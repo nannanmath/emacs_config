@@ -1,0 +1,704 @@
+;; Object caffe/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "caffe/"
+  :tables
+  (list
+    (semanticdb-table "sequence_layers.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CAFFE_SEQUENCE_LAYERS_HPP_" variable (:constant-flag t) nil [44 70])
+            ("string" include (:system-flag t) nil [72 89])
+            ("utility" include (:system-flag t) nil [90 108])
+            ("vector" include (:system-flag t) nil [109 126])
+            ("caffe/blob.hpp" include nil nil [128 153])
+            ("caffe/common.hpp" include nil nil [154 181])
+            ("caffe/layer.hpp" include nil nil [182 208])
+            ("caffe/net.hpp" include nil nil [209 233])
+            ("caffe/proto/caffe.pb.h" include nil nil [234 267])
+            ("caffe" type
+               (:members 
+                  ( ("RecurrentLayer" type
+                       (:template 
+                          ( ("Dtype" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [288 335])
+                    ("RecurrentLayer" type
+                       (:template 
+                          ( ("Dtype" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [709 716])
+                            ("RecurrentLayer" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LayerParameter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [743 771]))                                  
+                                :type ("RecurrentLayer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [728 802])
+                            ("LayerSetUp" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("bottom" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [829 864])
+                                    ("top" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [871 903]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [805 904])
+                            ("Reshape" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("bottom" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [928 963])
+                                    ("top" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [970 1002]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [907 1003])
+                            ("Reset" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1006 1027])
+                            ("type" function
+                               (:pointer 1
+                                :typemodifiers ("virtual" "inline")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [1031 1094])
+                            ("MinBottomBlobs" function
+                               (:typemodifiers ("virtual" "inline")
+                                :type "int")
+                                (reparse-symbol classsubparts) [1097 1152])
+                            ("MaxBottomBlobs" function
+                               (:typemodifiers ("virtual" "inline")
+                                :type "int")
+                                (reparse-symbol classsubparts) [1155 1210])
+                            ("ExactNumTopBlobs" function
+                               (:typemodifiers ("virtual" "inline")
+                                :type "int")
+                                (reparse-symbol classsubparts) [1213 1270])
+                            ("AllowForceBackward" function
+                               (:typemodifiers ("virtual" "inline")
+                                :arguments 
+                                  ( ("bottom_index" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [1314 1337]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1275 1439])
+                            ("protected" label nil (reparse-symbol classsubparts) [1442 1452])
+                            ("FillUnrolledNet" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("net_param" variable
+                                       (:pointer 1
+                                        :type ("NetParameter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1652 1676]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1623 1687])
+                            ("RecurrentInputBlobNames" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("names" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1922 1944]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1885 1955])
+                            ("RecurrentOutputBlobNames" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("names" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2192 2214]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2154 2225])
+                            ("OutputBlobNames" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("names" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2516 2538]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2487 2549])
+                            ("Forward_cpu" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("bottom" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5180 5215])
+                                    ("top" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5222 5254]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5155 5255])
+                            ("Forward_gpu" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("bottom" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5283 5318])
+                                    ("top" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5325 5357]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5258 5358])
+                            ("Backward_cpu" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("top" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5387 5419])
+                                    ("propagate_down" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5426 5461])
+                                    ("bottom" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5462 5497]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5361 5498])
+                            ("int_to_str" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("t" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [5602 5614]))                                  
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5576 5621])
+                            ("unrolled_net_" variable (:type ("shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("Net" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [5686 5724])
+                            ("N_" variable (:type "int") (reparse-symbol classsubparts) [5802 5809])
+                            ("T_" variable (:type "int") (reparse-symbol classsubparts) [5965 5972])
+                            ("static_input_" variable (:type "bool") (reparse-symbol classsubparts) [6057 6076])
+                            ("recur_input_blobs_" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("Blob" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6080 6121])
+                            ("recur_output_blobs_" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("Blob" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6124 6166])
+                            ("output_blobs_" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("Blob" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6169 6205])
+                            ("x_input_blob_" variable
+                               (:pointer 1
+                                :type ("Blob" type
+                                     (:template-specifier 
+                                        ( ("Dtype" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [6208 6235])
+                            ("x_static_input_blob_" variable
+                               (:pointer 1
+                                :type ("Blob" type
+                                     (:template-specifier 
+                                        ( ("Dtype" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [6238 6272])
+                            ("cont_input_blob_" variable
+                               (:pointer 1
+                                :type ("Blob" type
+                                     (:template-specifier 
+                                        ( ("Dtype" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [6275 6305]))                          
+                        :superclasses 
+                          ( ("Layer" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [637 6308])
+                    ("LSTMLayer" type
+                       (:template 
+                          ( ("Dtype" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7682 7689])
+                            ("LSTMLayer" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LayerParameter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7711 7739]))                                  
+                                :type ("LSTMLayer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7701 7779])
+                            ("type" function
+                               (:pointer 1
+                                :typemodifiers ("virtual" "inline")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [7783 7841])
+                            ("protected" label nil (reparse-symbol classsubparts) [7844 7854])
+                            ("FillUnrolledNet" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("net_param" variable
+                                       (:pointer 1
+                                        :type ("NetParameter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7886 7910]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7857 7917])
+                            ("RecurrentInputBlobNames" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("names" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7957 7979]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7920 7986])
+                            ("RecurrentOutputBlobNames" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("names" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8027 8049]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7989 8056])
+                            ("OutputBlobNames" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("names" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8088 8110]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8059 8117]))                          
+                        :superclasses 
+                          ( ("RecurrentLayer" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7606 8120])
+                    ("LSTMUnitLayer" type
+                       (:template 
+                          ( ("Dtype" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8362 8369])
+                            ("LSTMUnitLayer" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LayerParameter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8395 8423]))                                  
+                                :type ("LSTMUnitLayer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8381 8454])
+                            ("Reshape" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("bottom" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8478 8513])
+                                    ("top" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8520 8552]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8457 8553])
+                            ("type" function
+                               (:pointer 1
+                                :typemodifiers ("virtual" "inline")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [8557 8619])
+                            ("ExactNumBottomBlobs" function
+                               (:typemodifiers ("virtual" "inline")
+                                :type "int")
+                                (reparse-symbol classsubparts) [8622 8682])
+                            ("ExactNumTopBlobs" function
+                               (:typemodifiers ("virtual" "inline")
+                                :type "int")
+                                (reparse-symbol classsubparts) [8685 8742])
+                            ("AllowForceBackward" function
+                               (:typemodifiers ("virtual" "inline")
+                                :arguments 
+                                  ( ("bottom_index" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [8785 8808]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8746 8910])
+                            ("protected" label nil (reparse-symbol classsubparts) [8913 8923])
+                            ("Forward_cpu" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("bottom" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9805 9840])
+                                    ("top" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9847 9879]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9780 9880])
+                            ("Forward_gpu" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("bottom" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9908 9943])
+                                    ("top" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9950 9982]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9883 9983])
+                            ("Backward_cpu" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("top" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11522 11554])
+                                    ("propagate_down" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11561 11596])
+                                    ("bottom" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11597 11632]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11496 11633])
+                            ("Backward_gpu" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("top" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11662 11694])
+                                    ("propagate_down" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11701 11736])
+                                    ("bottom" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("Blob" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11737 11772]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11636 11773])
+                            ("hidden_dim_" variable (:type "int") (reparse-symbol classsubparts) [11823 11839])
+                            ("X_acts_" variable (:type ("Blob" type
+                                 (:template-specifier 
+                                    ( ("Dtype" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11842 11862]))                          
+                        :superclasses 
+                          ( ("Layer" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [8291 11865])
+                    ("RNNLayer" type
+                       (:template 
+                          ( ("Dtype" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [12311 12318])
+                            ("RNNLayer" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LayerParameter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12339 12367]))                                  
+                                :type ("RNNLayer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12330 12407])
+                            ("type" function
+                               (:pointer 1
+                                :typemodifiers ("virtual" "inline")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [12411 12468])
+                            ("protected" label nil (reparse-symbol classsubparts) [12471 12481])
+                            ("FillUnrolledNet" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("net_param" variable
+                                       (:pointer 1
+                                        :type ("NetParameter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12513 12537]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12484 12544])
+                            ("RecurrentInputBlobNames" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("names" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [12584 12606]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12547 12613])
+                            ("RecurrentOutputBlobNames" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("names" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [12654 12676]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12616 12683])
+                            ("OutputBlobNames" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("names" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [12715 12737]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12686 12744]))                          
+                        :superclasses 
+                          ( ("RecurrentLayer" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [12236 12747]))                  
+                :type "namespace")
+                nil [269 12750]))          
+      :file "sequence_layers.hpp"
+      :pointmax 12810
+      :fsize 13122
+      :lastmodtime '(21977 31312 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CAFFE_SEQUENCE_LAYERS_HPP_")
+          )
+)
+    (semanticdb-table "blob.hpp"
+      :file "blob.hpp"
+      :fsize 9627
+      :lastmodtime '(21975 24853 0 0))
+    (semanticdb-table "common.hpp"
+      :file "common.hpp"
+      :fsize 5594
+      :lastmodtime '(21975 24853 0 0))
+    (semanticdb-table "layer.hpp"
+      :file "layer.hpp"
+      :fsize 17204
+      :lastmodtime '(21975 24853 0 0))
+    (semanticdb-table "net.hpp"
+      :file "net.hpp"
+      :fsize 10222
+      :lastmodtime '(21975 24853 0 0)))
+  :file "!drive_h!nan!lisa-caffe-public!include!caffe!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

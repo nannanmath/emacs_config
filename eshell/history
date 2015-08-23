@@ -1,0 +1,15 @@
+cd /h
+cd h:
+cd nan
+cd lisa-caffe-public/
+ls
+exit
+git
+exit
+gtags
+ls G*
+ls
+cd include
+ls
+cd caffe
+ls

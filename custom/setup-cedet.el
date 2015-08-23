@@ -1,27 +1,24 @@
 (provide 'setup-cedet)
-(require 'cc-mode)
+
+;; semantic
+
 (require 'semantic)
 
 (global-semanticdb-minor-mode 1)
+(setq semanticdb-default-save-directory "~/.emacs.d/")
 (global-semantic-idle-scheduler-mode 1)
 (global-semantic-stickyfunc-mode 1)
-;; (global-semantic-idle-summary-mode 1)
 
 (semantic-mode 1)
 
-(defun alexott/cedet-hook ()
-  (local-set-key "\C-c\C-j" 'semantic-ia-fast-jump)
-  (local-set-key "\C-c\C-s" 'semantic-ia-show-summary))
-
-(add-hook 'c-mode-common-hook 'alexott/cedet-hook)
-(add-hook 'c-mode-hook 'alexott/cedet-hook)
-(add-hook 'c++-mode-hook 'alexott/cedet-hook)
+;; ede
 
 (require 'ede)
 (global-ede-mode)
 
 ;; my own project
-(ede-cpp-root-project "jianwu-caffe"
-                      :file "/local/zhangna1/jianwu-caffe/Makefile"
-                      :include-path '("/include") ;; add more include
-                      :system-include-path '("/usr/include/boost"))
+(ede-cpp-root-project "lisa-caffe-public"
+                      :file "h:/nan/lisa-caffe-public/Makefile"
+                      :include-path '("/include") ;; related to the project root directory
+                      ;; :system-include-path '("/usr/include/boost")
+					  )
