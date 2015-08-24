@@ -1,0 +1,1 @@
+("/local/zhangna1/testnan/nanzhang/" "~/.emacs.d/" "/local/zhangna1/testnan/lisa-caffe-public/")

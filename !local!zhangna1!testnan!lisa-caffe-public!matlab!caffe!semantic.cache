@@ -1,0 +1,315 @@
+;; Object caffe/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "caffe/"
+  :tables
+  (list
+    (semanticdb-table "matcaffe.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [220 238])
+            ("string" include (:system-flag t) nil [239 256])
+            ("vector" include (:system-flag t) nil [257 274])
+            ("mex.h" include nil nil [276 292])
+            ("caffe/caffe.hpp" include nil nil [294 320])
+            ("MEX_ARGS" variable (:constant-flag t) nil [330 338])
+            ("mex_error" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [448 471]))                  
+                :type "void")
+                nil [426 525])
+            ("caffe" using (:type ("caffe" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [527 549])
+            ("net_" variable
+               (:typemodifiers ("static")
+                :type ("shared_ptr" type
+                     (:template-specifier 
+                        ( ("Net" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [631 667])
+            ("init_key" variable
+               (:typemodifiers ("static")
+                :default-value "-2"
+                :type "int")
+                nil [668 693])
+            ("do_forward" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("bottom" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1718 1746]))                  
+                :type ("mxArray" type (:type "class") nil nil))
+                nil [1691 3894])
+            ("do_backward" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("top_diff" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3924 3954]))                  
+                :type ("mxArray" type (:type "class") nil nil))
+                nil [3896 5841])
+            ("do_get_weights" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("mxArray" type (:type "class") nil nil))
+                nil [5843 8431])
+            ("get_weights" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [8457 8465])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8457 8465])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [8457 8465])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8457 8466]))                  
+                :type "void")
+                nil [8433 8500])
+            ("set_mode_cpu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [8527 8535])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8527 8535])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [8527 8535])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8527 8536]))                  
+                :type "void")
+                nil [8502 8571])
+            ("set_mode_gpu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [8598 8606])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8598 8606])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [8598 8606])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8598 8607]))                  
+                :type "void")
+                nil [8573 8642])
+            ("set_device" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [8667 8675])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8667 8675])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [8667 8675])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8667 8676]))                  
+                :type "void")
+                nil [8644 8908])
+            ("get_init_key" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [8935 8943])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8935 8943])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [8935 8943])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8935 8944]))                  
+                :type "void")
+                nil [8910 8992])
+            ("init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [9011 9019])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9011 9019])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [9011 9019])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9011 9020]))                  
+                :type "void")
+                nil [8994 9798])
+            ("reset" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [9818 9826])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9818 9826])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [9818 9826])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9818 9827]))                  
+                :type "void")
+                nil [9800 9951])
+            ("forward" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [9973 9981])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9973 9981])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [9973 9981])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9973 9982]))                  
+                :type "void")
+                nil [9953 10158])
+            ("backward" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [10181 10189])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10181 10189])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [10181 10189])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10181 10190]))                  
+                :type "void")
+                nil [10160 10367])
+            ("is_initialized" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [10396 10404])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10396 10404])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [10396 10404])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10396 10405]))                  
+                :type "void")
+                nil [10369 10517])
+            ("read_mean" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [10541 10549])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10541 10549])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [10541 10549])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10541 10550]))                  
+                :type "void")
+                nil [10519 11534])
+            ("handler_registry" type
+               (:members 
+                  ( ("cmd" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11663 11674])
+                    ("func" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [11690 11698])
+                            ("plhs" variable
+                               (:pointer 2
+                                :type ("mxArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11690 11698])
+                            ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [11690 11698])
+                            ("prhs" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type ("mxArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11690 11699]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11677 11700]))                  
+                :type "struct")
+                nil [11635 11703])
+            ("handlers" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  // Public API functions
+  { \"forward\",            forward         },
+  { \"backward\",           backward        },
+  { \"init\",               init            },
+  { \"is_initialized\",     is_initialized  },
+  { \"set_mode_cpu\",       set_mode_cpu    },
+  { \"set_mode_gpu\",       set_mode_gpu    },
+  { \"set_device\",         set_device      },
+  { \"get_weights\",        get_weights     },
+  { \"get_init_key\",       get_init_key    },
+  { \"reset\",              reset           },
+  { \"read_mean\",          read_mean       },
+  // The end.
+  { \"END\",                NULL            },
+}"
+                :type ("handler_registry" type (:type "class") nil nil))
+                nil [11705 12326])
+            ("mexFunction" function
+               (:arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [12481 12489])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12481 12489])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [12481 12489])
+                    ("prhs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12481 12490]))                  
+                :type "void")
+                nil [12464 13124]))          
+      :file "matcaffe.cpp"
+      :pointmax 13125
+      :fsize 13124
+      :lastmodtime '(21969 60336 473714 555000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MEX_ARGS" . 
+              ((INT "int" 339 . 342) (symbol "nlhs" 343 . 347) (punctuation "," 347 . 348) (symbol "mxArray" 349 . 356) (punctuation "*" 357 . 358) (punctuation "*" 358 . 359) (symbol "plhs" 359 . 363) (punctuation "," 363 . 364) (INT "int" 365 . 368) (symbol "nrhs" 369 . 373) (punctuation "," 373 . 374) (CONST "const" 375 . 380) (symbol "mxArray" 381 . 388) (punctuation "*" 389 . 390) (punctuation "*" 390 . 391) (symbol "prhs" 391 . 395)))
+          )
+))
+  :file "!local!zhangna1!testnan!lisa-caffe-public!matlab!caffe!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

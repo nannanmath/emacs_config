@@ -9,4 +9,9 @@
 (helm-projectile-on)
 (setq projectile-completion-system 'helm)
 
+;; ag
+(require 'grep)
+(require 'ag)
+(require 'helm-ag)
+
 (setq projectile-switch-project-action 'helm-projectile-find-file)

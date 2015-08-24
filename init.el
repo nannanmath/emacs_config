@@ -1,7 +1,7 @@
-;;(setq url-proxy-services
-;;   '(("no_proxy" . "^\\(localhost\\|10.*\\)")
-;;     ("http" . "proxy-prc.intel.com:911")
-;;     ("https" . "proxy-prc.intel.com:911")))
+(setq url-proxy-services
+   '(("no_proxy" . "^\\(localhost\\|10.*\\)")
+     ("http" . "proxy-prc.intel.com:911")
+     ("https" . "proxy-prc.intel.com:911")))
 
 
 (require 'package)

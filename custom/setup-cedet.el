@@ -18,7 +18,7 @@
 
 ;; my own project
 (ede-cpp-root-project "lisa-caffe-public"
-                      :file "h:/nan/lisa-caffe-public/Makefile"
+                      :file "/local/zhangna1/testnan/lisa-caffe-public/Makefile"
                       :include-path '("/include") ;; related to the project root directory
-                      ;; :system-include-path '("/usr/include/boost")
+                      :system-include-path '("/usr/include/boost")
 					  )
