@@ -1,0 +1,1817 @@
+;; Object iterator/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "iterator/"
+  :tables
+  (list
+    (semanticdb-table "transform_iterator.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TRANSFORM_ITERATOR_23022003THW_HPP" variable (:constant-flag t) nil [328 368])
+            ("boost/iterator.hpp" include (:system-flag t) nil [370 399])
+            ("boost/iterator/detail/enable_if.hpp" include (:system-flag t) nil [400 446])
+            ("boost/iterator/iterator_adaptor.hpp" include (:system-flag t) nil [447 493])
+            ("boost/iterator/iterator_categories.hpp" include (:system-flag t) nil [494 543])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [544 572])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [573 602])
+            ("boost/type_traits/function_traits.hpp" include (:system-flag t) nil [603 651])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [652 693])
+            ("boost/type_traits/is_class.hpp" include (:system-flag t) nil [694 735])
+            ("boost/type_traits/is_function.hpp" include (:system-flag t) nil [736 780])
+            ("boost/type_traits/is_reference.hpp" include (:system-flag t) nil [781 826])
+            ("boost/type_traits/remove_const.hpp" include (:system-flag t) nil [827 872])
+            ("boost/type_traits/remove_reference.hpp" include (:system-flag t) nil [873 922])
+            ("boost/utility/result_of.hpp" include (:system-flag t) nil [923 961])
+            ("boost/iterator/detail/config_def.hpp" include (:system-flag t) nil [1083 1130])
+            ("boost" type
+               (:members 
+                  ( ("transform_iterator" type
+                       (:template 
+                          ( ("UnaryFunction" type (:type "class") nil nil)
+                            ("Iterator" type (:type "class") nil nil)
+                            ("Reference" type (:type "class") nil nil)
+                            ("Value" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1153 1285])
+                    ("detail" type
+                       (:members 
+                          ( ("transform_iterator_base" type
+                               (:template 
+                                  ( ("UnaryFunc" type (:type "class") nil nil)
+                                    ("Iterator" type (:type "class") nil nil)
+                                    ("Reference" type (:type "class") nil nil)
+                                    ("Value" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [1518 1526])
+                                    ("reference" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1784 1799])
+                                    ("cv_value_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2229 2248])
+                                    ("public" label nil (reparse-symbol classsubparts) [2255 2262])
+                                    ("type" type
+                                       (:typedef ("iterator_adaptor" type
+                                             (:template-specifier 
+                                                ( ("transform_iterator" type nil nil nil)
+                                                  ("Iterator" type nil nil nil)
+                                                  ("cv_value_type" type nil nil nil)
+                                                  ("use_default" type nil nil nil)
+                                                  ("reference" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2271 2516]))                                  )
+                                (reparse-symbol namespacesubparts) [1399 2523]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1289 2527])
+                    ("transform_iterator" type
+                       (:template 
+                          ( ("UnaryFunc" type (:type "class") nil nil)
+                            ("Iterator" type (:type "class") nil nil)
+                            ("Reference" type (:type "class") nil nil)
+                            ("Value" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("super_t" type
+                               (:typedef ("boost::detail::transform_iterator_base::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2736 2853])
+                            ("iterator_core_access" friend nil (reparse-symbol classsubparts) [2859 2892])
+                            ("public" label nil (reparse-symbol classsubparts) [2897 2904])
+                            ("transform_iterator" function
+                               (:constructor-flag t
+                                :type ("transform_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2909 2933])
+                            ("transform_iterator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2958 2976])
+                                    ("f" variable (:type ("UnaryFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2977 2989]))                                  
+                                :type ("transform_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2939 3020])
+                            ("transform_iterator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3054 3072]))                                  
+                                :type ("transform_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3035 3458])
+                            ("transform_iterator" function
+                               (:template 
+                                  ( ("OtherUnaryFunction" type (:type "class") nil nil)
+                                    ("OtherIterator" type (:type "class") nil nil)
+                                    ("OtherReference" type (:type "class") nil nil)
+                                    ("OtherValue" type (:type "class") nil nil))                                  
+                                :type ("transform_iterator" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("transform_iterator" type
+                                             (:template-specifier 
+                                                ( ("OtherUnaryFunction" type nil nil nil)
+                                                  ("OtherIterator" type nil nil nil)
+                                                  ("OtherReference" type nil nil nil)
+                                                  ("OtherValue" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3624 3723])
+                                    ("" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("enable_if_convertible" type
+                                             (:template-specifier 
+                                                ( ("OtherIterator" type nil nil nil)
+                                                  ("Iterator" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3724 3780])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3781 3790]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [3464 3979])
+                            ("functor" function (:type ("UnaryFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3985 4032])
+                            ("private" label nil (reparse-symbol classsubparts) [4036 4044])
+                            ("dereference" function
+                               (:typemodifiers ("typename")
+                                :type ("super_t::reference" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4049 4131])
+                            ("m_f" variable (:type ("UnaryFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4254 4268]))                          
+                        :superclasses 
+                          ( ("boost::detail::transform_iterator_base::type" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2531 4273])
+                    ("make_transform_iterator" function
+                       (:template 
+                          ( ("UnaryFunc" type (:type "class") nil nil)
+                            ("Iterator" type (:type "class") nil nil))                          
+                        :type ("transform_iterator" type
+                             (:template-specifier 
+                                ( ("UnaryFunc" type nil nil nil)
+                                  ("Iterator" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("it" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4388 4400])
+                            ("fun" variable (:type ("UnaryFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4401 4415]))                          )
+                        (reparse-symbol namespacesubparts) [4277 4486])
+                    ("make_transform_iterator" function
+                       (:template 
+                          ( ("UnaryFunc" type (:type "class") nil nil)
+                            ("Iterator" type (:type "class") nil nil))                          
+                        :type ("iterators::enable_if::type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("it" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5168 5180]))                          
+                        :typemodifiers ("typename"))
+                        (reparse-symbol namespacesubparts) [4783 5259]))                  
+                :type "namespace")
+                nil [1133 5646])
+            ("boost/iterator/detail/config_undef.hpp" include (:system-flag t) nil [5667 5716]))          
+      :file "transform_iterator.hpp"
+      :pointmax 5769
+      :fsize 5768
+      :lastmodtime '(21413 1115 0 0)
+      :unmatched-syntax '((punctuation 3780 . 3781) (punctuation 3779 . 3780) (EXPLICIT 3026 . 3034) (punctuation 2892 . 2893) (punctuation 2228 . 2229) (punctuation 2227 . 2228) (punctuation 2226 . 2227) (punctuation 2216 . 2217) (symbol 2207 . 2216) (punctuation 2206 . 2207) (symbol 2190 . 2206) (punctuation 2188 . 2189) (symbol 2172 . 2177) (punctuation 2158 . 2159) (symbol 2146 . 2158) (TYPENAME 2137 . 2145) (TYPEDEF 2129 . 2136) (punctuation 1783 . 1784) (punctuation 1782 . 1783) (punctuation 1781 . 1782) (punctuation 1771 . 1772) (semantic-list 1719 . 1771) (symbol 1710 . 1719) (CONST 1704 . 1709) (punctuation 1703 . 1704) (symbol 1694 . 1703) (punctuation 1692 . 1693) (symbol 1672 . 1681) (punctuation 1658 . 1659) (symbol 1646 . 1658) (TYPENAME 1637 . 1645) (TYPEDEF 1629 . 1636))
+      :lexical-table 
+        '(("BOOST_TRANSFORM_ITERATOR_23022003THW_HPP")
+          )
+)
+    (semanticdb-table "iterator_facade.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ITERATOR_FACADE_23022003THW_HPP" variable (:constant-flag t) nil [325 362])
+            ("boost/iterator.hpp" include (:system-flag t) nil [364 393])
+            ("boost/iterator/interoperable.hpp" include (:system-flag t) nil [394 437])
+            ("boost/iterator/iterator_traits.hpp" include (:system-flag t) nil [438 483])
+            ("boost/iterator/detail/facade_iterator_category.hpp" include (:system-flag t) nil [485 546])
+            ("boost/iterator/detail/enable_if.hpp" include (:system-flag t) nil [547 593])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [595 629])
+            ("boost/utility/addressof.hpp" include (:system-flag t) nil [630 668])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [670 710])
+            ("boost/type_traits/add_const.hpp" include (:system-flag t) nil [711 753])
+            ("boost/type_traits/add_pointer.hpp" include (:system-flag t) nil [754 798])
+            ("boost/type_traits/remove_const.hpp" include (:system-flag t) nil [799 844])
+            ("boost/type_traits/remove_reference.hpp" include (:system-flag t) nil [845 894])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [895 942])
+            ("boost/type_traits/is_pod.hpp" include (:system-flag t) nil [943 982])
+            ("boost/mpl/eval_if.hpp" include (:system-flag t) nil [984 1016])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [1017 1044])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [1045 1072])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [1073 1101])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [1102 1130])
+            ("boost/mpl/always.hpp" include (:system-flag t) nil [1131 1162])
+            ("boost/mpl/apply.hpp" include (:system-flag t) nil [1163 1193])
+            ("boost/mpl/identity.hpp" include (:system-flag t) nil [1194 1227])
+            ("boost/iterator/detail/config_def.hpp" include (:system-flag t) nil [1229 1276])
+            ("boost" type
+               (:members 
+                  ( ("iterator_facade" type
+                       (:template 
+                          ( ("I" type (:type "class") nil nil)
+                            ("V" type (:type "class") nil nil)
+                            ("TC" type (:type "class") nil nil)
+                            ("R" type (:type "class") nil nil)
+                            ("D" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1414 1492])
+                    ("detail" type
+                       (:members 
+                          ( ("always_bool2" type
+                               (:members 
+                                  ( ("apply" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("U" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("bool")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1777 1795]))                                          )
+                                        (reparse-symbol classsubparts) [1706 1806]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1672 1813])
+                            ("" type
+                               (:template 
+                                  ( ("Facade1" type (:type "class") nil nil)
+                                    ("Facade2" type (:type "class") nil nil)
+                                    ("Return" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("boost::iterators::enable_if" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :parent "enable_if_interoperable")
+                                (reparse-symbol namespacesubparts) [1886 2505])
+                            ("iterator_facade_types" type
+                               (:template 
+                                  ( ("ValueParam" type (:type "class") nil nil)
+                                    ("CategoryOrTraversal" type (:type "class") nil nil)
+                                    ("Reference" type (:type "class") nil nil)
+                                    ("Difference" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("iterator_category" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2906 2929])
+                                    ("value_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2990 3006])
+                                    ("pointer" type
+                                       (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3072 3284]))                                  )
+                                (reparse-symbol namespacesubparts) [2624 4121])
+                            ("postfix_increment_proxy" type
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("value_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4605 4621])
+                                    ("public" label nil (reparse-symbol classsubparts) [4627 4634])
+                                    ("postfix_increment_proxy" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Iterator" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4676 4694]))                                          
+                                        :type ("postfix_increment_proxy" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4652 4734])
+                                    ("" function
+                                       (:operator-flag t
+                                        :function-pointer t
+                                        :type ("value_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5009 5105])
+                                    ("private" label nil (reparse-symbol classsubparts) [5111 5119])
+                                    ("stored_value" variable
+                                       (:typemodifiers ("mutable")
+                                        :type ("value_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5128 5160]))                                  )
+                                (reparse-symbol namespacesubparts) [4488 5167])
+                            ("writable_postfix_increment_proxy" type
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("value_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5483 5499])
+                                    ("public" label nil (reparse-symbol classsubparts) [5505 5512])
+                                    ("writable_postfix_increment_proxy" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Iterator" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5563 5581]))                                          
+                                        :type ("writable_postfix_increment_proxy" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5530 5652])
+                                    ("" function
+                                       (:operator-flag t
+                                        :function-pointer t
+                                        :type ("writable_postfix_increment_proxy" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5897 6008])
+                                    ("=" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6235 6246]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [6189 6334])
+                                    ("=" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6458 6463]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [6418 6551])
+                                    ("private" label nil (reparse-symbol classsubparts) [6691 6699])
+                                    ("stored_value" variable
+                                       (:typemodifiers ("mutable")
+                                        :type ("value_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6708 6740])
+                                    ("stored_iterator" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6749 6774]))                                  )
+                                (reparse-symbol namespacesubparts) [5357 6781])
+                            ("operator_arrow_dispatch" type
+                               (:template 
+                                  ( ("Reference" type (:type "class") nil nil)
+                                    ("Pointer" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("proxy" type
+                                       (:members 
+                                          ( ("proxy" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Reference" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9870 9890]))                                                  
+                                                :type ("proxy" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [9864 9904])
+                                            ("->" function
+                                               (:operator-flag t
+                                                :pointer 1
+                                                :type ("Reference" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [9917 9976])
+                                            ("m_ref" variable (:type ("Reference" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10199 10215]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [9820 10226])
+                                    ("result_type" type
+                                       (:typedef ("proxy" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10235 10261])
+                                    ("apply" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Reference" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10295 10315]))                                          
+                                        :type ("result_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10270 10370]))                                  )
+                                (reparse-symbol namespacesubparts) [9709 10377])
+                            ("operator_arrow_dispatch" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("Pointer" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("result_type" type
+                                       (:typedef ("Pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10500 10528])
+                                    ("apply" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10562 10567]))                                          
+                                        :type ("result_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10537 10627]))                                  
+                                :template-specifier 
+                                  ( ("T" type (:reference 1) nil nil)
+                                    ("Pointer" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [10383 10634])
+                            ("operator_brackets_proxy" type
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("reference" type
+                                       (:typedef ("Iterator::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11204 11252])
+                                    ("value_type" type
+                                       (:typedef ("Iterator::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11261 11310])
+                                    ("public" label nil (reparse-symbol classsubparts) [11317 11324])
+                                    ("operator_brackets_proxy" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("iter" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Iterator" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11357 11378]))                                          
+                                        :type ("operator_brackets_proxy" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11333 11414])
+                                    ("reference" function (:type "int") (reparse-symbol classsubparts) [11433 11498])
+                                    ("=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("val" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("value_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11543 11565]))                                          
+                                        :type ("operator_brackets_proxy" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11508 11638])
+                                    ("private" label nil (reparse-symbol classsubparts) [11645 11653])
+                                    ("m_iter" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11662 11678]))                                  )
+                                (reparse-symbol namespacesubparts) [10997 11685])
+                            ("use_operator_brackets_proxy" type
+                               (:template 
+                                  ( ("ValueType" type (:type "class") nil nil)
+                                    ("Reference" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("mpl::not_" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [11834 12237])
+                            ("operator_brackets_result" type
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil)
+                                    ("Value" type (:type "class") nil nil)
+                                    ("Reference" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("mpl::if_::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12357 12526]))                                  )
+                                (reparse-symbol namespacesubparts) [12251 12533])
+                            ("make_operator_brackets_result" function
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil))                                  
+                                :type ("operator_brackets_proxy" type
+                                     (:template-specifier 
+                                        ( ("Iterator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("iter" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12633 12654])
+                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12655 12666]))                                  )
+                                (reparse-symbol namespacesubparts) [12539 12734])
+                            ("make_operator_brackets_result" function
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil))                                  
+                                :type ("Iterator::value_type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("iter" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12830 12851])
+                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12852 12864]))                                  
+                                :typemodifiers ("typename"))
+                                (reparse-symbol namespacesubparts) [12740 12896])
+                            ("choose_difference_type" type
+                               (:members 
+                                  ( ("apply" type
+                                       (:template 
+                                          ( ("I1" type (:type "class") nil nil)
+                                            ("I2" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::eval_if" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol classsubparts) [12946 13459]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [12902 13467]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1496 13471])
+                    ("BOOST_ITERATOR_FACADE_INTEROP_HEAD" variable (:constant-flag t) (reparse-symbol namespacesubparts) [14338 14372])
+                    ("BOOST_ITERATOR_FACADE_PLUS_HEAD" variable (:constant-flag t) (reparse-symbol namespacesubparts) [15269 15300])
+                    ("iterator_core_access" type
+                       (:members 
+                          ( ("iterator_facade" type
+                               (:template 
+                                  ( ("I" type (:type "class") nil nil)
+                                    ("V" type (:type "class") nil nil)
+                                    ("TC" type (:type "class") nil nil)
+                                    ("R" type (:type "class") nil nil)
+                                    ("D" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol classsubparts) [16144 16229])
+                            ("BOOST_ITERATOR_FACADE_RELATION" variable (:constant-flag t) (reparse-symbol classsubparts) [16241 16271])
+                            ("BOOST_ITERATOR_FACADE_INTEROP_HEAD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("boost::detail::always_bool2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [16398 16432])
+                            ("BOOST_ITERATOR_FACADE_INTEROP_HEAD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("boost::detail::always_bool2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [16439 16473])
+                            ("BOOST_ITERATOR_FACADE_INTEROP_HEAD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("boost::detail::always_bool2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [16481 16514])
+                            ("BOOST_ITERATOR_FACADE_INTEROP_HEAD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("boost::detail::always_bool2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [16521 16554])
+                            ("BOOST_ITERATOR_FACADE_INTEROP_HEAD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("boost::detail::always_bool2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [16561 16595])
+                            ("BOOST_ITERATOR_FACADE_INTEROP_HEAD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("boost::detail::always_bool2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [16602 16636])
+                            ("BOOST_ITERATOR_FACADE_INTEROP_HEAD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("boost::detail::choose_difference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16741 16779]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [16684 16787])
+                            ("BOOST_ITERATOR_FACADE_PLUS_HEAD" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [16795 16973])
+                            ("BOOST_ITERATOR_FACADE_PLUS_HEAD" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [16981 17157])
+                            ("dereference" function
+                               (:template 
+                                  ( ("Facade" type (:type "class") nil nil))                                  
+                                :type ("Facade::reference" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Facade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17250 17266]))                                  
+                                :typemodifiers ("static" "typename"))
+                                (reparse-symbol classsubparts) [17174 17316])
+                            ("increment" function
+                               (:template 
+                                  ( ("Facade" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("Facade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17376 17386]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [17324 17427])
+                            ("decrement" function
+                               (:template 
+                                  ( ("Facade" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("Facade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17487 17497]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [17435 17538])
+                            ("equal" function
+                               (:template 
+                                  ( ("Facade1" type (:type "class") nil nil)
+                                    ("Facade2" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("f1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Facade1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17610 17628])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Facade2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17629 17647])
+                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17648 17659]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [17546 17706])
+                            ("equal" function
+                               (:template 
+                                  ( ("Facade1" type (:type "class") nil nil)
+                                    ("Facade2" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("f1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Facade1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17778 17796])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Facade2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17797 17815])
+                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17816 17828]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [17714 17875])
+                            ("advance" function
+                               (:template 
+                                  ( ("Facade" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("Facade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17933 17943])
+                                    ("n" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("Facade::difference_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17944 17979]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [17883 18019])
+                            ("distance_from" function
+                               (:template 
+                                  ( ("Facade1" type (:type "class") nil nil)
+                                    ("Facade2" type (:type "class") nil nil))                                  
+                                :type ("Facade1::difference_type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Facade1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18139 18157])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Facade2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18158 18176])
+                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18177 18188]))                                  
+                                :typemodifiers ("static" "typename"))
+                                (reparse-symbol classsubparts) [18027 18242])
+                            ("distance_from" function
+                               (:template 
+                                  ( ("Facade1" type (:type "class") nil nil)
+                                    ("Facade2" type (:type "class") nil nil))                                  
+                                :type ("Facade2::difference_type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Facade1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18362 18380])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Facade2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18381 18399])
+                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18400 18412]))                                  
+                                :typemodifiers ("static" "typename"))
+                                (reparse-symbol classsubparts) [18250 18465])
+                            ("derived" function
+                               (:template 
+                                  ( ("I" type (:type "class") nil nil)
+                                    ("V" type (:type "class") nil nil)
+                                    ("TC" type (:type "class") nil nil)
+                                    ("R" type (:type "class") nil nil)
+                                    ("D" type (:type "class") nil nil))                                  
+                                :type ("I" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("facade" variable
+                                       (:reference 1
+                                        :type ("iterator_facade" type
+                                             (:template-specifier 
+                                                ( ("I" type nil nil nil)
+                                                  ("V" type nil nil nil)
+                                                  ("TC" type nil nil nil)
+                                                  ("R" type nil nil nil)
+                                                  ("D" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18620 18656]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [18540 18716])
+                            ("derived" function
+                               (:template 
+                                  ( ("I" type (:type "class") nil nil)
+                                    ("V" type (:type "class") nil nil)
+                                    ("TC" type (:type "class") nil nil)
+                                    ("R" type (:type "class") nil nil)
+                                    ("D" type (:type "class") nil nil))                                  
+                                :type ("I" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("facade" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("iterator_facade" type
+                                             (:template-specifier 
+                                                ( ("I" type nil nil nil)
+                                                  ("V" type nil nil nil)
+                                                  ("TC" type nil nil nil)
+                                                  ("R" type nil nil nil)
+                                                  ("D" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18810 18852]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [18724 18918])
+                            ("private" label nil (reparse-symbol classsubparts) [18923 18931])
+                            ("iterator_core_access" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("iterator_core_access" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18981 19004]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [15870 19021])
+                    ("iterator_facade" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [19620 19628])
+                            ("derived" function (:type ("Derived" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19702 19783])
+                            ("derived" function (:type ("Derived" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19791 19890])
+                            ("associated_types" type
+                               (:typedef ("boost::detail::iterator_facade_types" type
+                                     (:template-specifier 
+                                        ( ("Value" type nil nil nil)
+                                          ("CategoryOrTraversal" type nil nil nil)
+                                          ("Reference" type nil nil nil)
+                                          ("Difference" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [19898 20028])
+                            ("operator_arrow_dispatch_" variable (:type "int") (reparse-symbol classsubparts) [20157 20182])
+                            ("protected" label nil (reparse-symbol classsubparts) [20187 20197])
+                            ("iterator_facade_" type
+                               (:typedef ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived" type nil nil nil)
+                                          ("Value" type nil nil nil)
+                                          ("CategoryOrTraversal" type nil nil nil)
+                                          ("Reference" type nil nil nil)
+                                          ("Difference" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [20240 20337])
+                            ("public" label nil (reparse-symbol classsubparts) [20348 20355])
+                            ("value_type" type
+                               (:typedef ("associated_types::value_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [20363 20420])
+                            ("reference" type
+                               (:typedef ("Reference" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [20427 20455])
+                            ("difference_type" type
+                               (:typedef ("Difference" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [20462 20497])
+                            ("pointer" type
+                               (:typedef ("operator_arrow_dispatch_::result_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [20505 20568])
+                            ("iterator_category" type
+                               (:typedef ("associated_types::iterator_category" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [20576 20647])
+                            ("" function
+                               (:operator-flag t
+                                :function-pointer t
+                                :type ("reference" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20655 20767])
+                            ("->" function
+                               (:operator-flag t
+                                :type ("pointer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20775 20885])
+                            ("[]" function
+                               (:operator-flag t
+                                :typemodifiers ("typename")
+                                :arguments 
+                                  ( ("n" variable (:type ("difference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20998 21016]))                                  
+                                :type ("boost::detail::operator_brackets_result::type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20901 21283])
+                            ("++" function
+                               (:operator-flag t
+                                :type ("Derived" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21291 21422])
+                            ("--" function
+                               (:operator-flag t
+                                :type ("Derived" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21814 21945])
+                            ("--" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [21972 21976]))                                  
+                                :type ("Derived" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21953 22073])
+                            ("+=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("n" variable (:type ("difference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22101 22119]))                                  
+                                :type ("Derived" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22081 22230])
+                            ("-=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("n" variable (:type ("difference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22258 22276]))                                  
+                                :type ("Derived" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22238 22388])
+                            ("-" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable (:type ("difference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22414 22432]))                                  
+                                :type ("Derived" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22396 22527]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [19358 23016])
+                    ("BOOST_ITERATOR_CONVERTIBLE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [26222 26248])
+                    ("BOOST_ITERATOR_FACADE_INTEROP" variable (:constant-flag t) (reparse-symbol namespacesubparts) [26294 26323])
+                    ("BOOST_ITERATOR_FACADE_RELATION" variable (:constant-flag t) (reparse-symbol namespacesubparts) [27283 27313])
+                    ("detail" function
+                       (:arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived1" type nil nil nil)
+                                          ("V1" type nil nil nil)
+                                          ("TC1" type nil nil nil)
+                                          ("Reference1" type nil nil nil)
+                                          ("Difference1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil)
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived2" type nil nil nil)
+                                          ("V2" type nil nil nil)
+                                          ("TC2" type nil nil nil)
+                                          ("Reference2" type nil nil nil)
+                                          ("Difference2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [27701 27750])
+                    ("detail" function
+                       (:arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived1" type nil nil nil)
+                                          ("V1" type nil nil nil)
+                                          ("TC1" type nil nil nil)
+                                          ("Reference1" type nil nil nil)
+                                          ("Difference1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil)
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived2" type nil nil nil)
+                                          ("V2" type nil nil nil)
+                                          ("TC2" type nil nil nil)
+                                          ("Reference2" type nil nil nil)
+                                          ("Difference2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [27753 27804])
+                    ("detail" function
+                       (:arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived1" type nil nil nil)
+                                          ("V1" type nil nil nil)
+                                          ("TC1" type nil nil nil)
+                                          ("Reference1" type nil nil nil)
+                                          ("Difference1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil)
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived2" type nil nil nil)
+                                          ("V2" type nil nil nil)
+                                          ("TC2" type nil nil nil)
+                                          ("Reference2" type nil nil nil)
+                                          ("Difference2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [27808 27868])
+                    ("detail" function
+                       (:arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived1" type nil nil nil)
+                                          ("V1" type nil nil nil)
+                                          ("TC1" type nil nil nil)
+                                          ("Reference1" type nil nil nil)
+                                          ("Difference1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil)
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived2" type nil nil nil)
+                                          ("V2" type nil nil nil)
+                                          ("TC2" type nil nil nil)
+                                          ("Reference2" type nil nil nil)
+                                          ("Difference2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [27871 27931])
+                    ("detail" function
+                       (:arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived1" type nil nil nil)
+                                          ("V1" type nil nil nil)
+                                          ("TC1" type nil nil nil)
+                                          ("Reference1" type nil nil nil)
+                                          ("Difference1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil)
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived2" type nil nil nil)
+                                          ("V2" type nil nil nil)
+                                          ("TC2" type nil nil nil)
+                                          ("Reference2" type nil nil nil)
+                                          ("Difference2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [27934 27996])
+                    ("detail" function
+                       (:arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived1" type nil nil nil)
+                                          ("V1" type nil nil nil)
+                                          ("TC1" type nil nil nil)
+                                          ("Reference1" type nil nil nil)
+                                          ("Difference1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil)
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived2" type nil nil nil)
+                                          ("V2" type nil nil nil)
+                                          ("TC2" type nil nil nil)
+                                          ("Reference2" type nil nil nil)
+                                          ("Difference2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [27999 28061])
+                    ("detail" function
+                       (:arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived1" type nil nil nil)
+                                          ("V1" type nil nil nil)
+                                          ("TC1" type nil nil nil)
+                                          ("Reference1" type nil nil nil)
+                                          ("Difference1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil)
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("iterator_facade" type
+                                     (:template-specifier 
+                                        ( ("Derived2" type nil nil nil)
+                                          ("V2" type nil nil nil)
+                                          ("TC2" type nil nil nil)
+                                          ("Reference2" type nil nil nil)
+                                          ("Difference2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [28171 28290])
+                    ("BOOST_ITERATOR_FACADE_PLUS" variable (:constant-flag t) (reparse-symbol namespacesubparts) [28382 28408]))                  
+                :type "namespace")
+                nil [1296 28972])
+            ("boost/iterator/detail/config_undef.hpp" include (:system-flag t) nil [28993 29042]))          
+      :file "iterator_facade.hpp"
+      :pointmax 29092
+      :fsize 29091
+      :lastmodtime '(21413 1115 0 0)
+      :unmatched-syntax '((semantic-list #("{                                                 \\
+      Derived tmp(static_cast<Derived const&>(i));  \\
+      return tmp += n;                              \\
+  }" 0 1 (macros (("args" semantic-list "(
+    typename Derived::difference_type n
+    , iterator_facade<Derived, V, TC, R, D> const& i
+)" 28797 . 28893)))) 28770 . 28894) (punctuation "+" 28770 . 28894) (OPERATOR "operator" 28770 . 28894) (symbol "Derived" 28770 . 28894) (semantic-list "(
+    typename Derived::difference_type n
+    , iterator_facade<Derived, V, TC, R, D> const& i
+)" 28770 . 28894) (punctuation ">" 28770 . 28894) (symbol "D" 28770 . 28894) (CLASS "class" 28770 . 28894) (punctuation "," 28770 . 28894) (symbol "R" 28770 . 28894) (CLASS "class" 28770 . 28894) (punctuation "," 28770 . 28894) (symbol "TC" 28770 . 28894) (CLASS "class" 28770 . 28894) (punctuation "," 28770 . 28894) (symbol "V" 28770 . 28894) (CLASS "class" 28770 . 28894) (punctuation "," 28770 . 28894) (symbol "Derived" 28770 . 28894) (CLASS "class" 28770 . 28894) (punctuation "<" 28770 . 28894) (TEMPLATE "template" 28770 . 28894) (semantic-list #("{                                                 \\
+      Derived tmp(static_cast<Derived const&>(i));  \\
+      return tmp += n;                              \\
+  }" 0 1 (macros (("args" semantic-list "(
+  iterator_facade<Derived, V, TC, R, D> const& i
+  , typename Derived::difference_type n
+)" 28675 . 28767)))) 28648 . 28768) (punctuation "+" 28648 . 28768) (OPERATOR "operator" 28648 . 28768) (symbol "Derived" 28648 . 28768) (semantic-list "(
+  iterator_facade<Derived, V, TC, R, D> const& i
+  , typename Derived::difference_type n
+)" 28648 . 28768) (punctuation ">" 28648 . 28768) (symbol "D" 28648 . 28768) (CLASS "class" 28648 . 28768) (punctuation "," 28648 . 28768) (symbol "R" 28648 . 28768) (CLASS "class" 28648 . 28768) (punctuation "," 28648 . 28768) (symbol "TC" 28648 . 28768) (CLASS "class" 28648 . 28768) (punctuation "," 28648 . 28768) (symbol "V" 28648 . 28768) (CLASS "class" 28648 . 28768) (punctuation "," 28648 . 28768) (symbol "Derived" 28648 . 28768) (CLASS "class" 28648 . 28768) (punctuation "<" 28648 . 28768) (TEMPLATE "template" 28648 . 28768) (OPERATOR "operator" 28171 . 28290) (symbol "type" 28171 . 28290) (punctuation ":" 28171 . 28290) (punctuation ":" 28171 . 28290) (punctuation ">" 28171 . 28290) (symbol "type" 28171 . 28290) (punctuation ":" 28171 . 28290) (punctuation ":" 28171 . 28290) (punctuation ">" 28171 . 28290) (symbol "Derived2" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "Derived1" 28171 . 28290) (punctuation "," 28171 . 28290) (punctuation "<" 28171 . 28290) (symbol "apply2" 28171 . 28290) (punctuation ":" 28171 . 28290) (punctuation ":" 28171 . 28290) (symbol "mpl" 28171 . 28290) (TYPENAME "typename" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "Derived2" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "Derived1" 28171 . 28290) (punctuation "<" 28171 . 28290) (symbol "enable_if_interoperable" 28171 . 28290) (punctuation ":" 28171 . 28290) (punctuation ":" 28171 . 28290) (symbol "detail" 28171 . 28290) (punctuation ":" 28171 . 28290) (punctuation ":" 28171 . 28290) (symbol "boost" 28171 . 28290) (TYPENAME "typename" 28171 . 28290) (symbol "boost" 28171 . 28290) (punctuation ">" 28171 . 28290) (symbol "Difference2" 28171 . 28290) (CLASS "class" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "Reference2" 28171 . 28290) (CLASS "class" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "TC2" 28171 . 28290) (CLASS "class" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "V2" 28171 . 28290) (CLASS "class" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "Derived2" 28171 . 28290) (CLASS "class" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "Difference1" 28171 . 28290) (CLASS "class" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "Reference1" 28171 . 28290) (CLASS "class" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "TC1" 28171 . 28290) (CLASS "class" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "V1" 28171 . 28290) (CLASS "class" 28171 . 28290) (punctuation "," 28171 . 28290) (symbol "Derived1" 28171 . 28290) (CLASS "class" 28171 . 28290) (punctuation "<" 28171 . 28290) (TEMPLATE "template" 28171 . 28290) (OPERATOR "operator" 27999 . 28061) (symbol "type" 27999 . 28061) (punctuation ":" 27999 . 28061) (punctuation ":" 27999 . 28061) (punctuation ">" 27999 . 28061) (symbol "type" 27999 . 28061) (punctuation ":" 27999 . 28061) (punctuation ":" 27999 . 28061) (punctuation ">" 27999 . 28061) (symbol "Derived2" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "Derived1" 27999 . 28061) (punctuation "," 27999 . 28061) (punctuation "<" 27999 . 28061) (symbol "apply2" 27999 . 28061) (punctuation ":" 27999 . 28061) (punctuation ":" 27999 . 28061) (symbol "mpl" 27999 . 28061) (TYPENAME "typename" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "Derived2" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "Derived1" 27999 . 28061) (punctuation "<" 27999 . 28061) (symbol "enable_if_interoperable" 27999 . 28061) (punctuation ":" 27999 . 28061) (punctuation ":" 27999 . 28061) (symbol "detail" 27999 . 28061) (punctuation ":" 27999 . 28061) (punctuation ":" 27999 . 28061) (symbol "boost" 27999 . 28061) (TYPENAME "typename" 27999 . 28061) (symbol "boost" 27999 . 28061) (punctuation ">" 27999 . 28061) (symbol "Difference2" 27999 . 28061) (CLASS "class" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "Reference2" 27999 . 28061) (CLASS "class" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "TC2" 27999 . 28061) (CLASS "class" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "V2" 27999 . 28061) (CLASS "class" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "Derived2" 27999 . 28061) (CLASS "class" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "Difference1" 27999 . 28061) (CLASS "class" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "Reference1" 27999 . 28061) (CLASS "class" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "TC1" 27999 . 28061) (CLASS "class" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "V1" 27999 . 28061) (CLASS "class" 27999 . 28061) (punctuation "," 27999 . 28061) (symbol "Derived1" 27999 . 28061) (CLASS "class" 27999 . 28061) (punctuation "<" 27999 . 28061) (TEMPLATE "template" 27999 . 28061) (OPERATOR "operator" 27934 . 27996) (symbol "type" 27934 . 27996) (punctuation ":" 27934 . 27996) (punctuation ":" 27934 . 27996) (punctuation ">" 27934 . 27996) (symbol "type" 27934 . 27996) (punctuation ":" 27934 . 27996) (punctuation ":" 27934 . 27996) (punctuation ">" 27934 . 27996) (symbol "Derived2" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "Derived1" 27934 . 27996) (punctuation "," 27934 . 27996) (punctuation "<" 27934 . 27996) (symbol "apply2" 27934 . 27996) (punctuation ":" 27934 . 27996) (punctuation ":" 27934 . 27996) (symbol "mpl" 27934 . 27996) (TYPENAME "typename" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "Derived2" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "Derived1" 27934 . 27996) (punctuation "<" 27934 . 27996) (symbol "enable_if_interoperable" 27934 . 27996) (punctuation ":" 27934 . 27996) (punctuation ":" 27934 . 27996) (symbol "detail" 27934 . 27996) (punctuation ":" 27934 . 27996) (punctuation ":" 27934 . 27996) (symbol "boost" 27934 . 27996) (TYPENAME "typename" 27934 . 27996) (symbol "boost" 27934 . 27996) (punctuation ">" 27934 . 27996) (symbol "Difference2" 27934 . 27996) (CLASS "class" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "Reference2" 27934 . 27996) (CLASS "class" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "TC2" 27934 . 27996) (CLASS "class" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "V2" 27934 . 27996) (CLASS "class" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "Derived2" 27934 . 27996) (CLASS "class" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "Difference1" 27934 . 27996) (CLASS "class" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "Reference1" 27934 . 27996) (CLASS "class" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "TC1" 27934 . 27996) (CLASS "class" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "V1" 27934 . 27996) (CLASS "class" 27934 . 27996) (punctuation "," 27934 . 27996) (symbol "Derived1" 27934 . 27996) (CLASS "class" 27934 . 27996) (punctuation "<" 27934 . 27996) (TEMPLATE "template" 27934 . 27996) (OPERATOR "operator" 27871 . 27931) (symbol "type" 27871 . 27931) (punctuation ":" 27871 . 27931) (punctuation ":" 27871 . 27931) (punctuation ">" 27871 . 27931) (symbol "type" 27871 . 27931) (punctuation ":" 27871 . 27931) (punctuation ":" 27871 . 27931) (punctuation ">" 27871 . 27931) (symbol "Derived2" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "Derived1" 27871 . 27931) (punctuation "," 27871 . 27931) (punctuation "<" 27871 . 27931) (symbol "apply2" 27871 . 27931) (punctuation ":" 27871 . 27931) (punctuation ":" 27871 . 27931) (symbol "mpl" 27871 . 27931) (TYPENAME "typename" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "Derived2" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "Derived1" 27871 . 27931) (punctuation "<" 27871 . 27931) (symbol "enable_if_interoperable" 27871 . 27931) (punctuation ":" 27871 . 27931) (punctuation ":" 27871 . 27931) (symbol "detail" 27871 . 27931) (punctuation ":" 27871 . 27931) (punctuation ":" 27871 . 27931) (symbol "boost" 27871 . 27931) (TYPENAME "typename" 27871 . 27931) (symbol "boost" 27871 . 27931) (punctuation ">" 27871 . 27931) (symbol "Difference2" 27871 . 27931) (CLASS "class" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "Reference2" 27871 . 27931) (CLASS "class" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "TC2" 27871 . 27931) (CLASS "class" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "V2" 27871 . 27931) (CLASS "class" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "Derived2" 27871 . 27931) (CLASS "class" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "Difference1" 27871 . 27931) (CLASS "class" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "Reference1" 27871 . 27931) (CLASS "class" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "TC1" 27871 . 27931) (CLASS "class" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "V1" 27871 . 27931) (CLASS "class" 27871 . 27931) (punctuation "," 27871 . 27931) (symbol "Derived1" 27871 . 27931) (CLASS "class" 27871 . 27931) (punctuation "<" 27871 . 27931) (TEMPLATE "template" 27871 . 27931) (OPERATOR "operator" 27808 . 27868) (symbol "type" 27808 . 27868) (punctuation ":" 27808 . 27868) (punctuation ":" 27808 . 27868) (punctuation ">" 27808 . 27868) (symbol "type" 27808 . 27868) (punctuation ":" 27808 . 27868) (punctuation ":" 27808 . 27868) (punctuation ">" 27808 . 27868) (symbol "Derived2" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "Derived1" 27808 . 27868) (punctuation "," 27808 . 27868) (punctuation "<" 27808 . 27868) (symbol "apply2" 27808 . 27868) (punctuation ":" 27808 . 27868) (punctuation ":" 27808 . 27868) (symbol "mpl" 27808 . 27868) (TYPENAME "typename" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "Derived2" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "Derived1" 27808 . 27868) (punctuation "<" 27808 . 27868) (symbol "enable_if_interoperable" 27808 . 27868) (punctuation ":" 27808 . 27868) (punctuation ":" 27808 . 27868) (symbol "detail" 27808 . 27868) (punctuation ":" 27808 . 27868) (punctuation ":" 27808 . 27868) (symbol "boost" 27808 . 27868) (TYPENAME "typename" 27808 . 27868) (symbol "boost" 27808 . 27868) (punctuation ">" 27808 . 27868) (symbol "Difference2" 27808 . 27868) (CLASS "class" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "Reference2" 27808 . 27868) (CLASS "class" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "TC2" 27808 . 27868) (CLASS "class" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "V2" 27808 . 27868) (CLASS "class" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "Derived2" 27808 . 27868) (CLASS "class" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "Difference1" 27808 . 27868) (CLASS "class" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "Reference1" 27808 . 27868) (CLASS "class" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "TC1" 27808 . 27868) (CLASS "class" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "V1" 27808 . 27868) (CLASS "class" 27808 . 27868) (punctuation "," 27808 . 27868) (symbol "Derived1" 27808 . 27868) (CLASS "class" 27808 . 27868) (punctuation "<" 27808 . 27868) (TEMPLATE "template" 27808 . 27868) (OPERATOR "operator" 27753 . 27804) (symbol "type" 27753 . 27804) (punctuation ":" 27753 . 27804) (punctuation ":" 27753 . 27804) (punctuation ">" 27753 . 27804) (symbol "type" 27753 . 27804) (punctuation ":" 27753 . 27804) (punctuation ":" 27753 . 27804) (punctuation ">" 27753 . 27804) (symbol "Derived2" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "Derived1" 27753 . 27804) (punctuation "," 27753 . 27804) (punctuation "<" 27753 . 27804) (symbol "apply2" 27753 . 27804) (punctuation ":" 27753 . 27804) (punctuation ":" 27753 . 27804) (symbol "mpl" 27753 . 27804) (TYPENAME "typename" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "Derived2" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "Derived1" 27753 . 27804) (punctuation "<" 27753 . 27804) (symbol "enable_if_interoperable" 27753 . 27804) (punctuation ":" 27753 . 27804) (punctuation ":" 27753 . 27804) (symbol "detail" 27753 . 27804) (punctuation ":" 27753 . 27804) (punctuation ":" 27753 . 27804) (symbol "boost" 27753 . 27804) (TYPENAME "typename" 27753 . 27804) (symbol "boost" 27753 . 27804) (punctuation ">" 27753 . 27804) (symbol "Difference2" 27753 . 27804) (CLASS "class" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "Reference2" 27753 . 27804) (CLASS "class" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "TC2" 27753 . 27804) (CLASS "class" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "V2" 27753 . 27804) (CLASS "class" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "Derived2" 27753 . 27804) (CLASS "class" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "Difference1" 27753 . 27804) (CLASS "class" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "Reference1" 27753 . 27804) (CLASS "class" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "TC1" 27753 . 27804) (CLASS "class" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "V1" 27753 . 27804) (CLASS "class" 27753 . 27804) (punctuation "," 27753 . 27804) (symbol "Derived1" 27753 . 27804) (CLASS "class" 27753 . 27804) (punctuation "<" 27753 . 27804) (TEMPLATE "template" 27753 . 27804) (OPERATOR "operator" 27701 . 27750) (symbol "type" 27701 . 27750) (punctuation ":" 27701 . 27750) (punctuation ":" 27701 . 27750) (punctuation ">" 27701 . 27750) (symbol "type" 27701 . 27750) (punctuation ":" 27701 . 27750) (punctuation ":" 27701 . 27750) (punctuation ">" 27701 . 27750) (symbol "Derived2" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "Derived1" 27701 . 27750) (punctuation "," 27701 . 27750) (punctuation "<" 27701 . 27750) (symbol "apply2" 27701 . 27750) (punctuation ":" 27701 . 27750) (punctuation ":" 27701 . 27750) (symbol "mpl" 27701 . 27750) (TYPENAME "typename" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "Derived2" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "Derived1" 27701 . 27750) (punctuation "<" 27701 . 27750) (symbol "enable_if_interoperable" 27701 . 27750) (punctuation ":" 27701 . 27750) (punctuation ":" 27701 . 27750) (symbol "detail" 27701 . 27750) (punctuation ":" 27701 . 27750) (punctuation ":" 27701 . 27750) (symbol "boost" 27701 . 27750) (TYPENAME "typename" 27701 . 27750) (symbol "boost" 27701 . 27750) (punctuation ">" 27701 . 27750) (symbol "Difference2" 27701 . 27750) (CLASS "class" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "Reference2" 27701 . 27750) (CLASS "class" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "TC2" 27701 . 27750) (CLASS "class" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "V2" 27701 . 27750) (CLASS "class" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "Derived2" 27701 . 27750) (CLASS "class" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "Difference1" 27701 . 27750) (CLASS "class" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "Reference1" 27701 . 27750) (CLASS "class" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "TC1" 27701 . 27750) (CLASS "class" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "V1" 27701 . 27750) (CLASS "class" 27701 . 27750) (punctuation "," 27701 . 27750) (symbol "Derived1" 27701 . 27750) (CLASS "class" 27701 . 27750) (punctuation "<" 27701 . 27750) (TEMPLATE "template" 27701 . 27750) (punctuation 20155 . 20156) (symbol 20141 . 20148) (punctuation 20140 . 20141) (punctuation 20139 . 20140) (symbol 20123 . 20139) (TYPENAME 20114 . 20122) (punctuation 20112 . 20113) (symbol 20094 . 20103) (punctuation 20082 . 20083) (symbol 20059 . 20082) (punctuation 20058 . 20059) (punctuation 20057 . 20058) (symbol 20051 . 20057) (punctuation 20050 . 20051) (punctuation 20049 . 20050) (symbol 20044 . 20049) (TYPEDEF 20036 . 20043) (punctuation 19354 . 19355) (symbol 19342 . 19351) (punctuation 19341 . 19342) (punctuation 19340 . 19341) (symbol 19337 . 19340) (punctuation 19335 . 19336) (symbol 19323 . 19333) (CLASS 19317 . 19322) (punctuation 19315 . 19316) (punctuation 19309 . 19310) (symbol 19304 . 19309) (punctuation 19302 . 19303) (symbol 19290 . 19299) (CLASS 19284 . 19289) (punctuation 19282 . 19283) (symbol 19258 . 19277) (CLASS 19252 . 19257) (punctuation 19250 . 19251) (symbol 19240 . 19245) (CLASS 19234 . 19239) (punctuation 19232 . 19233) (symbol 19161 . 19168) (CLASS 19155 . 19160) (punctuation 19147 . 19148) (TEMPLATE 19138 . 19146) (semantic-list 17048 . 17141) (INLINE 17031 . 17037) (FRIEND 17024 . 17030) (semantic-list 16864 . 16957) (INLINE 16845 . 16851) (FRIEND 16838 . 16844) (punctuation 16738 . 16739) (FRIEND 16730 . 16736) (OPERATOR 11424 . 11432) (semantic-list 10151 . 10186) (semantic-list 10148 . 10150) (punctuation 10147 . 10148) (symbol 10138 . 10147) (OPERATOR 10129 . 10137) (EXPLICIT 9855 . 9863) (semantic-list 10151 . 10186) (semantic-list 10148 . 10150) (punctuation 10147 . 10148) (symbol 10138 . 10147) (OPERATOR 10129 . 10137) (EXPLICIT 9855 . 9863) (punctuation 9388 . 9389) (semantic-list 9386 . 9388) (punctuation 9380 . 9381) (punctuation 9370 . 9371) (symbol 9362 . 9370) (punctuation 9361 . 9362) (symbol 9353 . 9361) (punctuation 9352 . 9353) (punctuation 9351 . 9352) (symbol 9348 . 9351) (punctuation 9346 . 9347) (punctuation 9334 . 9335) (punctuation 9320 . 9321) (symbol 9312 . 9320) (punctuation 9311 . 9312) (symbol 9279 . 9311) (punctuation 9277 . 9278) (punctuation 9261 . 9262) (symbol 9253 . 9261) (punctuation 9252 . 9253) (symbol 9229 . 9252) (punctuation 9227 . 9228) (punctuation 9211 . 9212) (symbol 9206 . 9211) (punctuation 9205 . 9206) (symbol 9196 . 9205) (punctuation 9195 . 9196) (symbol 9173 . 9195) (punctuation 9155 . 9156) (symbol 9152 . 9155) (punctuation 9151 . 9152) (punctuation 9150 . 9151) (symbol 9147 . 9150) (punctuation 9145 . 9146) (punctuation 9133 . 9134) (punctuation 9119 . 9120) (punctuation 9101 . 9102) (symbol 9059 . 9080) (punctuation 9057 . 9058) (symbol 9030 . 9034) (punctuation 9029 . 9030) (punctuation 9028 . 9029) (punctuation 9027 . 9028) (symbol 9008 . 9027) (punctuation 9007 . 9008) (symbol 8977 . 9007) (TYPENAME 8968 . 8976) (punctuation 8942 . 8943) (symbol 8928 . 8942) (punctuation 8906 . 8907) (symbol 8902 . 8906) (punctuation 8901 . 8902) (punctuation 8900 . 8901) (symbol 8897 . 8900) (punctuation 8895 . 8896) (punctuation 8736 . 8737) (punctuation 8735 . 8736) (CONST 8730 . 8735) (symbol 8724 . 8729) (punctuation 8723 . 8724) (symbol 8714 . 8723) (punctuation 8713 . 8714) (symbol 8699 . 8713) (punctuation 8616 . 8617) (symbol 8612 . 8616) (punctuation 8611 . 8612) (punctuation 8610 . 8611) (symbol 8607 . 8610) (punctuation 8593 . 8594) (symbol 8586 . 8593) (punctuation 8585 . 8586) (punctuation 8584 . 8585) (symbol 8581 . 8584) (punctuation 8579 . 8580) (symbol 8548 . 8572) (STRUCT 8541 . 8547) (punctuation 8535 . 8536) (symbol 8516 . 8535) (CLASS 8510 . 8515) (punctuation 8508 . 8509) (symbol 8499 . 8508) (CLASS 8493 . 8498) (punctuation 8491 . 8492) (symbol 8486 . 8491) (CLASS 8480 . 8485) (punctuation 8478 . 8479) (symbol 8470 . 8478) (CLASS 8464 . 8469) (punctuation 8463 . 8464) (TEMPLATE 8454 . 8462) (punctuation 7727 . 7728) (semantic-list 7725 . 7727) (punctuation 7719 . 7720) (punctuation 7709 . 7710) (VOLATILE 7701 . 7709) (CONST 7695 . 7700) (symbol 7689 . 7694) (punctuation 7687 . 7688) (punctuation 7675 . 7676) (VOLATILE 7667 . 7675) (CONST 7661 . 7666) (symbol 7644 . 7648) (punctuation 7643 . 7644) (punctuation 7642 . 7643) (punctuation 7641 . 7642) (symbol 7632 . 7641) (punctuation 7631 . 7632) (symbol 7615 . 7631) (TYPENAME 7606 . 7614) (punctuation 7592 . 7593) (symbol 7578 . 7592) (punctuation 7576 . 7577) (symbol 7547 . 7569) (STRUCT 7540 . 7546) (punctuation 7534 . 7535) (symbol 7529 . 7534) (CLASS 7523 . 7528) (punctuation 7521 . 7522) (symbol 7512 . 7521) (CLASS 7506 . 7511) (punctuation 7505 . 7506) (TEMPLATE 7496 . 7504) (semantic-list 6629 . 6676) (CONST 6615 . 6620) (semantic-list 6612 . 6614) (punctuation 6611 . 6612) (CONST 6606 . 6611) (symbol 6597 . 6605) (OPERATOR 6588 . 6596) (semantic-list 6095 . 6139) (CONST 6081 . 6086) (semantic-list 6078 . 6080) (punctuation 6077 . 6078) (symbol 6067 . 6077) (OPERATOR 6058 . 6066) (EXPLICIT 5521 . 5529) (punctuation 5482 . 5483) (punctuation 5481 . 5482) (punctuation 5480 . 5481) (symbol 5472 . 5480) (punctuation 5471 . 5472) (symbol 5457 . 5471) (TYPENAME 5448 . 5456) (TYPEDEF 5440 . 5447) (EXPLICIT 4643 . 4651) (punctuation 4604 . 4605) (punctuation 4603 . 4604) (punctuation 4602 . 4603) (symbol 4594 . 4602) (punctuation 4593 . 4594) (symbol 4579 . 4593) (TYPENAME 4570 . 4578) (TYPEDEF 4562 . 4569) (punctuation 2989 . 2990) (punctuation 2988 . 2989) (punctuation 2987 . 2988) (symbol 2977 . 2987) (punctuation 2976 . 2977) (symbol 2964 . 2976) (TYPENAME 2955 . 2963) (TYPEDEF 2947 . 2954) (punctuation 2905 . 2906) (punctuation 2904 . 2905) (punctuation 2903 . 2904) (symbol 2885 . 2894) (punctuation 2883 . 2884) (symbol 2873 . 2883) (punctuation 2871 . 2872) (symbol 2852 . 2871) (punctuation 2838 . 2839) (symbol 2814 . 2838) (TYPENAME 2805 . 2813) (TYPEDEF 2797 . 2804))
+      :lexical-table 
+        '(("BOOST_ITERATOR_CONVERTIBLE" (spp-arg-list ("a" "b") 26248 . 26253) . 
+              ((symbol "is_convertible" 26254 . 26268) (punctuation "<" 26268 . 26269) (symbol "a" 26269 . 26270) (punctuation "," 26270 . 26271) (symbol "b" 26271 . 26272) (punctuation ">" 26272 . 26273) (semantic-list "()" 26273 . 26275)))
+          ("BOOST_ITERATOR_FACADE_23022003THW_HPP")
+          )
+)
+    (semanticdb-table "iterator_categories.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ITERATOR_CATEGORIES_HPP" variable (:constant-flag t) nil [240 269])
+            ("boost/config.hpp" include (:system-flag t) nil [271 299])
+            ("boost/detail/iterator.hpp" include (:system-flag t) nil [300 337])
+            ("boost/iterator/detail/config_def.hpp" include (:system-flag t) nil [338 386])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [388 427])
+            ("boost/mpl/eval_if.hpp" include (:system-flag t) nil [429 462])
+            ("boost/mpl/identity.hpp" include (:system-flag t) nil [463 497])
+            ("boost/mpl/placeholders.hpp" include (:system-flag t) nil [498 536])
+            ("boost/mpl/aux_/lambda_support.hpp" include (:system-flag t) nil [537 582])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [584 632])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [634 669])
+            ("boost" type
+               (:members 
+                  ( ("no_traversal_tag" type (:type "struct") (reparse-symbol namespacesubparts) [721 748])
+                    ("incrementable_traversal_tag" type
+                       (:superclasses 
+                          ( ("no_traversal_tag" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [750 923])
+                    ("single_pass_traversal_tag" type
+                       (:superclasses 
+                          ( ("incrementable_traversal_tag" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [927 1103])
+                    ("forward_traversal_tag" type
+                       (:superclasses 
+                          ( ("single_pass_traversal_tag" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1107 1271])
+                    ("bidirectional_traversal_tag" type
+                       (:superclasses 
+                          ( ("forward_traversal_tag" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1275 1460])
+                    ("random_access_traversal_tag" type
+                       (:superclasses 
+                          ( ("bidirectional_traversal_tag" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1464 1655])
+                    ("detail" type
+                       (:members 
+                          ( ("old_category_to_traversal" type
+                               (:template 
+                                  ( ("Cat" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("mpl::eval_if" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1924 2862])
+                            ("pure_traversal_tag" type
+                               (:template 
+                                  ( ("Traversal" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("mpl::eval_if" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3004 3967]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1657 4103])
+                    ("iterator_category_to_traversal" type
+                       (:template 
+                          ( ("Cat" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :superclasses 
+                          ( ("mpl::eval_if" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4185 4466]))                  
+                :type "namespace")
+                nil [671 5212])
+            ("boost/iterator/detail/config_undef.hpp" include (:system-flag t) nil [5233 5282]))          
+      :file "iterator_categories.hpp"
+      :pointmax 5324
+      :fsize 5323
+      :lastmodtime '(21413 1115 0 0)
+      :unmatched-syntax '((punctuation 4700 . 4701) (semantic-list 4698 . 4700) (punctuation 4696 . 4697) (symbol 4674 . 4691) (punctuation 4673 . 4674) (punctuation 4672 . 4673) (punctuation 4671 . 4672) (symbol 4663 . 4671) (punctuation 4662 . 4663) (symbol 4647 . 4662) (punctuation 4646 . 4647) (punctuation 4645 . 4646) (symbol 4639 . 4645) (punctuation 4638 . 4639) (punctuation 4637 . 4638) (symbol 4632 . 4637) (TYPENAME 4623 . 4631) (punctuation 4613 . 4614) (symbol 4583 . 4613) (punctuation 4581 . 4582) (symbol 4560 . 4578) (STRUCT 4553 . 4559) (punctuation 4551 . 4552) (symbol 4549 . 4551) (punctuation 4548 . 4549) (punctuation 4547 . 4548) (symbol 4544 . 4547) (punctuation 4542 . 4543) (symbol 4533 . 4541) (CLASS 4527 . 4532) (punctuation 4526 . 4527) (TEMPLATE 4517 . 4525))
+      :lexical-table 
+        '(("BOOST_ITERATOR_CATEGORIES_HPP")
+          )
+)
+    (semanticdb-table "iterator_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ITERATOR_ADAPTOR_23022003THW_HPP" variable (:constant-flag t) nil [326 364])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [366 400])
+            ("boost/iterator.hpp" include (:system-flag t) nil [401 430])
+            ("boost/detail/iterator.hpp" include (:system-flag t) nil [431 467])
+            ("boost/iterator/iterator_categories.hpp" include (:system-flag t) nil [469 518])
+            ("boost/iterator/iterator_facade.hpp" include (:system-flag t) nil [519 564])
+            ("boost/iterator/detail/enable_if.hpp" include (:system-flag t) nil [565 611])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [613 641])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [642 670])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [671 698])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [700 740])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [741 788])
+            ("boost/type_traits/add_reference.hpp" include (:system-flag t) nil [903 949])
+            ("boost/iterator/detail/config_def.hpp" include (:system-flag t) nil [950 997])
+            ("boost/iterator/iterator_traits.hpp" include (:system-flag t) nil [999 1044])
+            ("boost" type
+               (:members 
+                  ( ("use_default" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1264 1283])
+                    ("is_convertible" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :superclasses 
+                          ( ("mpl::false_" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("use_default" type nil nil nil)
+                            ("To" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1500 1580])
+                    ("detail" type
+                       (:members 
+                          ( ("enable_type" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1901 1920]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1595 1924])
+                    ("enable_if_convertible" type
+                       (:template 
+                          ( ("From" type (:type "class") nil nil)
+                            ("To" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :superclasses 
+                          ( ("iterators::enable_if" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4438 4619])
+                    ("detail" type
+                       (:members 
+                          ( ("ia_dflt_help" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("DefaultNullaryFn" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("mpl::eval_if" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4839 5044])
+                            ("iterator_adaptor_base" type
+                               (:template 
+                                  ( ("Derived" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Value" type (:type "class") nil nil)
+                                    ("Traversal" type (:type "class") nil nil)
+                                    ("Reference" type (:type "class") nil nil)
+                                    ("Difference" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [6456 6461]))                                  )
+                                (reparse-symbol namespacesubparts) [5165 6468])
+                            ("iterator_adaptor_assert_traversal" function
+                               (:template 
+                                  ( ("Tr1" type (:type "class") nil nil)
+                                    ("Tr2" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [6517 6675]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [4711 6679])
+                    ("iterator_adaptor" type
+                       (:template 
+                          ( ("Derived" type (:type "class") nil nil)
+                            ("Base" type (:type "class") nil nil)
+                            ("Value" type (:type "class") nil nil)
+                            ("Traversal" type (:type "class") nil nil)
+                            ("Reference" type (:type "class") nil nil)
+                            ("Difference" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("iterator_core_access" friend nil (reparse-symbol classsubparts) [8244 8277])
+                            ("protected" label nil (reparse-symbol classsubparts) [8283 8293])
+                            ("super_t" type
+                               (:typedef ("boost::detail::iterator_adaptor_base::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8300 8442])
+                            ("public" label nil (reparse-symbol classsubparts) [8446 8453])
+                            ("iterator_adaptor" function
+                               (:constructor-flag t
+                                :type ("iterator_adaptor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8460 8481])
+                            ("iterator_adaptor" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("iter" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8515 8532]))                                  
+                                :type ("iterator_adaptor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8498 8577])
+                            ("base_type" type
+                               (:typedef ("Base" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8585 8608])
+                            ("base" function (:type ("Base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8616 8671])
+                            ("protected" label nil (reparse-symbol classsubparts) [8676 8686])
+                            ("iterator_adaptor_" type
+                               (:typedef ("iterator_adaptor" type
+                                     (:template-specifier 
+                                        ( ("Derived" type nil nil nil)
+                                          ("Base" type nil nil nil)
+                                          ("Value" type nil nil nil)
+                                          ("Traversal" type nil nil nil)
+                                          ("Reference" type nil nil nil)
+                                          ("Difference" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8737 8831])
+                            ("base_reference" function (:type ("Base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8917 8982])
+                            ("base_reference" function (:type ("Base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8990 9043])
+                            ("private" label nil (reparse-symbol classsubparts) [9048 9056])
+                            ("dereference" function
+                               (:typemodifiers ("typename")
+                                :type ("super_t::reference" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9359 9438])
+                            ("equal" function
+                               (:template 
+                                  ( ("OtherDerived" type (:type "class") nil nil)
+                                    ("OtherIterator" type (:type "class") nil nil)
+                                    ("V" type (:type "class") nil nil)
+                                    ("C" type (:type "class") nil nil)
+                                    ("R" type (:type "class") nil nil)
+                                    ("D" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("iterator_adaptor" type
+                                             (:template-specifier 
+                                                ( ("OtherDerived" type nil nil nil)
+                                                  ("OtherIterator" type nil nil nil)
+                                                  ("V" type nil nil nil)
+                                                  ("C" type nil nil nil)
+                                                  ("R" type nil nil nil)
+                                                  ("D" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9567 9634]))                                  )
+                                (reparse-symbol classsubparts) [9446 9902])
+                            ("my_traversal" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10014 10032])
+                            ("BOOST_ITERATOR_ADAPTOR_ASSERT_TRAVERSAL" variable (:constant-flag t) (reparse-symbol classsubparts) [10043 10082])
+                            ("advance" function
+                               (:arguments 
+                                  ( ("n" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("super_t::difference_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10187 10223]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10174 10345])
+                            ("increment" function (:type "void") (reparse-symbol classsubparts) [10355 10389])
+                            ("decrement" function (:type "void") (reparse-symbol classsubparts) [10397 10534])
+                            ("distance_to" function
+                               (:template 
+                                  ( ("OtherDerived" type (:type "class") nil nil)
+                                    ("OtherIterator" type (:type "class") nil nil)
+                                    ("V" type (:type "class") nil nil)
+                                    ("C" type (:type "class") nil nil)
+                                    ("R" type (:type "class") nil nil)
+                                    ("D" type (:type "class") nil nil))                                  
+                                :type ("super_t::difference_type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("iterator_adaptor" type
+                                             (:template-specifier 
+                                                ( ("OtherDerived" type nil nil nil)
+                                                  ("OtherIterator" type nil nil nil)
+                                                  ("V" type nil nil nil)
+                                                  ("C" type nil nil nil)
+                                                  ("R" type nil nil nil)
+                                                  ("D" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10713 10780]))                                  
+                                :typemodifiers ("typename"))
+                                (reparse-symbol classsubparts) [10542 11134])
+                            ("private" label nil (reparse-symbol classsubparts) [11194 11202])
+                            ("m_iterator" variable (:type ("Base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11225 11241]))                          
+                        :superclasses 
+                          ( ("boost::detail::iterator_adaptor_base::type" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7873 11246]))                  
+                :type "namespace")
+                nil [1046 11249])
+            ("boost/iterator/detail/config_undef.hpp" include (:system-flag t) nil [11270 11319]))          
+      :file "iterator_adaptor.hpp"
+      :pointmax 11370
+      :fsize 11369
+      :lastmodtime '(21413 1115 0 0)
+      :unmatched-syntax '((punctuation 10013 . 10014) (punctuation 10012 . 10013) (punctuation 10011 . 10012) (symbol 9987 . 10004) (punctuation 9986 . 9987) (punctuation 9985 . 9986) (symbol 9978 . 9985) (TYPENAME 9969 . 9977) (punctuation 9957 . 9958) (symbol 9927 . 9957) (TYPENAME 9918 . 9926) (TYPEDEF 9910 . 9917) (EXPLICIT 8489 . 8497) (punctuation 8277 . 8278) (punctuation 6446 . 6447) (symbol 6433 . 6437) (punctuation 6432 . 6433) (punctuation 6431 . 6432) (punctuation 6430 . 6431) (punctuation 6416 . 6417) (symbol 6412 . 6416) (punctuation 6411 . 6412) (symbol 6392 . 6411) (punctuation 6390 . 6391) (symbol 6380 . 6390) (punctuation 6362 . 6363) (symbol 6350 . 6362) (punctuation 6349 . 6350) (punctuation 6348 . 6349) (symbol 6342 . 6348) (punctuation 6341 . 6342) (punctuation 6340 . 6341) (symbol 6335 . 6340) (TYPENAME 6326 . 6334) (punctuation 6324 . 6325) (symbol 6308 . 6312) (punctuation 6307 . 6308) (punctuation 6306 . 6307) (punctuation 6305 . 6306) (punctuation 6291 . 6292) (punctuation 6273 . 6274) (symbol 6268 . 6273) (punctuation 6267 . 6268) (symbol 6254 . 6267) (punctuation 6252 . 6253) (punctuation 6232 . 6233) (symbol 6228 . 6232) (punctuation 6227 . 6228) (symbol 6209 . 6227) (punctuation 6207 . 6208) (punctuation 6187 . 6188) (symbol 6176 . 6187) (punctuation 6175 . 6176) (symbol 6170 . 6175) (punctuation 6169 . 6170) (symbol 6162 . 6169) (punctuation 6140 . 6141) (symbol 6133 . 6140) (punctuation 6132 . 6133) (punctuation 6131 . 6132) (symbol 6128 . 6131) (punctuation 6126 . 6127) (symbol 6102 . 6111) (punctuation 6084 . 6085) (symbol 6072 . 6084) (punctuation 6071 . 6072) (punctuation 6070 . 6071) (symbol 6064 . 6070) (punctuation 6063 . 6064) (punctuation 6062 . 6063) (symbol 6057 . 6062) (TYPENAME 6048 . 6056) (punctuation 6046 . 6047) (symbol 6030 . 6034) (punctuation 6029 . 6030) (punctuation 6028 . 6029) (punctuation 6027 . 6028) (punctuation 6013 . 6014) (symbol 6009 . 6013) (punctuation 6008 . 6009) (symbol 5990 . 6008) (punctuation 5988 . 5989) (symbol 5964 . 5973) (punctuation 5946 . 5947) (symbol 5934 . 5946) (punctuation 5933 . 5934) (punctuation 5932 . 5933) (symbol 5926 . 5932) (punctuation 5925 . 5926) (punctuation 5924 . 5925) (symbol 5919 . 5924) (TYPENAME 5910 . 5918) (punctuation 5908 . 5909) (symbol 5872 . 5876) (punctuation 5871 . 5872) (punctuation 5870 . 5871) (punctuation 5869 . 5870) (punctuation 5855 . 5856) (symbol 5851 . 5855) (punctuation 5850 . 5851) (symbol 5836 . 5850) (punctuation 5834 . 5835) (symbol 5829 . 5834) (punctuation 5811 . 5812) (symbol 5799 . 5811) (punctuation 5798 . 5799) (punctuation 5797 . 5798) (symbol 5791 . 5797) (punctuation 5790 . 5791) (punctuation 5789 . 5790) (symbol 5784 . 5789) (TYPENAME 5775 . 5783) (punctuation 5773 . 5774) (symbol 5400 . 5407) (punctuation 5386 . 5387) (symbol 5371 . 5386) (TYPEDEF 5363 . 5370))
+      :lexical-table 
+        '(("BOOST_ITERATOR_ADAPTOR_23022003THW_HPP")
+          )
+)
+    (semanticdb-table "iterator_traits.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ITERATOR_TRAITS_DWA200347_HPP" variable (:constant-flag t) nil [238 267])
+            ("boost/detail/iterator.hpp" include (:system-flag t) nil [269 306])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [307 346])
+            ("boost" type
+               (:members 
+                  ( ("BOOST_ITERATOR_CATEGORY" variable (:constant-flag t) (reparse-symbol namespacesubparts) [788 811])
+                    ("iterator_value" type
+                       (:template 
+                          ( ("Iterator" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("type" type
+                               (:typedef ("boost::detail::iterator_traits::value_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [894 969]))                          )
+                        (reparse-symbol namespacesubparts) [840 972])
+                    ("iterator_reference" type
+                       (:template 
+                          ( ("Iterator" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("type" type
+                               (:typedef ("boost::detail::iterator_traits::reference" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1034 1108]))                          )
+                        (reparse-symbol namespacesubparts) [976 1111])
+                    ("iterator_pointer" type
+                       (:template 
+                          ( ("Iterator" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("type" type
+                               (:typedef ("boost::detail::iterator_traits::pointer" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1174 1246]))                          )
+                        (reparse-symbol namespacesubparts) [1118 1249])
+                    ("iterator_difference" type
+                       (:template 
+                          ( ("Iterator" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("type" type
+                               (:typedef ("boost::detail::iterator_traits::difference_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1312 1392]))                          )
+                        (reparse-symbol namespacesubparts) [1253 1395])
+                    ("iterator_category" type
+                       (:template 
+                          ( ("Iterator" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("type" type
+                               (:typedef ("boost::detail::iterator_traits::iterator_category" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1460 1542]))                          )
+                        (reparse-symbol namespacesubparts) [1397 1545]))                  
+                :type "namespace")
+                nil [348 1964]))          
+      :file "iterator_traits.hpp"
+      :pointmax 2035
+      :fsize 2034
+      :lastmodtime '(21413 1115 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ITERATOR_TRAITS_DWA200347_HPP")
+          ("BOOST_ITERATOR_CATEGORY" . ((symbol "iterator_category" 812 . 829)))
+          )
+)
+    (semanticdb-table "interoperable.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_INTEROPERABLE_23022003THW_HPP" variable (:constant-flag t) nil [324 359])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [361 391])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [392 420])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [422 470])
+            ("boost/iterator/detail/config_def.hpp" include (:system-flag t) nil [472 520])
+            ("boost" type
+               (:members 
+                  ( ("is_interoperable" type
+                       (:template 
+                          ( ("A" type (:type "class") nil nil)
+                            ("B" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :superclasses 
+                          ( ("mpl::or_" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1119 1354]))                  
+                :type "namespace")
+                nil [542 1357])
+            ("boost/iterator/detail/config_undef.hpp" include (:system-flag t) nil [1378 1428]))          
+      :file "interoperable.hpp"
+      :pointmax 1476
+      :fsize 1475
+      :lastmodtime '(21413 1115 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_INTEROPERABLE_23022003THW_HPP")
+          )
+)
+    (semanticdb-table "iterator_concepts.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ITERATOR_CONCEPTS_HPP" variable (:constant-flag t) nil [237 264])
+            ("boost/concept_check.hpp" include (:system-flag t) nil [266 300])
+            ("boost/iterator/iterator_categories.hpp" include (:system-flag t) nil [301 350])
+            ("boost/detail/iterator.hpp" include (:system-flag t) nil [436 472])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [474 514])
+            ("boost/type_traits/is_integral.hpp" include (:system-flag t) nil [515 559])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [561 590])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [591 618])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [619 647])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [648 675])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [677 711])
+            ("boost/limits.hpp" include (:system-flag t) nil [789 816])
+            ("boost/config.hpp" include (:system-flag t) nil [817 844])
+            ("algorithm" include (:system-flag t) nil [846 866])
+            ("boost/concept/detail/concept_def.hpp" include (:system-flag t) nil [868 915])
+            ("boost_concepts" type
+               (:members 
+                  ( ("boost::Assignable" variable (:type "int") (reparse-symbol namespacesubparts) [1262 1714])
+                    ("boost::CopyConstructible" variable (:type "int") (reparse-symbol namespacesubparts) [1262 1714])
+                    ("WritableIterator" type
+                       (:superclasses 
+                          ( ("boost::CopyConstructible" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("BOOST_CONCEPT_USAGE" function
+                               (:arguments 
+                                  ( ("" variable (:type ("WritableIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1959 1976]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1939 2010])
+                            ("private" label nil (reparse-symbol classsubparts) [2013 2021])
+                            ("v" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2028 2040])
+                            ("i" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2047 2058]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1864 2063])
+                    ("WritableIteratorConcept" type
+                       (:superclasses 
+                          ( ("WritableIterator" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2211 2284])
+                    ("BOOST_concept" function
+                       (:arguments 
+                          ( ("" variable (:type ("SwappableIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2304 2322]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2290 2485])
+                    ("BOOST_concept" function
+                       (:arguments 
+                          ( ("" variable (:type ("LvalueIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2504 2519]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2490 2823])
+                    ("boost::Assignable" variable (:type "int") (reparse-symbol namespacesubparts) [2999 3441])
+                    ("boost::CopyConstructible" variable (:type "int") (reparse-symbol namespacesubparts) [2999 3441])
+                    ("IncrementableIterator" variable (:type "int") (reparse-symbol namespacesubparts) [3496 3775])
+                    ("boost::EqualityComparable" variable (:type "int") (reparse-symbol namespacesubparts) [3496 3775])
+                    ("SinglePassIterator" variable (:type "int") (reparse-symbol namespacesubparts) [3828 4360])
+                    ("boost::DefaultConstructible" variable (:type "int") (reparse-symbol namespacesubparts) [3828 4360])
+                    ("ForwardTraversal" variable (:type "int") (reparse-symbol namespacesubparts) [4421 4791])
+                    ("BidirectionalTraversal" variable (:type "int") (reparse-symbol namespacesubparts) [4849 5385])
+                    ("detail" type
+                       (:members 
+                          ( ("interop_single_pass_constraints" function
+                               (:template 
+                                  ( ("Iterator1" type (:type "class") nil nil)
+                                    ("Iterator2" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("i1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Iterator1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5618 5638])
+                                    ("i2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Iterator2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5639 5659]))                                  )
+                                (reparse-symbol namespacesubparts) [5527 5826])
+                            ("interop_rand_access_constraints" function
+                               (:template 
+                                  ( ("Iterator1" type (:type "class") nil nil)
+                                    ("Iterator2" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("i1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Iterator1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5932 5952])
+                                    ("i2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Iterator2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5953 5973])
+                                    ("" variable (:type ("boost::random_access_traversal_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5982 6017])
+                                    ("" variable (:type ("boost::random_access_traversal_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6018 6053]))                                  )
+                                (reparse-symbol namespacesubparts) [5832 6481])
+                            ("interop_rand_access_constraints" function
+                               (:template 
+                                  ( ("Iterator1" type (:type "class") nil nil)
+                                    ("Iterator2" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Iterator1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6587 6604])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Iterator2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6605 6622])
+                                    ("" variable (:type ("boost::single_pass_traversal_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6631 6664])
+                                    ("" variable (:type ("boost::single_pass_traversal_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6665 6698]))                                  )
+                                (reparse-symbol namespacesubparts) [6487 6706]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [5502 6711])
+                    ("BOOST_concept" function
+                       (:arguments 
+                          ( ("" variable (:type ("InteroperableIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6749 6771]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [6735 7646]))                  
+                :type "namespace")
+                nil [917 7650])
+            ("boost/concept/detail/concept_undef.hpp" include (:system-flag t) nil [7680 7729]))          
+      :file "iterator_concepts.hpp"
+      :pointmax 7769
+      :fsize 7768
+      :lastmodtime '(21413 1115 0 0)
+      :unmatched-syntax '((punctuation 7646 . 7647) (semantic-list 6781 . 6796) (semantic-list 6771 . 6781) (punctuation 4847 . 4848) (semantic-list 4808 . 4842) (symbol 4795 . 4808) (semantic-list 4831 . 4841) (punctuation 4419 . 4420) (semantic-list 4379 . 4414) (symbol 4366 . 4379) (semantic-list 4403 . 4413) (punctuation 3826 . 3827) (semantic-list 3792 . 3821) (symbol 3779 . 3792) (semantic-list 3810 . 3820) (punctuation 3494 . 3495) (semantic-list 3458 . 3489) (symbol 3445 . 3458) (semantic-list 3478 . 3488) (punctuation 2997 . 2998) (semantic-list 2958 . 2992) (symbol 2945 . 2958) (semantic-list 2981 . 2991) (punctuation 2823 . 2824) (semantic-list 2519 . 2529) (punctuation 2485 . 2486) (semantic-list 2322 . 2332) (punctuation 2207 . 2208) (symbol 2194 . 2204) (punctuation 2193 . 2194) (punctuation 2192 . 2193) (punctuation 2191 . 2192) (symbol 2183 . 2191) (punctuation 2182 . 2183) (symbol 2167 . 2182) (punctuation 2166 . 2167) (punctuation 2165 . 2166) (symbol 2159 . 2165) (punctuation 2158 . 2159) (punctuation 2157 . 2158) (symbol 2152 . 2157) (symbol 2129 . 2151) (punctuation 2127 . 2128) (symbol 2117 . 2126) (TYPENAME 2108 . 2116) (punctuation 2106 . 2107) (symbol 2093 . 2101) (TYPENAME 2084 . 2092) (punctuation 2076 . 2077) (TEMPLATE 2067 . 2075) (punctuation 1860 . 1861) (symbol 1847 . 1857) (punctuation 1846 . 1847) (punctuation 1845 . 1846) (punctuation 1844 . 1845) (symbol 1836 . 1844) (punctuation 1835 . 1836) (symbol 1820 . 1835) (punctuation 1819 . 1820) (punctuation 1818 . 1819) (symbol 1812 . 1818) (punctuation 1811 . 1812) (punctuation 1810 . 1811) (symbol 1805 . 1810) (symbol 1782 . 1804) (punctuation 1780 . 1781) (symbol 1770 . 1779) (TYPENAME 1761 . 1769) (punctuation 1759 . 1760) (symbol 1746 . 1754) (TYPENAME 1737 . 1745) (punctuation 1729 . 1730) (TEMPLATE 1720 . 1728) (punctuation 1260 . 1261) (semantic-list 1226 . 1255) (symbol 1213 . 1226) (semantic-list 1244 . 1254))
+      :lexical-table 
+        '(("BOOST_ITERATOR_CONCEPTS_HPP")
+          )
+)
+    (semanticdb-table "reverse_iterator.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_REVERSE_ITERATOR_23022003THW_HPP" variable (:constant-flag t) nil [326 364])
+            ("boost/next_prior.hpp" include (:system-flag t) nil [366 397])
+            ("boost/iterator.hpp" include (:system-flag t) nil [398 427])
+            ("boost/iterator/iterator_adaptor.hpp" include (:system-flag t) nil [428 474])
+            ("boost" type
+               (:members 
+                  ( ("reverse_iterator" type
+                       (:template 
+                          ( ("Iterator" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("super_t" type
+                               (:typedef ("iterator_adaptor" type
+                                     (:template-specifier 
+                                        ( ("reverse_iterator" type nil nil nil)
+                                          ("Iterator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [645 718])
+                            ("iterator_core_access" friend nil (reparse-symbol classsubparts) [726 759])
+                            ("public" label nil (reparse-symbol classsubparts) [765 772])
+                            ("reverse_iterator" function
+                               (:constructor-flag t
+                                :type ("reverse_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [779 800])
+                            ("reverse_iterator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [834 845]))                                  
+                                :type ("reverse_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [817 872])
+                            ("reverse_iterator" function
+                               (:template 
+                                  ( ("OtherIterator" type (:type "class") nil nil))                                  
+                                :type ("reverse_iterator" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("r" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("reverse_iterator" type
+                                             (:template-specifier 
+                                                ( ("OtherIterator" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [944 996])
+                                    ("" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("enable_if_convertible" type
+                                             (:template-specifier 
+                                                ( ("OtherIterator" type nil nil nil)
+                                                  ("Iterator" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [997 1053])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1054 1063]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [880 1114])
+                            ("private" label nil (reparse-symbol classsubparts) [1119 1127])
+                            ("dereference" function
+                               (:typemodifiers ("typename")
+                                :type ("super_t::reference" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1134 1221])
+                            ("increment" function (:type "void") (reparse-symbol classsubparts) [1233 1279])
+                            ("decrement" function (:type "void") (reparse-symbol classsubparts) [1286 1332])
+                            ("advance" function
+                               (:arguments 
+                                  ( ("n" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("super_t::difference_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1353 1389]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1340 1445])
+                            ("distance_to" function
+                               (:template 
+                                  ( ("OtherIterator" type (:type "class") nil nil))                                  
+                                :type ("super_t::difference_type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("reverse_iterator" type
+                                             (:template-specifier 
+                                                ( ("OtherIterator" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1542 1583]))                                  
+                                :typemodifiers ("typename"))
+                                (reparse-symbol classsubparts) [1453 1657]))                          
+                        :superclasses 
+                          ( ("iterator_adaptor" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [512 1662])
+                    ("make_reverse_iterator" function
+                       (:template 
+                          ( ("BidirectionalIterator" type (:type "class") nil nil))                          
+                        :type ("reverse_iterator" type
+                             (:template-specifier 
+                                ( ("BidirectionalIterator" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("x" variable (:type ("BidirectionalIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1769 1793]))                          )
+                        (reparse-symbol namespacesubparts) [1666 1858]))                  
+                :type "namespace")
+                nil [476 1861]))          
+      :file "reverse_iterator.hpp"
+      :pointmax 1931
+      :fsize 1930
+      :lastmodtime '(21413 1115 0 0)
+      :unmatched-syntax '((punctuation 1053 . 1054) (punctuation 1052 . 1053) (EXPLICIT 808 . 816) (punctuation 759 . 760))
+      :lexical-table 
+        '(("BOOST_REVERSE_ITERATOR_23022003THW_HPP")
+          )
+))
+  :file "!usr!include!boost!iterator!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

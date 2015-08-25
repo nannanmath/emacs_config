@@ -1,0 +1,889 @@
+;; Object gflags/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gflags/"
+  :tables
+  (list
+    (semanticdb-table "gflags.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("BASE_COMMANDLINEFLAGS_H_" variable (:constant-flag t) nil [3644 3668])
+            ("string" include (:system-flag t) nil [3670 3687])
+            ("vector" include (:system-flag t) nil [3688 3705])
+            ("gflags/gflags_declare.h" include (:system-flag t) nil [3706 3740])
+            ("google" type
+               (:members 
+                  ( ("GFLAGS_DLL_DECL" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4010 4025])
+                    ("GFLAGS_DLL_DEFINE_FLAG" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4082 4104])
+                    ("RegisterFlagValidator" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("flag" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [5649 5666])
+                            ("validate_fn" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5721 5733])
+                                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [5734 5739]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5615 5741])
+                    ("RegisterFlagValidator" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("flag" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("int32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5776 5794])
+                            ("validate_fn" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5849 5861])
+                                    ("" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5862 5868]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5742 5870])
+                    ("RegisterFlagValidator" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("flag" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("int64" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5905 5923])
+                            ("validate_fn" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5978 5990])
+                                    ("" variable (:type ("int64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5991 5997]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5871 5999])
+                    ("RegisterFlagValidator" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("flag" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint64" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6034 6053])
+                            ("validate_fn" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6108 6120])
+                                    ("" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6121 6128]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [6000 6130])
+                    ("RegisterFlagValidator" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("flag" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [6165 6184])
+                            ("validate_fn" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6239 6251])
+                                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [6252 6259]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [6131 6261])
+                    ("RegisterFlagValidator" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("flag" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6296 6320])
+                            ("validate_fn" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6375 6387])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6442 6461]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [6262 6463])
+                    ("CommandLineFlagInfo" type
+                       (:members 
+                          ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7169 7186])
+                            ("type" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7224 7241])
+                            ("description" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7291 7315])
+                            ("current_value" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7366 7392])
+                            ("default_value" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7431 7457])
+                            ("filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7496 7517])
+                            ("has_validator_fn" variable (:type "bool") (reparse-symbol classsubparts) [7577 7599])
+                            ("is_default" variable (:type "bool") (reparse-symbol classsubparts) [7656 7672])
+                            ("flag_ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [7859 7880]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [7122 7941])
+                    ("GetAllFlags" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("OUTPUT" variable
+                               (:pointer 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("CommandLineFlagInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8235 8276]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8211 8277])
+                    ("ShowUsageWithFlags" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("argv0" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8367 8385]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8336 8386])
+                    ("ShowUsageWithFlagsRestrict" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("argv0" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8447 8465])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8466 8486])
+                            ("" variable (:type ("restrict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8478 8487]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8408 8488])
+                    ("DescribeOneFlag" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("flag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CommandLineFlagInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8620 8652]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8585 8653])
+                    ("SetArgv" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8745 8754])
+                            ("argv" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8755 8773]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8725 8774])
+                    ("GetArgvs" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8884 8934])
+                    ("GetArgv" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("extern")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [8935 8964])
+                    ("GetArgv0" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("extern")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [9008 9038])
+                    ("GetArgvSum" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :type ("uint32" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9068 9095])
+                    ("ProgramInvocationName" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("extern")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [9141 9184])
+                    ("ProgramInvocationShortName" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("extern")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [9221 9269])
+                    ("ProgramUsage" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("extern")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [9398 9432])
+                    ("VersionString" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("extern")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [9588 9623])
+                    ("GetCommandLineOption" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10277 10294])
+                            ("OUTPUT" variable
+                               (:pointer 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10295 10315]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10244 10316])
+                    ("GetCommandLineFlagInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10480 10497])
+                            ("OUTPUT" variable
+                               (:pointer 1
+                                :type ("CommandLineFlagInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10533 10561]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10445 10562])
+                    ("GetCommandLineFlagInfoOrDie" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10834 10851]))                          
+                        :type ("CommandLineFlagInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10779 10852])
+                    ("FlagSettingMode" type
+                       (:members 
+                          ( ("SET_FLAGS_VALUE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10956 10972])
+                            ("SET_FLAG_IF_DEFAULT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11120 11140])
+                            ("SET_FLAGS_DEFAULT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11367 11386]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [10854 11387])
+                    ("SetCommandLineOption" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11867 11884])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11885 11903]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11827 11904])
+                    ("SetCommandLineOptionWithMode" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11953 11970])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11971 11989])
+                            ("set_mode" variable (:type ("FlagSettingMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12033 12058]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11905 12059])
+                    ("FlagSaver" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [13264 13271])
+                            ("FlagSaver" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("FlagSaver" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13274 13286])
+                            ("FlagSaver" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [13289 13302])
+                            ("private" label nil (reparse-symbol classsubparts) [13305 13313])
+                            ("impl_" variable
+                               (:pointer 1
+                                :type ("FlagSaverImpl" type
+                                     (:prototype t
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [13316 13343])
+                            ("FlagSaver" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FlagSaver" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13399 13416]))                                  
+                                :type ("FlagSaver" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13389 13417])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FlagSaver" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13451 13468]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13436 13469]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [13229 13497])
+                    ("CommandlineFlagsIntoString" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13713 13761])
+                    ("ReadFlagsFromString" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("flagfilecontents" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13861 13897])
+                            ("prog_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13930 13952])
+                            ("errors_are_fatal" variable (:type "bool") (reparse-symbol arg-sub-list) [13985 14007]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [13829 14008])
+                    ("AppendFlagsIntoFile" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14144 14172])
+                            ("prog_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [14173 14195]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [14112 14196])
+                    ("ReadFromFlagsFile" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14227 14255])
+                            ("prog_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [14256 14278])
+                            ("errors_are_fatal" variable (:type "bool") (reparse-symbol arg-sub-list) [14309 14331]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [14197 14332])
+                    ("BoolFromEnv" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("varname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [14848 14868])
+                            ("defval" variable (:type "bool") (reparse-symbol arg-sub-list) [14869 14881]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [14824 14882])
+                    ("Int32FromEnv" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("varname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [14909 14929])
+                            ("defval" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14930 14943]))                          
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14883 14944])
+                    ("Int64FromEnv" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("varname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [14971 14991])
+                            ("defval" variable (:type ("int64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14992 15005]))                          
+                        :type ("int64" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14945 15006])
+                    ("Uint64FromEnv" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("varname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [15035 15055])
+                            ("defval" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15056 15070]))                          
+                        :type ("uint64" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15007 15071])
+                    ("DoubleFromEnv" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("varname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [15100 15120])
+                            ("defval" variable (:type "double") (reparse-symbol arg-sub-list) [15121 15135]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [15072 15136])
+                    ("StringFromEnv" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("extern")
+                        :constant-flag t
+                        :arguments 
+                          ( ("varname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [15170 15190])
+                            ("defval" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [15191 15210]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [15137 15211])
+                    ("SetUsageMessage" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("usage" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15717 15742]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15689 15743])
+                    ("SetVersionString" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("version" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15947 15974]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15918 15975])
+                    ("ParseCommandLineFlags" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("argc" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [16443 16453])
+                            ("argv" variable
+                               (:pointer 3
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16454 16467])
+                            ("remove_flags" variable (:type "bool") (reparse-symbol arg-sub-list) [16468 16486]))                          
+                        :type ("uint32" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16407 16487])
+                    ("ParseCommandLineNonHelpFlags" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :arguments 
+                          ( ("argc" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [17178 17188])
+                            ("argv" variable
+                               (:pointer 3
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [17189 17202])
+                            ("remove_flags" variable (:type "bool") (reparse-symbol arg-sub-list) [17246 17264]))                          
+                        :type ("uint32" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17135 17265])
+                    ("HandleCommandLineHelpFlags" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [17427 17468])
+                    ("AllowCommandLineReparsing" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [17718 17758])
+                    ("ReparseCommandLineNonHelpFlags" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18158 18203])
+                    ("ShutDownCommandLineFlags" function
+                       (:prototype-flag t
+                        :typemodifiers ("extern")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18766 18805])
+                    ("FlagRegisterer" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [20952 20959])
+                            ("FlagRegisterer" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [20977 20994])
+                                    ("type" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [20995 21012])
+                                    ("help" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [21030 21047])
+                                    ("filename" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [21048 21069])
+                                    ("current_storage" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [21087 21109])
+                                    ("defvalue_storage" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [21110 21133]))                                  
+                                :type ("FlagRegisterer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20962 21134]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [20912 21137])
+                    ("kStrippedFlagHelp" variable
+                       (:dereference 1
+                        :typemodifiers ("extern")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [21399 21437]))                  
+                :type "namespace")
+                nil [3767 21440])
+            ("MAYBE_STRIPPED_HELP" variable (:constant-flag t) nil [21721 21740])
+            ("DEFINE_VARIABLE" variable (:constant-flag t) nil [22513 22528])
+            ("fLB" type
+               (:members 
+                  ( ("CompileAssert" type (:type "struct") (reparse-symbol namespacesubparts) [23766 23790])
+                    ("expected_sizeof_double_neq_sizeof_bool" variable (:type ("CompileAssert" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [23799 23918])
+                    ("IsBoolFlag" function
+                       (:template 
+                          ( ("From" type (:type "class") nil nil))                          
+                        :type "double"
+                        :arguments 
+                          ( ("from" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("From" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23977 23994]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [23919 23995])
+                    ("IsBoolFlag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("from" variable (:type "bool") (reparse-symbol arg-sub-list) [24028 24038]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [24012 24039]))                  
+                :type "namespace")
+                nil [23750 24041])
+            ("DEFINE_bool" variable (:constant-flag t) nil [24251 24262])
+            ("DEFINE_int32" variable (:constant-flag t) nil [24667 24679])
+            ("DEFINE_int64" variable (:constant-flag t) nil [24783 24795])
+            ("DEFINE_uint64" variable (:constant-flag t) nil [24901 24914])
+            ("DEFINE_double" variable (:constant-flag t) nil [25020 25033])
+            ("fLS" type
+               (:members 
+                  ( ("dont_pass0toDEFINE_string" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("stringspot" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [25558 25575])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [25619 25637]))                          
+                        :type ("clstring" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25515 25683])
+                    ("dont_pass0toDEFINE_string" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("stringspot" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [25727 25744])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("clstring" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25788 25810]))                          
+                        :type ("clstring" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25684 25856])
+                    ("dont_pass0toDEFINE_string" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("stringspot" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [25900 25917])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [25961 25971]))                          
+                        :type ("clstring" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25857 25972]))                  
+                :type "namespace")
+                nil [25498 25974])
+            ("DEFINE_string" variable (:constant-flag t) nil [26438 26451]))          
+      :file "gflags.h"
+      :pointmax 27573
+      :fsize 27572
+      :lastmodtime '(21149 62334 0 0)
+      :unmatched-syntax '((TYPEDEF 23791 . 23798))
+      :lexical-table 
+        '(("DEFINE_VARIABLE" (spp-arg-list ("type" "shorttype" "name" "value" "help") 22528 . 22564) . 
+              ((NAMESPACE "namespace" 22581 . 22590) (spp-symbol-merge ((symbol "fL" 22591 . 22593) (symbol "shorttype" 22595 . 22604)) 22591 . 22604) (semantic-list "{                                             \\
+    static const type FLAGS_nono##name = value;                         \\
+    /* We always want to export defined variables, dll or no */         \\
+    GFLAGS_DLL_DEFINE_FLAG type FLAGS_##name = FLAGS_nono##name;        \\
+    type FLAGS_no##name = FLAGS_nono##name;                             \\
+    static ::google::FlagRegisterer o_##name( \\
+      #name, #type, MAYBE_STRIPPED_HELP(help), __FILE__,                \\
+      &FLAGS_##name, &FLAGS_no##name);                                  \\
+  }" 22605 . 23148) (USING "using" 23221 . 23226) (spp-symbol-merge ((symbol "fL" 23227 . 23229) (symbol "shorttype" 23231 . 23240)) 23227 . 23240) (punctuation ":" 23240 . 23241) (punctuation ":" 23241 . 23242) (spp-symbol-merge ((symbol "FLAGS_" 23242 . 23248) (symbol "name" 23250 . 23254)) 23242 . 23254)))
+          ("GFLAGS_DLL_DEFINE_FLAG")
+          ("GFLAGS_DLL_DECL")
+          ("DEFINE_string" (spp-arg-list ("name" "val" "txt") 26451 . 26467) . 
+              ((NAMESPACE "namespace" 26510 . 26519) (symbol "fLS" 26520 . 26523) (semantic-list "{                                                           \\
+    using ::fLS::clstring;                                                  \\
+    static union { void* align; char s[sizeof(clstring)]; } s_##name[2];    \\
+    clstring* const FLAGS_no##name = ::fLS::                                \\
+                                   dont_pass0toDEFINE_string(s_##name[0].s, \\
+                                                             val);          \\
+    static ::google::FlagRegisterer o_##name(  \\
+        #name, \"string\", MAYBE_STRIPPED_HELP(txt), __FILE__,                \\
+        s_##name[0].s, new (s_##name[1].s) clstring(*FLAGS_no##name));      \\
+    extern GFLAGS_DLL_DEFINE_FLAG clstring& FLAGS_##name;                   \\
+    using fLS::FLAGS_##name;                                                \\
+    clstring& FLAGS_##name = *FLAGS_no##name;                               \\
+  }" 26524 . 27418) (USING "using" 27495 . 27500) (symbol "fLS" 27501 . 27504) (punctuation ":" 27504 . 27505) (punctuation ":" 27505 . 27506) (spp-symbol-merge ((symbol "FLAGS_" 27506 . 27512) (symbol "name" 27514 . 27518)) 27506 . 27518)))
+          ("DEFINE_bool" (spp-arg-list ("name" "val" "txt") 24262 . 24278) . 
+              ((NAMESPACE "namespace" 24319 . 24328) (symbol "fLB" 24329 . 24332) (semantic-list "{                                                       \\
+    typedef ::fLB::CompileAssert FLAG_##name##_value_is_not_a_bool[     \\
+            (sizeof(::fLB::IsBoolFlag(val)) != sizeof(double)) ? 1 : -1]; \\
+  }" 24333 . 24544) (symbol "DEFINE_VARIABLE" 24617 . 24632) (semantic-list "(bool, B, name, val, txt)" 24632 . 24657)))
+          ("DEFINE_double" (spp-arg-list ("name" "val" "txt") 25033 . 25049) . ((symbol "DEFINE_VARIABLE" 25055 . 25070) (semantic-list "(double, D, name, val, txt)" 25070 . 25097)))
+          ("DEFINE_int64" (spp-arg-list ("name" "val" "txt") 24795 . 24811) . ((symbol "DEFINE_VARIABLE" 24817 . 24832) (semantic-list "(::google::int64, I64, \\
+                   name, val, txt)" 24832 . 24891)))
+          ("DEFINE_uint64" (spp-arg-list ("name" "val" "txt") 24914 . 24929) . ((symbol "DEFINE_VARIABLE" 24935 . 24950) (semantic-list "(::google::uint64, U64, \\
+                   name, val, txt)" 24950 . 25010)))
+          ("BASE_COMMANDLINEFLAGS_H_")
+          ("MAYBE_STRIPPED_HELP" (spp-arg-list ("txt") 21740 . 21745) . ((symbol "txt" 21746 . 21749)))
+          ("DEFINE_int32" (spp-arg-list ("name" "val" "txt") 24679 . 24695) . ((symbol "DEFINE_VARIABLE" 24701 . 24716) (semantic-list "(::google::int32, I, \\
+                   name, val, txt)" 24716 . 24773)))
+          )
+)
+    (semanticdb-table "gflags_declare.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("BASE_COMMANDLINEFLAGS_DECLARE_H_" variable (:constant-flag t) nil [1767 1799])
+            ("string" include (:system-flag t) nil [1801 1818])
+            ("stdint.h" include (:system-flag t) nil [1825 1844])
+            ("sys/types.h" include (:system-flag t) nil [1906 1928])
+            ("inttypes.h" include (:system-flag t) nil [1988 2009])
+            ("google" type
+               (:members 
+                  ( ("int32" type
+                       (:typedef ("int32_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2115 2137])
+                    ("uint32" type
+                       (:typedef ("uint32_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2138 2162])
+                    ("int64" type
+                       (:typedef ("int64_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2163 2185])
+                    ("uint64" type
+                       (:typedef ("uint64_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2186 2210])
+                    ("int32" type
+                       (:typedef ("int32_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2239 2261])
+                    ("uint32" type
+                       (:typedef ("u_int32_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2262 2287])
+                    ("int64" type
+                       (:typedef ("int64_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2288 2310])
+                    ("uint64" type
+                       (:typedef ("u_int64_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2311 2336]))                  
+                :type "namespace")
+                nil [2067 2577])
+            ("GFLAGS_DLL_DECLARE_FLAG" variable (:constant-flag t) nil [2588 2611])
+            ("fLS" type
+               (:members 
+                  ( ("clstring" type
+                       (:typedef ("std::string" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2955 2984]))                  
+                :type "namespace")
+                nil [2661 2987])
+            ("DECLARE_VARIABLE" variable (:constant-flag t) nil [2997 3013])
+            ("DECLARE_bool" variable (:constant-flag t) nil [3231 3243])
+            ("DECLARE_int32" variable (:constant-flag t) nil [3295 3308])
+            ("DECLARE_int64" variable (:constant-flag t) nil [3371 3384])
+            ("DECLARE_uint64" variable (:constant-flag t) nil [3449 3463])
+            ("DECLARE_double" variable (:constant-flag t) nil [3529 3543])
+            ("DECLARE_string" variable (:constant-flag t) nil [3597 3611]))          
+      :file "gflags_declare.h"
+      :pointmax 3883
+      :fsize 3882
+      :lastmodtime '(21149 62334 0 0)
+      :unmatched-syntax '((symbol 2562 . 2568) (symbol 2557 . 2561) (symbol 2554 . 2556) (symbol 2545 . 2553) (symbol 2537 . 2544) (symbol 2533 . 2536) (punctuation 2532 . 2533) (number 2530 . 2532) (symbol 2528 . 2529) (symbol 2521 . 2527) (symbol 2518 . 2520) (symbol 2514 . 2517) (symbol 2509 . 2513) (symbol 2505 . 2508) (symbol 2502 . 2504) (symbol 2496 . 2501) (punctuation 2495 . 2496))
+      :lexical-table 
+        '(("BASE_COMMANDLINEFLAGS_DECLARE_H_")
+          ("DECLARE_bool" (spp-arg-list ("name") 3243 . 3249) . ((symbol "DECLARE_VARIABLE" 3254 . 3270) (semantic-list "(bool, B, name)" 3270 . 3285)))
+          ("DECLARE_string" (spp-arg-list ("name") 3611 . 3617) . 
+              ((NAMESPACE "namespace" 3622 . 3631) (symbol "fLS" 3632 . 3635) (semantic-list "{                       \\
+  using ::fLS::clstring;                \\
+  extern GFLAGS_DLL_DECLARE_FLAG ::fLS::clstring& FLAGS_##name; \\
+  }" 3636 . 3773) (USING "using" 3814 . 3819) (symbol "fLS" 3820 . 3823) (punctuation ":" 3823 . 3824) (punctuation ":" 3824 . 3825) (spp-symbol-merge ((symbol "FLAGS_" 3825 . 3831) (symbol "name" 3833 . 3837)) 3825 . 3837)))
+          ("DECLARE_double" (spp-arg-list ("name") 3543 . 3549) . ((symbol "DECLARE_VARIABLE" 3554 . 3570) (semantic-list "(double, D, name)" 3570 . 3587)))
+          ("GFLAGS_DLL_DECLARE_FLAG")
+          ("DECLARE_uint64" (spp-arg-list ("name") 3463 . 3469) . ((symbol "DECLARE_VARIABLE" 3474 . 3490) (semantic-list "(::google::uint64, U64, name)" 3490 . 3519)))
+          ("DECLARE_VARIABLE" (spp-arg-list ("type" "shorttype" "name") 3013 . 3036) . 
+              ((NAMESPACE "namespace" 3106 . 3115) (spp-symbol-merge ((symbol "fL" 3116 . 3118) (symbol "shorttype" 3120 . 3129)) 3116 . 3129) (semantic-list "{ extern GFLAGS_DLL_DECLARE_FLAG type FLAGS_##name; }" 3130 . 3183) (USING "using" 3188 . 3193) (spp-symbol-merge ((symbol "fL" 3194 . 3196) (symbol "shorttype" 3198 . 3207)) 3194 . 3207) (punctuation ":" 3207 . 3208) (punctuation ":" 3208 . 3209) (spp-symbol-merge ((symbol "FLAGS_" 3209 . 3215) (symbol "name" 3217 . 3221)) 3209 . 3221)))
+          ("DECLARE_int64" (spp-arg-list ("name") 3384 . 3390) . ((symbol "DECLARE_VARIABLE" 3395 . 3411) (semantic-list "(::google::int64, I64, name)" 3411 . 3439)))
+          ("DECLARE_int32" (spp-arg-list ("name") 3308 . 3314) . ((symbol "DECLARE_VARIABLE" 3319 . 3335) (semantic-list "(::google::int32, I, name)" 3335 . 3361)))
+          )
+))
+  :file "!usr!include!gflags!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,45 @@
+;; Object punctuation/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "punctuation/"
+  :tables
+  (list
+    (semanticdb-table "comma_if.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_PUNCTUATION_COMMA_IF_HPP" variable (:constant-flag t) nil [418 461])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [464 512])
+            ("boost/preprocessor/control/if.hpp" include (:system-flag t) nil [513 558])
+            ("boost/preprocessor/facilities/empty.hpp" include (:system-flag t) nil [559 610])
+            ("boost/preprocessor/punctuation/comma.hpp" include (:system-flag t) nil [611 663])
+            ("BOOST_PP_COMMA_IF" variable (:constant-flag t) nil [855 872])
+            ("BOOST_PP_COMMA_IF_I" variable (:constant-flag t) nil [917 936]))          
+      :file "comma_if.hpp"
+      :pointmax 1013
+      :fsize 1012
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax '((punctuation 1003 . 1004) (punctuation 692 . 693) (punctuation 666 . 667) (punctuation 664 . 665) (punctuation 462 . 463) (punctuation 354 . 355) (punctuation 296 . 297) (punctuation 294 . 295) (punctuation 252 . 253) (punctuation 250 . 251) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PREPROCESSOR_PUNCTUATION_COMMA_IF_HPP")
+          ("BOOST_PP_COMMA_IF_I" (spp-arg-list ("cond") 936 . 942) . 
+              ((symbol "BOOST_PP_IF" 943 . 954) (semantic-list "(cond, BOOST_PP_COMMA, BOOST_PP_EMPTY)" 954 . 992) (semantic-list "()" 992 . 994)))
+          ("BOOST_PP_COMMA_IF" (spp-arg-list ("cond") 872 . 878) . ((symbol "BOOST_PP_COMMA_IF_I" 879 . 898) (semantic-list "(cond)" 898 . 904)))
+          )
+)
+    (semanticdb-table "comma.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_PUNCTUATION_COMMA_HPP" variable (:constant-flag t) nil [415 455])
+            ("BOOST_PP_COMMA" variable (:constant-flag t) nil [492 506]))          
+      :file "comma.hpp"
+      :pointmax 521
+      :fsize 520
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax '((punctuation 511 . 512) (punctuation 481 . 482) (punctuation 458 . 459) (punctuation 456 . 457) (punctuation 354 . 355) (punctuation 296 . 297) (punctuation 294 . 295) (punctuation 252 . 253) (punctuation 250 . 251) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_COMMA" (spp-arg-list nil 506 . 508) . ((punctuation "," 509 . 510)))
+          ("BOOST_PREPROCESSOR_PUNCTUATION_COMMA_HPP")
+          )
+))
+  :file "!usr!include!boost!preprocessor!punctuation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

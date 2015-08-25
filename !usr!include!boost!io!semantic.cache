@@ -1,0 +1,821 @@
+;; Object io/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "io/"
+  :tables
+  (list
+    (semanticdb-table "ios_state.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_IO_IOS_STATE_HPP" variable (:constant-flag t) nil [428 450])
+            ("boost/io_fwd.hpp" include (:system-flag t) nil [452 479])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [497 535])
+            ("ios" include (:system-flag t) nil [537 551])
+            ("locale" include (:system-flag t) nil [630 647])
+            ("ostream" include (:system-flag t) nil [678 696])
+            ("streambuf" include (:system-flag t) nil [726 746])
+            ("string" include (:system-flag t) nil [776 793])
+            ("boost" type
+               (:members 
+                  ( ("io" type
+                       (:members 
+                          ( ("ios_flags_saver" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [965 972])
+                                    ("state_type" variable (:type ("std::ios_base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [987 1023])
+                                    ("aspect_type" variable (:type ("std::ios_base::fmtflags" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1038 1075])
+                                    ("ios_flags_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1108 1123]))                                          
+                                        :type ("ios_flags_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1091 1179])
+                                    ("ios_flags_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1201 1215])
+                                            ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("aspect_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1216 1238]))                                          
+                                        :type ("ios_flags_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1184 1295])
+                                    ("ios_flags_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1300 1347])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [1353 1406])
+                                    ("private" label nil (reparse-symbol classsubparts) [1408 1416])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1421 1448])
+                                    ("a_save_" variable (:type ("aspect_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1453 1480])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ios_flags_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1513 1536]))                                          
+                                        :type ("ios_flags_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1486 1537]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [941 1540])
+                            ("ios_precision_saver" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1570 1577])
+                                    ("state_type" variable (:type ("std::ios_base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1592 1620])
+                                    ("aspect_type" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1635 1664])
+                                    ("ios_precision_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1701 1716]))                                          
+                                        :type ("ios_precision_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1680 1776])
+                                    ("ios_precision_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1802 1816])
+                                            ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("aspect_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1817 1839]))                                          
+                                        :type ("ios_precision_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1781 1900])
+                                    ("ios_precision_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1905 1956])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [1962 2019])
+                                    ("private" label nil (reparse-symbol classsubparts) [2021 2029])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2034 2061])
+                                    ("a_save_" variable (:type ("aspect_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2066 2093])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ios_precision_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2130 2157]))                                          
+                                        :type ("ios_precision_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2099 2158]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1542 2161])
+                            ("ios_width_saver" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2187 2194])
+                                    ("state_type" variable (:type ("std::ios_base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2209 2237])
+                                    ("aspect_type" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2252 2281])
+                                    ("ios_width_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2314 2329]))                                          
+                                        :type ("ios_width_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2297 2385])
+                                    ("ios_width_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2407 2421])
+                                            ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("aspect_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2422 2444]))                                          
+                                        :type ("ios_width_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2390 2501])
+                                    ("ios_width_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2506 2553])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [2559 2612])
+                                    ("private" label nil (reparse-symbol classsubparts) [2614 2622])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2627 2654])
+                                    ("a_save_" variable (:type ("aspect_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2659 2686])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ios_width_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2718 2741]))                                          
+                                        :type ("ios_width_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2691 2742]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2163 2745])
+                            ("basic_ios_iostate_saver" type
+                               (:template 
+                                  ( ("Ch" type (:type "class") nil nil)
+                                    ("Tr" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2897 2904])
+                                    ("state_type" variable (:type ("std::basic_ios" type
+                                         (:template-specifier 
+                                            ( ("Ch" type nil nil nil)
+                                              ("Tr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2919 2954])
+                                    ("aspect_type" variable (:type ("std::ios_base::iostate" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2969 3005])
+                                    ("basic_ios_iostate_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3046 3061]))                                          
+                                        :type ("basic_ios_iostate_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3021 3119])
+                                    ("basic_ios_iostate_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3149 3163])
+                                            ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("aspect_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3164 3186]))                                          
+                                        :type ("basic_ios_iostate_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3124 3257])
+                                    ("basic_ios_iostate_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3262 3317])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [3323 3376])
+                                    ("private" label nil (reparse-symbol classsubparts) [3378 3386])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3391 3418])
+                                    ("a_save_" variable (:type ("aspect_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3423 3450])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_ios_iostate_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3490 3521]))                                          
+                                        :type ("basic_ios_iostate_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3455 3522]))                                  )
+                                (reparse-symbol namespacesubparts) [2830 3525])
+                            ("basic_ios_exception_saver" type
+                               (:template 
+                                  ( ("Ch" type (:type "class") nil nil)
+                                    ("Tr" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [3596 3603])
+                                    ("state_type" variable (:type ("std::basic_ios" type
+                                         (:template-specifier 
+                                            ( ("Ch" type nil nil nil)
+                                              ("Tr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3618 3653])
+                                    ("aspect_type" variable (:type ("std::ios_base::iostate" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3668 3704])
+                                    ("basic_ios_exception_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3747 3762]))                                          
+                                        :type ("basic_ios_exception_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3720 3823])
+                                    ("basic_ios_exception_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3982 3996])
+                                            ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("aspect_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3997 4019]))                                          
+                                        :type ("basic_ios_exception_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3955 4105])
+                                    ("basic_ios_exception_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4110 4167])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [4173 4231])
+                                    ("private" label nil (reparse-symbol classsubparts) [4233 4241])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4246 4273])
+                                    ("a_save_" variable (:type ("aspect_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4278 4305])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_ios_exception_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4347 4380]))                                          
+                                        :type ("basic_ios_exception_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4310 4381]))                                  )
+                                (reparse-symbol namespacesubparts) [3527 4384])
+                            ("basic_ios_tie_saver" type
+                               (:template 
+                                  ( ("Ch" type (:type "class") nil nil)
+                                    ("Tr" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [4449 4456])
+                                    ("state_type" variable (:type ("std::basic_ios" type
+                                         (:template-specifier 
+                                            ( ("Ch" type nil nil nil)
+                                              ("Tr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [4471 4512])
+                                    ("aspect_type" variable
+                                       (:pointer 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("Ch" type nil nil nil)
+                                                  ("Tr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [4527 4569])
+                                    ("basic_ios_tie_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4606 4621]))                                          
+                                        :type ("basic_ios_tie_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4585 4675])
+                                    ("basic_ios_tie_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4701 4715])
+                                            ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("aspect_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4716 4738]))                                          
+                                        :type ("basic_ios_tie_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4680 4793])
+                                    ("basic_ios_tie_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4798 4849])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [4855 4906])
+                                    ("private" label nil (reparse-symbol classsubparts) [4908 4916])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4921 4948])
+                                    ("a_save_" variable (:type ("aspect_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4953 4980])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_ios_tie_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5016 5043]))                                          
+                                        :type ("basic_ios_tie_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4985 5044]))                                  )
+                                (reparse-symbol namespacesubparts) [4386 5047])
+                            ("basic_ios_rdbuf_saver" type
+                               (:template 
+                                  ( ("Ch" type (:type "class") nil nil)
+                                    ("Tr" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [5114 5121])
+                                    ("state_type" variable (:type ("std::basic_ios" type
+                                         (:template-specifier 
+                                            ( ("Ch" type nil nil nil)
+                                              ("Tr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [5136 5179])
+                                    ("aspect_type" variable
+                                       (:pointer 1
+                                        :type ("std::basic_streambuf" type
+                                             (:template-specifier 
+                                                ( ("Ch" type nil nil nil)
+                                                  ("Tr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [5194 5238])
+                                    ("basic_ios_rdbuf_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5277 5292]))                                          
+                                        :type ("basic_ios_rdbuf_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5254 5348])
+                                    ("basic_ios_rdbuf_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5376 5390])
+                                            ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("aspect_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5391 5413]))                                          
+                                        :type ("basic_ios_rdbuf_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5353 5470])
+                                    ("basic_ios_rdbuf_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5475 5528])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [5534 5587])
+                                    ("private" label nil (reparse-symbol classsubparts) [5589 5597])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5602 5629])
+                                    ("a_save_" variable (:type ("aspect_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5634 5661])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_ios_rdbuf_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5699 5728]))                                          
+                                        :type ("basic_ios_rdbuf_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5666 5729]))                                  )
+                                (reparse-symbol namespacesubparts) [5049 5732])
+                            ("basic_ios_fill_saver" type
+                               (:template 
+                                  ( ("Ch" type (:type "class") nil nil)
+                                    ("Tr" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [5798 5805])
+                                    ("state_type" variable (:type ("std::basic_ios" type
+                                         (:template-specifier 
+                                            ( ("Ch" type nil nil nil)
+                                              ("Tr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [5820 5861])
+                                    ("aspect_type" type
+                                       (:typedef ("state_type::char_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5866 5918])
+                                    ("basic_ios_fill_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5956 5971]))                                          
+                                        :type ("basic_ios_fill_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5934 6026])
+                                    ("basic_ios_fill_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6053 6067])
+                                            ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("aspect_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6068 6090]))                                          
+                                        :type ("basic_ios_fill_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6031 6146])
+                                    ("basic_ios_fill_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6151 6203])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [6209 6261])
+                                    ("private" label nil (reparse-symbol classsubparts) [6263 6271])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6276 6303])
+                                    ("a_save_" variable (:type ("aspect_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6308 6335])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_ios_fill_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6372 6400]))                                          
+                                        :type ("basic_ios_fill_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6340 6401]))                                  )
+                                (reparse-symbol namespacesubparts) [5734 6404])
+                            ("basic_ios_locale_saver" type
+                               (:template 
+                                  ( ("Ch" type (:type "class") nil nil)
+                                    ("Tr" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [6500 6507])
+                                    ("state_type" variable (:type ("std::basic_ios" type
+                                         (:template-specifier 
+                                            ( ("Ch" type nil nil nil)
+                                              ("Tr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [6522 6556])
+                                    ("aspect_type" variable (:type ("std::locale" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6571 6595])
+                                    ("basic_ios_locale_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6634 6649]))                                          
+                                        :type ("basic_ios_locale_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6610 6706])
+                                    ("basic_ios_locale_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6735 6749])
+                                            ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("aspect_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6750 6772]))                                          
+                                        :type ("basic_ios_locale_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6711 6829])
+                                    ("basic_ios_locale_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6834 6888])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [6894 6947])
+                                    ("private" label nil (reparse-symbol classsubparts) [6949 6957])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6962 6989])
+                                    ("a_save_" variable (:type ("aspect_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6994 7021])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_ios_locale_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7060 7090]))                                          
+                                        :type ("basic_ios_locale_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7026 7091]))                                  )
+                                (reparse-symbol namespacesubparts) [6434 7094])
+                            ("ios_iword_saver" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [7210 7217])
+                                    ("state_type" variable (:type ("std::ios_base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7232 7258])
+                                    ("index_type" type
+                                       (:typedef ("int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7263 7299])
+                                    ("aspect_type" type
+                                       (:typedef ("long")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7304 7341])
+                                    ("ios_iword_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7373 7387])
+                                            ("i" variable (:type ("index_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7388 7402]))                                          
+                                        :type ("ios_iword_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7356 7473])
+                                    ("ios_iword_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7495 7509])
+                                            ("i" variable (:type ("index_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7510 7523])
+                                            ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("aspect_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7524 7546]))                                          
+                                        :type ("ios_iword_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7478 7634])
+                                    ("ios_iword_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7639 7686])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [7692 7755])
+                                    ("private" label nil (reparse-symbol classsubparts) [7757 7765])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7770 7797])
+                                    ("a_save_" variable (:type ("aspect_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7802 7829])
+                                    ("i_save_" variable (:type ("index_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7834 7861])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ios_iword_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7894 7917]))                                          
+                                        :type ("ios_iword_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7867 7918]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [7186 7921])
+                            ("ios_pword_saver" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [7947 7954])
+                                    ("state_type" variable (:type ("std::ios_base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7969 7995])
+                                    ("index_type" type
+                                       (:typedef ("int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8000 8036])
+                                    ("aspect_type" type
+                                       (:typedef ("void")
+                                        :pointer 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8041 8078])
+                                    ("ios_pword_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8111 8125])
+                                            ("i" variable (:type ("index_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8126 8140]))                                          
+                                        :type ("ios_pword_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8094 8211])
+                                    ("ios_pword_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8233 8247])
+                                            ("i" variable (:type ("index_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8248 8261])
+                                            ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("aspect_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8262 8284]))                                          
+                                        :type ("ios_pword_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8216 8372])
+                                    ("ios_pword_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8377 8424])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [8430 8493])
+                                    ("private" label nil (reparse-symbol classsubparts) [8495 8503])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8508 8535])
+                                    ("a_save_" variable (:type ("aspect_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8540 8567])
+                                    ("i_save_" variable (:type ("index_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8572 8599])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ios_pword_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8631 8654]))                                          
+                                        :type ("ios_pword_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8605 8655]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [7923 8658])
+                            ("ios_base_all_saver" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [8770 8777])
+                                    ("state_type" variable (:type ("std::ios_base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8792 8818])
+                                    ("ios_base_all_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8854 8869]))                                          
+                                        :type ("ios_base_all_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8834 8985])
+                                    ("ios_base_all_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8991 9041])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [9047 9183])
+                                    ("private" label nil (reparse-symbol classsubparts) [9185 9193])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9198 9234])
+                                    ("a1_save_" variable (:type ("state_type::fmtflags" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9239 9276])
+                                    ("a2_save_" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9283 9318])
+                                    ("a3_save_" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9325 9360])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ios_base_all_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9396 9422]))                                          
+                                        :type ("ios_base_all_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9366 9423]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [8743 9426])
+                            ("basic_ios_all_saver" type
+                               (:template 
+                                  ( ("Ch" type (:type "class") nil nil)
+                                    ("Tr" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [9491 9498])
+                                    ("state_type" variable (:type ("std::basic_ios" type
+                                         (:template-specifier 
+                                            ( ("Ch" type nil nil nil)
+                                              ("Tr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [9513 9548])
+                                    ("basic_ios_all_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9585 9600]))                                          
+                                        :type ("basic_ios_all_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9564 9937])
+                                    ("basic_ios_all_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9943 9994])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [10000 10399])
+                                    ("private" label nil (reparse-symbol classsubparts) [10401 10409])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10414 10462])
+                                    ("a1_save_" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("state_type::fmtflags" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10467 10516])
+                                    ("a2_save_" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10523 10570])
+                                    ("a3_save_" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10577 10624])
+                                    ("a4_save_" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("state_type::iostate" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10629 10678])
+                                    ("a5_save_" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("state_type::iostate" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10683 10732])
+                                    ("a6_save_" variable
+                                       (:pointer 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("Ch" type nil nil nil)
+                                                  ("Tr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [10739 10786])
+                                    ("a7_save_" variable
+                                       (:pointer 1
+                                        :type ("std::basic_streambuf" type
+                                             (:template-specifier 
+                                                ( ("Ch" type nil nil nil)
+                                                  ("Tr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [10793 10840])
+                                    ("a8_save_" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("state_type::char_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10845 10894])
+                                    ("a9_save_" variable (:type ("std::locale" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10933 10980])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_ios_all_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11028 11055]))                                          
+                                        :type ("basic_ios_all_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10997 11056]))                                  )
+                                (reparse-symbol namespacesubparts) [9428 11059])
+                            ("ios_all_word_saver" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [11088 11095])
+                                    ("state_type" variable (:type ("std::ios_base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11110 11136])
+                                    ("index_type" type
+                                       (:typedef ("int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11141 11177])
+                                    ("ios_all_word_saver" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("state_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11203 11217])
+                                            ("i" variable (:type ("index_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11218 11232]))                                          
+                                        :type ("ios_all_word_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11183 11337])
+                                    ("ios_all_word_saver" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11343 11393])
+                                    ("restore" function (:type "void") (reparse-symbol classsubparts) [11399 11516])
+                                    ("private" label nil (reparse-symbol classsubparts) [11518 11526])
+                                    ("s_save_" variable (:type ("state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11531 11557])
+                                    ("i_save_" variable (:type ("index_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11562 11588])
+                                    ("a1_save_" variable (:type "long") (reparse-symbol classsubparts) [11593 11620])
+                                    ("a2_save_" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11625 11652])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ios_all_word_saver" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11688 11714]))                                          
+                                        :type ("ios_all_word_saver" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11658 11715]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [11061 11718]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [842 11722]))                  
+                :type "namespace")
+                nil [824 11741]))          
+      :file "ios_state.hpp"
+      :pointmax 11798
+      :fsize 11797
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax '((punctuation 11109 . 11110) (punctuation 11108 . 11109) (TYPEDEF 11100 . 11107) (punctuation 10932 . 10933) (punctuation 10931 . 10932) (punctuation 10792 . 10793) (punctuation 10791 . 10792) (punctuation 10738 . 10739) (punctuation 10737 . 10738) (punctuation 10576 . 10577) (punctuation 10575 . 10576) (punctuation 10522 . 10523) (punctuation 10521 . 10522) (EXPLICIT 9554 . 9562) (punctuation 9512 . 9513) (punctuation 9511 . 9512) (TYPEDEF 9503 . 9510) (punctuation 9324 . 9325) (punctuation 9323 . 9324) (punctuation 9282 . 9283) (punctuation 9281 . 9282) (EXPLICIT 8824 . 8832) (punctuation 8791 . 8792) (punctuation 8790 . 8791) (TYPEDEF 8782 . 8789) (EXPLICIT 8084 . 8092) (punctuation 7968 . 7969) (punctuation 7967 . 7968) (TYPEDEF 7959 . 7966) (EXPLICIT 7347 . 7355) (punctuation 7231 . 7232) (punctuation 7230 . 7231) (TYPEDEF 7222 . 7229) (EXPLICIT 6601 . 6609) (punctuation 6570 . 6571) (punctuation 6569 . 6570) (TYPEDEF 6561 . 6568) (punctuation 6521 . 6522) (punctuation 6520 . 6521) (TYPEDEF 6512 . 6519) (EXPLICIT 5924 . 5932) (punctuation 5819 . 5820) (punctuation 5818 . 5819) (TYPEDEF 5810 . 5817) (EXPLICIT 5244 . 5252) (punctuation 5193 . 5194) (punctuation 5192 . 5193) (TYPEDEF 5184 . 5191) (punctuation 5135 . 5136) (punctuation 5134 . 5135) (TYPEDEF 5126 . 5133) (EXPLICIT 4575 . 4583) (punctuation 4526 . 4527) (punctuation 4525 . 4526) (TYPEDEF 4517 . 4524) (punctuation 4470 . 4471) (punctuation 4469 . 4470) (TYPEDEF 4461 . 4468) (EXPLICIT 3710 . 3718) (punctuation 3667 . 3668) (punctuation 3666 . 3667) (TYPEDEF 3658 . 3665) (punctuation 3617 . 3618) (punctuation 3616 . 3617) (TYPEDEF 3608 . 3615) (EXPLICIT 3011 . 3019) (punctuation 2968 . 2969) (punctuation 2967 . 2968) (TYPEDEF 2959 . 2966) (punctuation 2918 . 2919) (punctuation 2917 . 2918) (TYPEDEF 2909 . 2916) (EXPLICIT 2287 . 2295) (punctuation 2251 . 2252) (punctuation 2250 . 2251) (TYPEDEF 2242 . 2249) (punctuation 2208 . 2209) (punctuation 2207 . 2208) (TYPEDEF 2199 . 2206) (EXPLICIT 1670 . 1678) (punctuation 1634 . 1635) (punctuation 1633 . 1634) (TYPEDEF 1625 . 1632) (punctuation 1591 . 1592) (punctuation 1590 . 1591) (TYPEDEF 1582 . 1589) (EXPLICIT 1081 . 1089) (punctuation 1037 . 1038) (punctuation 1036 . 1037) (TYPEDEF 1028 . 1035) (punctuation 986 . 987) (punctuation 985 . 986) (TYPEDEF 977 . 984))
+      :lexical-table 
+        '(("BOOST_IO_IOS_STATE_HPP")
+          )
+))
+  :file "!usr!include!boost!io!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

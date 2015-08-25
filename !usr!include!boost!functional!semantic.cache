@@ -1,0 +1,17 @@
+;; Object functional/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "functional/"
+  :tables
+  (list
+    (semanticdb-table "hash_fwd.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("boost/functional/hash/hash_fwd.hpp" include (:system-flag t) nil [193 238]))          
+      :file "hash_fwd.hpp"
+      :pointmax 240
+      :fsize 239
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!boost!functional!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,387 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables
+  (list
+    (semanticdb-table "static_constant.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_STATIC_CONSTANT_HPP_INCLUDED" variable (:constant-flag t) nil [68 117])
+            ("boost/config.hpp" include (:system-flag t) nil [612 642]))          
+      :file "static_constant.hpp"
+      :pointmax 795
+      :fsize 794
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_STATIC_CONSTANT_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "msvc.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_MSVC_HPP_INCLUDED" variable (:constant-flag t) nil [57 95])
+            ("boost/config.hpp" include (:system-flag t) nil [526 553]))          
+      :file "msvc.hpp"
+      :pointmax 604
+      :fsize 603
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_MSVC_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "gcc.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_GCC_HPP_INCLUDED" variable (:constant-flag t) nil [56 93])
+            ("BOOST_MPL_CFG_GCC" variable (:constant-flag t) nil [548 565]))          
+      :file "gcc.hpp"
+      :pointmax 694
+      :fsize 693
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_GCC_HPP_INCLUDED")
+          ("BOOST_MPL_CFG_GCC" . ((semantic-list "((__GNUC__ << 8) | __GNUC_MINOR__)" 566 . 600)))
+          )
+)
+    (semanticdb-table "workaround.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_WORKAROUND_HPP_INCLUDED" variable (:constant-flag t) nil [63 107])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [512 550]))          
+      :file "workaround.hpp"
+      :pointmax 607
+      :fsize 606
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_WORKAROUND_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "integral.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_INTEGRAL_HPP_INCLUDED" variable (:constant-flag t) nil [61 103])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [501 542])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [543 590]))          
+      :file "integral.hpp"
+      :pointmax 1153
+      :fsize 1152
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_INTEGRAL_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "ctps.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_CTPS_HPP_INCLUDED" variable (:constant-flag t) nil [57 95])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [494 541])
+            ("boost/config.hpp" include (:system-flag t) nil [542 569]))          
+      :file "ctps.hpp"
+      :pointmax 927
+      :fsize 926
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_CTPS_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "use_preprocessed.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_USE_PREPROCESSED_HPP_INCLUDED" variable (:constant-flag t) nil [69 119]))          
+      :file "use_preprocessed.hpp"
+      :pointmax 641
+      :fsize 640
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_USE_PREPROCESSED_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "lambda.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_LAMBDA_HPP_INCLUDED" variable (:constant-flag t) nil [59 99])
+            ("boost/mpl/aux_/config/ttp.hpp" include (:system-flag t) nil [500 540])
+            ("boost/mpl/aux_/config/ctps.hpp" include (:system-flag t) nil [541 582]))          
+      :file "lambda.hpp"
+      :pointmax 1016
+      :fsize 1015
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_LAMBDA_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "nttp.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_NTTP_HPP_INCLUDED" variable (:constant-flag t) nil [57 95])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [494 535])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [536 583]))          
+      :file "nttp.hpp"
+      :pointmax 1113
+      :fsize 1112
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_NTTP_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "dtp.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_DTP_HPP_INCLUDED" variable (:constant-flag t) nil [56 93])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [491 538]))          
+      :file "dtp.hpp"
+      :pointmax 1674
+      :fsize 1673
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_DTP_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "eti.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_ETI_HPP_INCLUDED" variable (:constant-flag t) nil [56 93])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [491 532])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [533 580]))          
+      :file "eti.hpp"
+      :pointmax 1338
+      :fsize 1337
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_ETI_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "ttp.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_TTP_HPP_INCLUDED" variable (:constant-flag t) nil [56 93])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [491 532])
+            ("boost/mpl/aux_/config/gcc.hpp" include (:system-flag t) nil [533 573])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [574 621]))          
+      :file "ttp.hpp"
+      :pointmax 1271
+      :fsize 1270
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_TTP_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "overload_resolution.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_OVERLOAD_RESOLUTION_HPP_INCLUDED" variable (:constant-flag t) nil [72 125])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [539 586]))          
+      :file "overload_resolution.hpp"
+      :pointmax 937
+      :fsize 936
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_OVERLOAD_RESOLUTION_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "has_xxx.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_HAS_XXX_HPP_INCLUDED" variable (:constant-flag t) nil [60 101])
+            ("boost/mpl/aux_/config/overload_resolution.hpp" include (:system-flag t) nil [541 597])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [598 645]))          
+      :file "has_xxx.hpp"
+      :pointmax 1080
+      :fsize 1079
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_HAS_XXX_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "msvc_typename.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_MSVC_TYPENAME_HPP_INCLUDED" variable (:constant-flag t) nil [66 113])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [521 562])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [563 610])
+            ("BOOST_MSVC_TYPENAME" variable (:constant-flag t) nil [702 721]))          
+      :file "msvc_typename.hpp"
+      :pointmax 797
+      :fsize 796
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MSVC_TYPENAME" . ((TYPENAME "typename" 722 . 730)))
+          ("BOOST_MPL_AUX_CONFIG_MSVC_TYPENAME_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "pp_counter.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_PP_COUNTER_HPP_INCLUDED" variable (:constant-flag t) nil [63 107])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [546 590])
+            ("BOOST_MPL_AUX_PP_COUNTER" variable (:constant-flag t) nil [714 738]))          
+      :file "pp_counter.hpp"
+      :pointmax 823
+      :fsize 822
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_PP_COUNTER_HPP_INCLUDED")
+          ("BOOST_MPL_AUX_PP_COUNTER" (spp-arg-list nil 738 . 740) . ((symbol "__LINE__" 741 . 749)))
+          )
+)
+    (semanticdb-table "compiler.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_COMPILER_HPP_INCLUDED" variable (:constant-flag t) nil [61 103])
+            ("boost/mpl/aux_/config/dtp.hpp" include (:system-flag t) nil [546 589])
+            ("boost/mpl/aux_/config/ttp.hpp" include (:system-flag t) nil [590 633])
+            ("boost/mpl/aux_/config/ctps.hpp" include (:system-flag t) nil [634 678])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [679 723])
+            ("boost/mpl/aux_/config/gcc.hpp" include (:system-flag t) nil [724 767])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [768 818])
+            ("BOOST_MPL_CFG_COMPILER_DIR" variable (:constant-flag t) nil [2105 2131]))          
+      :file "compiler.hpp"
+      :pointmax 2240
+      :fsize 2239
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_CFG_COMPILER_DIR" . ((symbol "plain" 2132 . 2137)))
+          ("BOOST_MPL_AUX_CONFIG_COMPILER_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "preprocessor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_PREPROCESSOR_HPP_INCLUDED" variable (:constant-flag t) nil [65 111])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [518 565])
+            ("BOOST_MPL_CFG_NO_OWN_PP_PRIMITIVES" variable (:constant-flag t) nil [924 958]))          
+      :file "preprocessor.hpp"
+      :pointmax 1221
+      :fsize 1220
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_PREPROCESSOR_HPP_INCLUDED")
+          ("BOOST_MPL_CFG_NO_OWN_PP_PRIMITIVES")
+          )
+)
+    (semanticdb-table "adl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_ADL_HPP_INCLUDED" variable (:constant-flag t) nil [56 93])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [491 532])
+            ("boost/mpl/aux_/config/intel.hpp" include (:system-flag t) nil [533 575])
+            ("boost/mpl/aux_/config/gcc.hpp" include (:system-flag t) nil [576 616])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [617 664]))          
+      :file "adl.hpp"
+      :pointmax 1519
+      :fsize 1518
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_ADL_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "arrays.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_ARRAYS_HPP_INCLUDED" variable (:constant-flag t) nil [59 99])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [500 541])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [542 589]))          
+      :file "arrays.hpp"
+      :pointmax 935
+      :fsize 934
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_ARRAYS_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "has_apply.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_HAS_APPLY_HPP_INCLUDED" variable (:constant-flag t) nil [62 105])
+            ("boost/mpl/aux_/config/has_xxx.hpp" include (:system-flag t) nil [504 548])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [549 590])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [591 638]))          
+      :file "has_apply.hpp"
+      :pointmax 1014
+      :fsize 1013
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_HAS_APPLY_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "bind.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_BIND_HPP_INCLUDED" variable (:constant-flag t) nil [57 95])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [527 568])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [569 616]))          
+      :file "bind.hpp"
+      :pointmax 1002
+      :fsize 1001
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_BIND_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "intel.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_INTEL_HPP_INCLUDED" variable (:constant-flag t) nil [58 97])
+            ("boost/config.hpp" include (:system-flag t) nil [537 564]))          
+      :file "intel.hpp"
+      :pointmax 616
+      :fsize 615
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_INTEL_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "bcc.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_BCC_HPP_INCLUDED" variable (:constant-flag t) nil [56 93])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [486 533]))          
+      :file "bcc.hpp"
+      :pointmax 849
+      :fsize 848
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_BCC_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "forwarding.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_FORWARDING_HPP_INCLUDED" variable (:constant-flag t) nil [63 107])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [507 554]))          
+      :file "forwarding.hpp"
+      :pointmax 831
+      :fsize 830
+      :lastmodtime '(21413 1118 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_CONFIG_FORWARDING_HPP_INCLUDED")
+          )
+))
+  :file "!usr!include!boost!mpl!aux_!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,2284 @@
+;; Object gregorian/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gregorian/"
+  :tables
+  (list
+    (semanticdb-table "gregorian.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GREGORIAN_HPP__" variable (:constant-flag t) nil [33 48])
+            ("boost/date_time/compiler_config.hpp" include nil nil [617 663])
+            ("boost/date_time/gregorian/gregorian_types.hpp" include nil nil [664 720])
+            ("boost/date_time/gregorian/conversion.hpp" include nil nil [721 772])
+            ("boost/date_time/gregorian/formatters.hpp" include nil nil [892 943])
+            ("boost/date_time/gregorian/gregorian_io.hpp" include nil nil [1055 1108])
+            ("boost/date_time/gregorian/parsers.hpp" include nil nil [1152 1200]))          
+      :file "gregorian.hpp"
+      :pointmax 1211
+      :fsize 1210
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GREGORIAN_HPP__")
+          )
+)
+    (semanticdb-table "conversion.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GREGORIAN__CONVERSION_HPP___" variable (:constant-flag t) nil [47 76])
+            ("cstring" include (:system-flag t) nil [410 428])
+            ("string" include (:system-flag t) nil [429 446])
+            ("stdexcept" include (:system-flag t) nil [447 467])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [468 504])
+            ("boost/date_time/c_time.hpp" include (:system-flag t) nil [505 542])
+            ("boost/date_time/special_defs.hpp" include (:system-flag t) nil [543 586])
+            ("boost/date_time/gregorian/gregorian_types.hpp" include (:system-flag t) nil [587 643])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("to_tm" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [807 821]))                                  
+                                :type ("std::tm" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [784 1749])
+                            ("date_from_tm" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("datetm" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tm" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1852 1874]))                                  
+                                :type ("date" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1825 2072]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [664 2075]))                  
+                :type "namespace")
+                nil [645 2077]))          
+      :file "conversion.hpp"
+      :pointmax 2115
+      :fsize 2114
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_GREGORIAN__CONVERSION_HPP___")
+          )
+)
+    (semanticdb-table "gregorian_types.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GREGORIAN_TYPES_HPP__" variable (:constant-flag t) nil [40 62])
+            ("boost/date_time/date.hpp" include nil nil [522 557])
+            ("boost/date_time/period.hpp" include nil nil [558 595])
+            ("boost/date_time/gregorian/greg_calendar.hpp" include nil nil [596 650])
+            ("boost/date_time/gregorian/greg_duration.hpp" include nil nil [651 705])
+            ("boost/date_time/gregorian/greg_date.hpp" include nil nil [828 878])
+            ("boost/date_time/date_generators.hpp" include nil nil [879 925])
+            ("boost/date_time/date_clock_device.hpp" include nil nil [926 974])
+            ("boost/date_time/date_iterator.hpp" include nil nil [975 1019])
+            ("boost/date_time/adjust_functors.hpp" include nil nil [1020 1066])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("date_period" type
+                               (:typedef ("date_time::period" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil)
+                                          ("date_duration" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1388 1447])
+                            ("year_based_generator" type
+                               (:typedef ("date_time::year_based_generator" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1669 1736])
+                            ("partial_date" type
+                               (:typedef ("date_time::partial_date" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1776 1827])
+                            ("nth_kday_of_month" type
+                               (:typedef ("date_time::nth_kday_of_month" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1831 1892])
+                            ("nth_day_of_the_week_in_month" type
+                               (:typedef ("nth_kday_of_month" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1895 1950])
+                            ("first_kday_of_month" type
+                               (:typedef ("date_time::first_kday_of_month" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1954 2019])
+                            ("first_day_of_the_week_in_month" type
+                               (:typedef ("first_kday_of_month" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2022 2081])
+                            ("last_kday_of_month" type
+                               (:typedef ("date_time::last_kday_of_month" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2085 2148])
+                            ("last_day_of_the_week_in_month" type
+                               (:typedef ("last_kday_of_month" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2151 2208])
+                            ("first_kday_after" type
+                               (:typedef ("date_time::first_kday_after" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2212 2271])
+                            ("first_day_of_the_week_after" type
+                               (:typedef ("first_kday_after" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2274 2327])
+                            ("first_kday_before" type
+                               (:typedef ("date_time::first_kday_before" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2331 2392])
+                            ("first_day_of_the_week_before" type
+                               (:typedef ("first_kday_before" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2395 2450])
+                            ("day_clock" type
+                               (:typedef ("date_time::day_clock" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2547 2592])
+                            ("date_iterator" type
+                               (:typedef ("date_time::date_itr_base" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2679 2732])
+                            ("day_iterator" type
+                               (:typedef ("date_time::date_itr" type
+                                     (:template-specifier 
+                                        ( ("date_time::day_functor" type nil nil nil)
+                                          ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2795 2902])
+                            ("week_iterator" type
+                               (:typedef ("date_time::date_itr" type
+                                     (:template-specifier 
+                                        ( ("date_time::week_functor" type nil nil nil)
+                                          ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2965 3074])
+                            ("month_iterator" type
+                               (:typedef ("date_time::date_itr" type
+                                     (:template-specifier 
+                                        ( ("date_time::month_functor" type nil nil nil)
+                                          ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3138 3249])
+                            ("year_iterator" type
+                               (:typedef ("date_time::date_itr" type
+                                     (:template-specifier 
+                                        ( ("date_time::year_functor" type nil nil nil)
+                                          ("date" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3312 3421])
+                            ("date_time::days_until_weekday" using (:type ("date_time::days_until_weekday" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [3495 3531])
+                            ("date_time::days_before_weekday" using (:type ("date_time::days_before_weekday" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [3534 3571])
+                            ("date_time::next_weekday" using (:type ("date_time::next_weekday" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [3574 3604])
+                            ("date_time::previous_weekday" using (:type ("date_time::previous_weekday" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [3607 3641]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1288 3644]))                  
+                :type "namespace")
+                nil [1068 3646]))          
+      :file "gregorian_types.hpp"
+      :pointmax 3679
+      :fsize 3678
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_GREGORIAN_TYPES_HPP__")
+          )
+)
+    (semanticdb-table "formatters.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GREGORIAN_FORMATTERS_HPP___" variable (:constant-flag t) nil [45 72])
+            ("boost/date_time/compiler_config.hpp" include nil nil [407 453])
+            ("boost/date_time/gregorian/gregorian_types.hpp" include nil nil [454 510])
+            ("boost/date_time/date_formatting.hpp" include nil nil [625 671])
+            ("boost/date_time/iso_format.hpp" include nil nil [679 720])
+            ("boost/date_time/date_format_simple.hpp" include nil nil [721 770])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("to_simple_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1105 1119]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [1024 1226])
+                            ("to_simple_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1376 1390]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1340 1439])
+                            ("to_simple_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date_period" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1581 1602]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [1503 1974])
+                            ("to_simple_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date_period" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2124 2145]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2088 2194])
+                            ("to_iso_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date_period" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2329 2350]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [2254 2619])
+                            ("to_iso_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date_period" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2774 2795]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2741 2841])
+                            ("to_iso_extended_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2988 3002]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [2904 3115])
+                            ("to_iso_extended_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3267 3281]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3225 3336])
+                            ("to_iso_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3464 3478]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [3389 3582])
+                            ("to_iso_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3715 3729]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3682 3775])
+                            ("to_sql_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3910 3924]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [3835 4278])
+                            ("to_sql_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4314 4328]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4281 4374])
+                            ("to_simple_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date_period" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4563 4584]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4525 4636])
+                            ("to_simple_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4788 4802]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4750 4854])
+                            ("to_iso_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date_period" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5011 5032]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4976 5081])
+                            ("to_iso_extended_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5235 5249]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5191 5307])
+                            ("to_iso_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5442 5456]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5407 5505])
+                            ("to_sql_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5543 5557]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5508 5606]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [947 5640]))                  
+                :type "namespace")
+                nil [929 5642]))          
+      :file "formatters.hpp"
+      :pointmax 5675
+      :fsize 5674
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GREGORIAN_FORMATTERS_HPP___")
+          )
+)
+    (semanticdb-table "gregorian_io.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DATE_TIME_GREGORIAN_IO_HPP__" variable (:constant-flag t) nil [46 74])
+            ("locale" include (:system-flag t) nil [408 425])
+            ("iostream" include (:system-flag t) nil [426 445])
+            ("iterator" include (:system-flag t) nil [446 465])
+            ("boost/io/ios_state.hpp" include (:system-flag t) nil [491 524])
+            ("boost/date_time/date_facet.hpp" include (:system-flag t) nil [525 566])
+            ("boost/date_time/period_parser.hpp" include (:system-flag t) nil [567 611])
+            ("boost/date_time/period_formatter.hpp" include (:system-flag t) nil [612 659])
+            ("boost/date_time/special_values_parser.hpp" include (:system-flag t) nil [660 712])
+            ("boost/date_time/special_values_formatter.hpp" include (:system-flag t) nil [713 768])
+            ("boost/date_time/gregorian/gregorian_types.hpp" include (:system-flag t) nil [769 825])
+            ("boost/date_time/gregorian/conversion.hpp" include (:system-flag t) nil [826 877])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("wperiod_formatter" type
+                               (:typedef ("boost::date_time::period_formatter" type
+                                     (:template-specifier 
+                                        ( ("wchar_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [961 1031])
+                            ("period_formatter" type
+                               (:typedef ("boost::date_time::period_formatter" type
+                                     (:template-specifier 
+                                        ( ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1034 1103])
+                            ("wdate_facet" type
+                               (:typedef ("boost::date_time::date_facet" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil)
+                                          ("wchar_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1109 1172])
+                            ("date_facet" type
+                               (:typedef ("boost::date_time::date_facet" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil)
+                                          ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1175 1237])
+                            ("period_parser" type
+                               (:typedef ("boost::date_time::period_parser" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil)
+                                          ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1241 1312])
+                            ("wperiod_parser" type
+                               (:typedef ("boost::date_time::period_parser" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil)
+                                          ("wchar_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1315 1387])
+                            ("special_values_formatter" type
+                               (:typedef ("boost::date_time::special_values_formatter" type
+                                     (:template-specifier 
+                                        ( ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1395 1477])
+                            ("wspecial_values_formatter" type
+                               (:typedef ("boost::date_time::special_values_formatter" type
+                                     (:template-specifier 
+                                        ( ("wchar_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1481 1567])
+                            ("special_values_parser" type
+                               (:typedef ("boost::date_time::special_values_parser" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil)
+                                          ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1574 1655])
+                            ("wspecial_values_parser" type
+                               (:typedef ("boost::date_time::special_values_parser" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil)
+                                          ("wchar_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1659 1744])
+                            ("date_input_facet" type
+                               (:typedef ("boost::date_time::date_input_facet" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil)
+                                          ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1751 1825])
+                            ("wdate_input_facet" type
+                               (:typedef ("boost::date_time::date_input_facet" type
+                                     (:template-specifier 
+                                        ( ("date" type nil nil nil)
+                                          ("wchar_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1828 1903])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2003 2042])
+                                    ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::gregorian::date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2043 2075]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [1907 3058])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3188 3226])
+                                    ("d" variable
+                                       (:reference 1
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3227 3235]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [3092 4602])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4702 4741])
+                                    ("dd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::gregorian::date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4742 4784]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [4606 5305])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5444 5482])
+                                    ("dd" variable
+                                       (:reference 1
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5483 5501]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [5348 6597])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6697 6736])
+                                    ("dp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::gregorian::date_period" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6737 6777]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [6601 7776])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7914 7952])
+                                    ("dp" variable
+                                       (:reference 1
+                                        :type ("date_period" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7953 7969]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [7818 9057])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9208 9247])
+                                    ("gm" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::gregorian::greg_month" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9248 9287]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [9112 9935])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10071 10109])
+                                    ("m" variable
+                                       (:reference 1
+                                        :type ("greg_month" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10110 10124]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [9975 11210])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11311 11350])
+                                    ("gw" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::gregorian::greg_weekday" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11351 11392]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [11215 11912])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [12051 12089])
+                                    ("wd" variable
+                                       (:reference 1
+                                        :type ("greg_weekday" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12090 12107]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [11955 13195])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [13387 13425])
+                                    ("gd" variable
+                                       (:reference 1
+                                        :type ("greg_day" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13426 13439]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [13291 14527])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [14721 14759])
+                                    ("gy" variable
+                                       (:reference 1
+                                        :type ("greg_year" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14760 14774]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [14625 15862])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [16012 16051])
+                                    ("pd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::gregorian::partial_date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16052 16093]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [15916 16613])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [16751 16789])
+                                    ("pd" variable
+                                       (:reference 1
+                                        :type ("partial_date" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16790 16807]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [16655 17895])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17995 18034])
+                                    ("nkd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::gregorian::nth_day_of_the_week_in_month" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18035 18093]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [17899 18615])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18769 18807])
+                                    ("nday" variable
+                                       (:reference 1
+                                        :type ("nth_day_of_the_week_in_month" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18822 18857]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [18673 19949])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20050 20089])
+                                    ("fkd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::gregorian::first_day_of_the_week_in_month" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20090 20150]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [19954 20672])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20828 20866])
+                                    ("fkd" variable
+                                       (:reference 1
+                                        :type ("first_day_of_the_week_in_month" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20881 20917]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [20732 22007])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [22108 22147])
+                                    ("lkd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::gregorian::last_day_of_the_week_in_month" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22148 22207]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [22012 22729])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [22884 22922])
+                                    ("lkd" variable
+                                       (:reference 1
+                                        :type ("last_day_of_the_week_in_month" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22937 22972]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [22788 24062])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [24163 24202])
+                                    ("fda" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::gregorian::first_day_of_the_week_after" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24203 24260]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [24067 24791])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [24944 24982])
+                                    ("fka" variable
+                                       (:reference 1
+                                        :type ("first_day_of_the_week_after" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24997 25030]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [24848 26120])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [26221 26260])
+                                    ("fdb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::gregorian::first_day_of_the_week_before" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26261 26319]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [26125 26849])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [27003 27041])
+                                    ("fkb" variable
+                                       (:reference 1
+                                        :type ("first_day_of_the_week_before" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27056 27090]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [26907 28180]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [935 28186]))                  
+                :type "namespace")
+                nil [917 28188]))          
+      :file "gregorian_io.hpp"
+      :pointmax 28243
+      :fsize 28242
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DATE_TIME_GREGORIAN_IO_HPP__")
+          )
+)
+    (semanticdb-table "parsers.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GREGORIAN_PARSERS_HPP___" variable (:constant-flag t) nil [42 66])
+            ("boost/date_time/gregorian/gregorian_types.hpp" include nil nil [406 462])
+            ("boost/date_time/date_parsing.hpp" include nil nil [463 506])
+            ("boost/date_time/compiler_config.hpp" include nil nil [507 553])
+            ("boost/date_time/parse_format_base.hpp" include nil nil [554 602])
+            ("string" include (:system-flag t) nil [603 620])
+            ("sstream" include (:system-flag t) nil [621 639])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("special_value_from_string" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [967 988]))                                  
+                                :type ("special_values" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [926 989])
+                            ("from_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1058 1072]))                                  
+                                :type ("date" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1034 1121])
+                            ("from_simple_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1285 1299]))                                  
+                                :type ("date" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1254 1374])
+                            ("from_us_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1536 1550]))                                  
+                                :type ("date" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1509 1624])
+                            ("from_uk_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1786 1800]))                                  
+                                :type ("date" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1759 1875])
+                            ("from_undelimited_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1994 2008]))                                  
+                                :type ("date" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1958 2069])
+                            ("date_from_iso_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2183 2204]))                                  
+                                :type ("date" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2150 2265])
+                            ("from_stream" function
+                               (:template 
+                                  ( ("iterator_type" type (:type "class") nil nil))                                  
+                                :type ("date" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("beg" variable (:type ("iterator_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2644 2662])
+                                    ("end" variable (:type ("iterator_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2663 2681]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [2588 2906])
+                            ("date_period_from_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3219 3240]))                                  
+                                :type ("date_period" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3176 3306])
+                            ("date_period_from_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::wstring" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3475 3497]))                                  
+                                :type ("date_period" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3431 3566]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [659 3609]))                  
+                :type "namespace")
+                nil [641 3611]))          
+      :file "parsers.hpp"
+      :pointmax 3642
+      :fsize 3641
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((symbol 905 . 925))
+      :lexical-table 
+        '(("GREGORIAN_PARSERS_HPP___")
+          )
+)
+    (semanticdb-table "greg_calendar.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GREGORIAN_GREGORIAN_CALENDAR_HPP__" variable (:constant-flag t) nil [52 86])
+            ("boost/cstdint.hpp" include (:system-flag t) nil [408 436])
+            ("boost/date_time/gregorian/greg_weekday.hpp" include (:system-flag t) nil [437 490])
+            ("boost/date_time/gregorian/greg_day_of_year.hpp" include (:system-flag t) nil [491 548])
+            ("boost/date_time/gregorian_calendar.hpp" include (:system-flag t) nil [549 598])
+            ("boost/date_time/gregorian/greg_ymd.hpp" include (:system-flag t) nil [599 648])
+            ("boost/date_time/int_adapter.hpp" include (:system-flag t) nil [649 691])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("fancy_date_rep" type
+                               (:typedef ("date_time::int_adapter" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [810 866])
+                            ("gregorian_calendar" type
+                               (:superclasses 
+                                  ( ("date_time::gregorian_calendar_base" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1066 1073])
+                                    ("day_of_week_type" type
+                                       (:typedef ("greg_weekday" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1134 1180])
+                                    ("day_of_year_type" type
+                                       (:typedef ("greg_day_of_year_rep" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1241 1287])
+                                    ("date_rep_type" type
+                                       (:typedef ("fancy_date_rep" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1363 1406])
+                                    ("date_traits_type" type
+                                       (:typedef ("fancy_date_rep" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1464 1510])
+                                    ("private" label nil (reparse-symbol classsubparts) [1515 1523]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [942 1528]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [711 1531]))                  
+                :type "namespace")
+                nil [693 1533]))          
+      :file "greg_calendar.hpp"
+      :pointmax 1568
+      :fsize 1567
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GREGORIAN_GREGORIAN_CALENDAR_HPP__")
+          )
+)
+    (semanticdb-table "greg_duration.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GREG_DURATION_HPP___" variable (:constant-flag t) nil [38 58])
+            ("boost/date_time/date_duration.hpp" include (:system-flag t) nil [394 438])
+            ("boost/date_time/int_adapter.hpp" include (:system-flag t) nil [439 481])
+            ("boost/date_time/special_defs.hpp" include (:system-flag t) nil [482 525])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("date_duration_rep" type
+                               (:typedef ("boost::date_time::duration_traits_adapted" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [644 712])
+                            ("date_duration" type
+                               (:superclasses 
+                                  ( ("boost::date_time::date_duration" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("base_type" type
+                                       (:typedef ("boost::date_time::date_duration" type
+                                             (:template-specifier 
+                                                ( ("date_duration_rep" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [888 959])
+                                    ("public" label nil (reparse-symbol classsubparts) [963 970])
+                                    ("duration_rep" type
+                                       (:typedef ("base_type::duration_rep" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [975 1020])
+                                    ("date_duration" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("day_count" variable
+                                               (:default-value "0"
+                                                :type ("duration_rep" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1084 1110]))                                          
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1070 1137])
+                                    ("date_duration" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("sv" variable (:type ("date_time::special_values" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1195 1224]))                                          
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1181 1243])
+                                    ("date_duration" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1288 1315]))                                          
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1274 1374])
+                                    ("date_duration" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("base_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1439 1462]))                                          
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1425 1488])
+                                    ("==" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1783 1808]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1766 1868])
+                                    ("!=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1890 1915]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1873 1965])
+                                    ("<" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1986 2011]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1970 2070])
+                                    (">" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2091 2116]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2075 2209])
+                                    ("<=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2231 2256]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2214 2348])
+                                    (">=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2370 2395]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2353 2455])
+                                    ("-=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2542 2567]))                                          
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2515 2634])
+                                    ("-" function
+                                       (:operator-flag t
+                                        :typemodifiers ("friend")
+                                        :arguments 
+                                          ( ("rhs" variable (:type ("date_duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2671 2689])
+                                            ("lhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2690 2715]))                                          
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2639 2763])
+                                    ("+=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2839 2864]))                                          
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2812 2931])
+                                    ("+" function
+                                       (:operator-flag t
+                                        :typemodifiers ("friend")
+                                        :arguments 
+                                          ( ("rhs" variable (:type ("date_duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2968 2986])
+                                            ("lhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2987 3012]))                                          
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2936 3060])
+                                    ("-" function
+                                       (:operator-flag t
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3128 3217])
+                                    ("/=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("divisor" variable (:type "int") (reparse-symbol arg-sub-list) [3309 3321]))                                          
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3282 3392])
+                                    ("/" function
+                                       (:operator-flag t
+                                        :typemodifiers ("friend")
+                                        :arguments 
+                                          ( ("rhs" variable (:type ("date_duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3429 3447])
+                                            ("lhs" variable (:type "int") (reparse-symbol arg-sub-list) [3448 3456]))                                          
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3397 3504])
+                                    ("unit" function
+                                       (:typemodifiers ("static")
+                                        :type ("date_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3578 3674]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [794 3679])
+                            ("days" type
+                               (:typedef ("date_duration" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3723 3750]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [545 3753]))                  
+                :type "namespace")
+                nil [527 3755]))          
+      :file "greg_duration.hpp"
+      :pointmax 3899
+      :fsize 3898
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((EXPLICIT 1061 . 1069))
+      :lexical-table 
+        '(("GREG_DURATION_HPP___")
+          )
+)
+    (semanticdb-table "greg_date.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GREG_DATE_HPP___" variable (:constant-flag t) nil [34 50])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [372 408])
+            ("boost/date_time/date.hpp" include (:system-flag t) nil [409 444])
+            ("boost/date_time/special_defs.hpp" include (:system-flag t) nil [445 488])
+            ("boost/date_time/gregorian/greg_calendar.hpp" include (:system-flag t) nil [489 543])
+            ("boost/date_time/gregorian/greg_duration.hpp" include (:system-flag t) nil [544 598])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("date_time::special_values" using (:type ("date_time::special_values" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [692 724])
+                            ("date_time::not_special" using (:type ("date_time::not_special" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [727 756])
+                            ("date_time::neg_infin" using (:type ("date_time::neg_infin" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [759 786])
+                            ("date_time::pos_infin" using (:type ("date_time::pos_infin" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [789 816])
+                            ("date_time::not_a_date_time" using (:type ("date_time::not_a_date_time" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [819 852])
+                            ("date_time::max_date_time" using (:type ("date_time::max_date_time" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [855 886])
+                            ("date_time::min_date_time" using (:type ("date_time::min_date_time" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [889 920])
+                            ("date" type
+                               (:superclasses 
+                                  ( ("date_time::date" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1289 1296])
+                                    ("year_type" type
+                                       (:typedef ("gregorian_calendar::year_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1301 1349])
+                                    ("month_type" type
+                                       (:typedef ("gregorian_calendar::month_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1354 1404])
+                                    ("day_type" type
+                                       (:typedef ("gregorian_calendar::day_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1409 1455])
+                                    ("day_of_year_type" type
+                                       (:typedef ("gregorian_calendar::day_of_year_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1460 1522])
+                                    ("ymd_type" type
+                                       (:typedef ("gregorian_calendar::ymd_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1527 1573])
+                                    ("date_rep_type" type
+                                       (:typedef ("gregorian_calendar::date_rep_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1578 1634])
+                                    ("date_int_type" type
+                                       (:typedef ("gregorian_calendar::date_int_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1639 1695])
+                                    ("duration_type" type
+                                       (:typedef ("date_duration" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1700 1737])
+                                    ("date" function
+                                       (:constructor-flag t
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1849 1972])
+                                    ("date" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("y" variable (:type ("year_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2072 2084])
+                                            ("m" variable (:type ("month_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2085 2098])
+                                            ("d" variable (:type ("day_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2099 2110]))                                          
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2067 2365])
+                                    ("date" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("ymd" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ymd_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2430 2450]))                                          
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2425 2527])
+                                    ("date" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("date_int_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2578 2603]))                                          
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2573 2678])
+                                    ("date" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("rhs" variable (:type ("date_rep_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2729 2747]))                                          
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2724 2822])
+                                    ("date" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("sv" variable (:type ("special_values" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2906 2924]))                                          
+                                        :type ("date" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2901 3198])
+                                    ("julian_day" function (:type ("date_int_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3253 3393])
+                                    ("day_of_year" function (:type ("day_of_year_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3461 3675])
+                                    ("modjulian_day" function (:type ("date_int_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3739 3885])
+                                    ("week_number" function (:type "int") (reparse-symbol classsubparts) [3935 4060])
+                                    ("day_number" function (:type ("date_int_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4113 4177])
+                                    ("end_of_month" function (:type ("date" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4231 4438])
+                                    ("private" label nil (reparse-symbol classsubparts) [4443 4451]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1205 4457]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [618 4462]))                  
+                :type "namespace")
+                nil [600 4464]))          
+      :file "greg_date.hpp"
+      :pointmax 4497
+      :fsize 4496
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((EXPLICIT 2892 . 2900) (EXPLICIT 2715 . 2723) (EXPLICIT 2564 . 2572) (EXPLICIT 2416 . 2424))
+      :lexical-table 
+        '(("GREG_DATE_HPP___")
+          )
+)
+    (semanticdb-table "greg_weekday.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GREG_WEEKDAY_HPP___" variable (:constant-flag t) nil [37 56])
+            ("boost/date_time/constrained_value.hpp" include nil nil [391 439])
+            ("boost/date_time/date_defs.hpp" include nil nil [440 480])
+            ("boost/date_time/compiler_config.hpp" include nil nil [481 527])
+            ("stdexcept" include (:system-flag t) nil [528 548])
+            ("string" include (:system-flag t) nil [549 566])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("date_time::Sunday" using (:type ("date_time::Sunday" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [652 676])
+                            ("date_time::Monday" using (:type ("date_time::Monday" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [679 703])
+                            ("date_time::Tuesday" using (:type ("date_time::Tuesday" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [706 731])
+                            ("date_time::Wednesday" using (:type ("date_time::Wednesday" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [734 761])
+                            ("date_time::Thursday" using (:type ("date_time::Thursday" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [764 790])
+                            ("date_time::Friday" using (:type ("date_time::Friday" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [793 817])
+                            ("date_time::Saturday" using (:type ("date_time::Saturday" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [820 846])
+                            ("bad_weekday" type
+                               (:superclasses 
+                                  ( ("std::out_of_range" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("bad_weekday" function
+                                       (:constructor-flag t
+                                        :type ("bad_weekday" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [967 1048]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [913 1053])
+                            ("greg_weekday_policies" type
+                               (:typedef ("CV::simple_exception_policy" type
+                                     (:template-specifier 
+                                        ( ("unsigned short" type nil nil nil)
+                                          ("0")
+                                          ("6")
+                                          ("bad_weekday" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1056 1149])
+                            ("greg_weekday_rep" type
+                               (:typedef ("CV::constrained_value" type
+                                     (:template-specifier 
+                                        ( ("greg_weekday_policies" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1152 1222])
+                            ("greg_weekday_rep" variable (:type "int") (reparse-symbol namespacesubparts) [1337 1887]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [586 1892]))                  
+                :type "namespace")
+                nil [568 1894]))          
+      :file "greg_weekday.hpp"
+      :pointmax 1927
+      :fsize 1926
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((PUBLIC 1330 . 1336) (punctuation 1328 . 1329) (symbol 1315 . 1327) (symbol 1294 . 1314) (CLASS 1288 . 1293))
+      :lexical-table 
+        '(("GREG_WEEKDAY_HPP___")
+          )
+)
+    (semanticdb-table "greg_day_of_year.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GREG_DAY_OF_YEAR_HPP___" variable (:constant-flag t) nil [41 64])
+            ("boost/date_time/constrained_value.hpp" include nil nil [388 436])
+            ("stdexcept" include (:system-flag t) nil [437 457])
+            ("string" include (:system-flag t) nil [458 475])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("bad_day_of_year" type
+                               (:superclasses 
+                                  ( ("std::out_of_range" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("bad_day_of_year" function
+                                       (:constructor-flag t
+                                        :type ("bad_day_of_year" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [624 733]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [566 738])
+                            ("greg_day_of_year_policies" type
+                               (:typedef ("CV::simple_exception_policy" type
+                                     (:template-specifier 
+                                        ( ("unsigned short" type nil nil nil)
+                                          ("1")
+                                          ("366")
+                                          ("bad_day_of_year" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [781 881])
+                            ("greg_day_of_year_rep" type
+                               (:typedef ("CV::constrained_value" type
+                                     (:template-specifier 
+                                        ( ("greg_day_of_year_policies" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [957 1035]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [495 1039]))                  
+                :type "namespace")
+                nil [477 1041]))          
+      :file "greg_day_of_year.hpp"
+      :pointmax 1074
+      :fsize 1073
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GREG_DAY_OF_YEAR_HPP___")
+          )
+)
+    (semanticdb-table "greg_ymd.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DATE_TIME_GREG_YMD_HPP__" variable (:constant-flag t) nil [42 66])
+            ("boost/date_time/year_month_day.hpp" include nil nil [390 435])
+            ("boost/date_time/special_defs.hpp" include nil nil [436 479])
+            ("boost/date_time/gregorian/greg_day.hpp" include nil nil [480 529])
+            ("boost/date_time/gregorian/greg_year.hpp" include nil nil [530 580])
+            ("boost/date_time/gregorian/greg_month.hpp" include nil nil [581 632])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("greg_year_month_day" type
+                               (:typedef ("date_time::year_month_day_base" type
+                                     (:template-specifier 
+                                        ( ("greg_year" type nil nil nil)
+                                          ("greg_month" type nil nil nil)
+                                          ("greg_day" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [679 855]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [652 866]))                  
+                :type "namespace")
+                nil [634 868]))          
+      :file "greg_ymd.hpp"
+      :pointmax 905
+      :fsize 904
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DATE_TIME_GREG_YMD_HPP__")
+          )
+)
+    (semanticdb-table "greg_day.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GREG_DAY_HPP___" variable (:constant-flag t) nil [33 48])
+            ("boost/date_time/constrained_value.hpp" include nil nil [372 420])
+            ("stdexcept" include (:system-flag t) nil [421 441])
+            ("string" include (:system-flag t) nil [442 459])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("bad_day_of_month" type
+                               (:superclasses 
+                                  ( ("std::out_of_range" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("bad_day_of_month" function
+                                       (:constructor-flag t
+                                        :type ("bad_day_of_month" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [619 729])
+                                    ("bad_day_of_month" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [831 852]))                                          
+                                        :type ("bad_day_of_month" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [814 890]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [560 895])
+                            ("greg_day_policies" type
+                               (:typedef ("CV::simple_exception_policy" type
+                                     (:template-specifier 
+                                        ( ("unsigned short" type nil nil nil)
+                                          ("1")
+                                          ("31")
+                                          ("bad_day_of_month" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [970 1065])
+                            ("greg_day_rep" type
+                               (:typedef ("CV::constrained_value" type
+                                     (:template-specifier 
+                                        ( ("greg_day_policies" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1126 1188])
+                            ("greg_day" type
+                               (:superclasses 
+                                  ( ("greg_day_rep" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1553 1560])
+                                    ("greg_day" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("day_of_month" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1574 1602]))                                          
+                                        :type ("greg_day" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1565 1634])
+                                    ("as_number" function (:type "unsigned short") (reparse-symbol classsubparts) [1639 1688])
+                                    ("private" label nil (reparse-symbol classsubparts) [1745 1753]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1512 1763]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [479 1768]))                  
+                :type "namespace")
+                nil [461 1770]))          
+      :file "greg_day.hpp"
+      :pointmax 1803
+      :fsize 1802
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((semantic-list 1726 . 1742) (CONST 1720 . 1725) (semantic-list 1716 . 1718) (SHORT 1711 . 1716) (UNSIGNED 1702 . 1710) (OPERATOR 1693 . 1701))
+      :lexical-table 
+        '(("GREG_DAY_HPP___")
+          )
+)
+    (semanticdb-table "greg_year.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GREG_YEAR_HPP___" variable (:constant-flag t) nil [34 50])
+            ("boost/date_time/constrained_value.hpp" include nil nil [374 422])
+            ("stdexcept" include (:system-flag t) nil [423 443])
+            ("string" include (:system-flag t) nil [444 461])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("bad_year" type
+                               (:superclasses 
+                                  ( ("std::out_of_range" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("bad_year" function
+                                       (:constructor-flag t
+                                        :type ("bad_year" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [597 698]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [546 703])
+                            ("greg_year_policies" type
+                               (:typedef ("CV::simple_exception_policy" type
+                                     (:template-specifier 
+                                        ( ("unsigned short" type nil nil nil)
+                                          ("1400")
+                                          ("10000")
+                                          ("bad_year" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [774 868])
+                            ("greg_year_rep" type
+                               (:typedef ("CV::constrained_value" type
+                                     (:template-specifier 
+                                        ( ("greg_year_policies" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [922 986])
+                            ("greg_year" type
+                               (:superclasses 
+                                  ( ("greg_year_rep" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1447 1454])
+                                    ("greg_year" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("year" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1469 1489]))                                          
+                                        :type ("greg_year" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1459 1514])
+                                    ("private" label nil (reparse-symbol classsubparts) [1571 1579]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1404 1589]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [481 1594]))                  
+                :type "namespace")
+                nil [463 1596]))          
+      :file "greg_year.hpp"
+      :pointmax 1629
+      :fsize 1628
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((semantic-list 1552 . 1568) (CONST 1546 . 1551) (semantic-list 1542 . 1544) (SHORT 1537 . 1542) (UNSIGNED 1528 . 1536) (OPERATOR 1519 . 1527))
+      :lexical-table 
+        '(("GREG_YEAR_HPP___")
+          )
+)
+    (semanticdb-table "greg_month.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GREG_MONTH_HPP___" variable (:constant-flag t) nil [35 52])
+            ("boost/date_time/constrained_value.hpp" include nil nil [387 435])
+            ("boost/date_time/date_defs.hpp" include nil nil [436 476])
+            ("boost/shared_ptr.hpp" include nil nil [477 508])
+            ("boost/date_time/compiler_config.hpp" include nil nil [509 555])
+            ("stdexcept" include (:system-flag t) nil [556 576])
+            ("string" include (:system-flag t) nil [577 594])
+            ("map" include (:system-flag t) nil [595 609])
+            ("algorithm" include (:system-flag t) nil [610 630])
+            ("cctype" include (:system-flag t) nil [631 648])
+            ("boost" type
+               (:members 
+                  ( ("gregorian" type
+                       (:members 
+                          ( ("months_of_year" type
+                               (:typedef ("date_time::months_of_year" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [693 742])
+                            ("date_time::Jan" using (:type ("date_time::Jan" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [787 808])
+                            ("date_time::Feb" using (:type ("date_time::Feb" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [811 832])
+                            ("date_time::Mar" using (:type ("date_time::Mar" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [835 856])
+                            ("date_time::Apr" using (:type ("date_time::Apr" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [859 880])
+                            ("date_time::May" using (:type ("date_time::May" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [883 904])
+                            ("date_time::Jun" using (:type ("date_time::Jun" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [907 928])
+                            ("date_time::Jul" using (:type ("date_time::Jul" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [931 952])
+                            ("date_time::Aug" using (:type ("date_time::Aug" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [955 976])
+                            ("date_time::Sep" using (:type ("date_time::Sep" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [979 1000])
+                            ("date_time::Oct" using (:type ("date_time::Oct" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1003 1024])
+                            ("date_time::Nov" using (:type ("date_time::Nov" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1027 1048])
+                            ("date_time::Dec" using (:type ("date_time::Dec" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1051 1072])
+                            ("date_time::NotAMonth" using (:type ("date_time::NotAMonth" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1075 1102])
+                            ("date_time::NumMonths" using (:type ("date_time::NumMonths" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1105 1132])
+                            ("bad_month" type
+                               (:superclasses 
+                                  ( ("std::out_of_range" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("bad_month" function
+                                       (:constructor-flag t
+                                        :type ("bad_month" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1270 1355]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1218 1360])
+                            ("greg_month_policies" type
+                               (:typedef ("CV::simple_exception_policy" type
+                                     (:template-specifier 
+                                        ( ("unsigned short" type nil nil nil)
+                                          ("1")
+                                          ("12")
+                                          ("bad_month" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1413 1503])
+                            ("greg_month_rep" type
+                               (:typedef ("CV::constrained_value" type
+                                     (:template-specifier 
+                                        ( ("greg_month_policies" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1574 1640])
+                            ("greg_month_rep" variable (:type "int") (reparse-symbol namespacesubparts) [1762 3450]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [668 3453]))                  
+                :type "namespace")
+                nil [650 3455]))          
+      :file "greg_month.hpp"
+      :pointmax 3488
+      :fsize 3487
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((PUBLIC 1755 . 1761) (punctuation 1753 . 1754) (symbol 1742 . 1752) (symbol 1721 . 1741) (CLASS 1715 . 1720))
+      :lexical-table 
+        '(("GREG_MONTH_HPP___")
+          )
+))
+  :file "!usr!include!boost!date_time!gregorian!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

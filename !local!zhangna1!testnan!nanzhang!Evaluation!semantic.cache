@@ -56,12 +56,65 @@ trajectory and the estimated trajectory.
       :file "evaluate_ate.py"
       :pointmax 8438
       :fsize 8437
-      :lastmodtime '(21953 49877 397124 459000)
-      :unmatched-syntax nil)
+      :lastmodtime '(21979 57520 698422 945000)
+      :unmatched-syntax '(($EOI 8438 . 8438) ($EOI 8439 . 8439) ($EOI 8438 . 8438) ($EOI 8444 . 8444) ($EOI 8443 . 8443)))
     (semanticdb-table "associate.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+The Kinect provides the color and depth images in an un-synchronized way. This means that the set of time stamps from the color images do not intersect with those of the depth images. Therefore, we need some way of associating color images to depth images.
+
+For this purpose, you can use the ''associate.py'' script. It reads the time stamps from the rgb.txt file and the depth.txt file, and joins them by finding the best matches.
+\"\"\"" code nil nil [1665 2104])
+            ("argparse" include nil nil [2106 2121])
+            ("sys" include nil nil [2122 2132])
+            ("os" include nil nil [2133 2142])
+            ("numpy" include nil nil [2143 2155])
+            ("read_file_list" function
+               (:documentation "
+    Reads a trajectory from a text file. 
+    
+    File format:
+    The file format is \"stamp d1 d2 d3 ...\", where stamp denotes the time stamp (to be matched)
+    and \"d1 d2 d3..\" is arbitary data (e.g., a 3D position and 3D orientation) associated to this timestamp. 
+    
+    Input:
+    filename -- File name
+    
+    Output:
+    dict -- dictionary of (stamp,data) tuples
+    
+    "
+                :arguments 
+                  ( ("filename" variable nil (reparse-symbol function_parameters) [2177 2185]))                  )
+                nil [2158 2896])
+            ("associate" function
+               (:documentation "
+    Associate two dictionaries of (stamp,data). As the time stamps never match exactly, we aim 
+    to find the closest match for every input tuple.
+    
+    Input:
+    first_list -- first dictionary of (stamp,data) tuples
+    second_list -- second dictionary of (stamp,data) tuples
+    offset -- time offset between both dictionaries (e.g., to model the delay between the sensors)
+    max_difference -- search radius for candidate generation
+
+    Output:
+    matches -- list of matched tuples ((stamp1,data1),(stamp2,data2))
+    
+    "
+                :arguments 
+                  ( ("first_list" variable nil (reparse-symbol function_parameters) [2911 2921])
+                    ("second_list" variable nil (reparse-symbol function_parameters) [2923 2934])
+                    ("offset" variable nil (reparse-symbol function_parameters) [2935 2941])
+                    ("max_difference" variable nil (reparse-symbol function_parameters) [2942 2956]))                  )
+                nil [2897 4076])
+            ("if" code nil nil [4077 5309]))          
       :file "associate.py"
+      :pointmax 5331
       :fsize 5330
-      :lastmodtime '(21953 49877 397124 459000)))
+      :lastmodtime '(21953 49877 397124 459000)
+      :unmatched-syntax nil))
   :file "!local!zhangna1!testnan!nanzhang!Evaluation!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

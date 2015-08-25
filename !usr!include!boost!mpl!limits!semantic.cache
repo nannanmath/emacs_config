@@ -1,0 +1,53 @@
+;; Object limits/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "limits/"
+  :tables
+  (list
+    (semanticdb-table "arity.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_LIMITS_ARITY_HPP_INCLUDED" variable (:constant-flag t) nil [54 89])
+            ("BOOST_MPL_LIMIT_METAFUNCTION_ARITY" variable (:constant-flag t) nil [549 583]))          
+      :file "arity.hpp"
+      :pointmax 640
+      :fsize 639
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_LIMITS_ARITY_HPP_INCLUDED")
+          ("BOOST_MPL_LIMIT_METAFUNCTION_ARITY" . ((number "5" 584 . 585)))
+          )
+)
+    (semanticdb-table "list.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_LIMITS_LIST_HPP_INCLUDED" variable (:constant-flag t) nil [53 87])
+            ("BOOST_MPL_LIMIT_LIST_SIZE" variable (:constant-flag t) nil [537 562]))          
+      :file "list.hpp"
+      :pointmax 619
+      :fsize 618
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_LIMIT_LIST_SIZE" . ((number "20" 563 . 565)))
+          ("BOOST_MPL_LIMITS_LIST_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "vector.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_LIMITS_VECTOR_HPP_INCLUDED" variable (:constant-flag t) nil [55 91])
+            ("BOOST_MPL_LIMIT_VECTOR_SIZE" variable (:constant-flag t) nil [545 572]))          
+      :file "vector.hpp"
+      :pointmax 631
+      :fsize 630
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_LIMITS_VECTOR_HPP_INCLUDED")
+          ("BOOST_MPL_LIMIT_VECTOR_SIZE" . ((number "20" 573 . 575)))
+          )
+))
+  :file "!usr!include!boost!mpl!limits!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

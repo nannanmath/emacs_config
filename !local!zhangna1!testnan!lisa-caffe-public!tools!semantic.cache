@@ -1,0 +1,210 @@
+;; Object tools/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tools/"
+  :tables
+  (list
+    (semanticdb-table "caffe.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("glog/logging.h" include (:system-flag t) nil [1 26])
+            ("cstring" include (:system-flag t) nil [28 46])
+            ("map" include (:system-flag t) nil [47 61])
+            ("string" include (:system-flag t) nil [62 79])
+            ("vector" include (:system-flag t) nil [80 97])
+            ("boost/algorithm/string.hpp" include nil nil [99 136])
+            ("caffe/caffe.hpp" include nil nil [137 163])
+            ("caffe::Blob" using (:type ("caffe::Blob" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [165 183])
+            ("caffe::Caffe" using (:type ("caffe::Caffe" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [184 203])
+            ("caffe::Net" using (:type ("caffe::Net" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [204 221])
+            ("caffe::Layer" using (:type ("caffe::Layer" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [222 241])
+            ("caffe::shared_ptr" using (:type ("caffe::shared_ptr" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [242 266])
+            ("caffe::Timer" using (:type ("caffe::Timer" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [267 286])
+            ("caffe::vector" using (:type ("caffe::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [287 307])
+            ("DEFINE_int32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("gpu" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [323 327]))                  
+                :type "int")
+                nil [310 375])
+            ("DEFINE_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("solver" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [390 397]))                  
+                :type "int")
+                nil [376 458])
+            ("DEFINE_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [473 479]))                  
+                :type "int")
+                nil [459 540])
+            ("DEFINE_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("snapshot" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [555 564]))                  
+                :type "int")
+                nil [541 632])
+            ("DEFINE_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("weights" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [647 655]))                  
+                :type "int")
+                nil [633 777])
+            ("DEFINE_int32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("iterations" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [791 802]))                  
+                :type "int")
+                nil [778 847])
+            ("BrewFunction" function
+               (:prototype-flag t
+                :function-pointer t
+                :type "int")
+                nil [898 920])
+            ("BrewMap" type
+               (:typedef ("std::map" type
+                     (:template-specifier 
+                        ( ("caffe::string" type nil nil nil)
+                          ("BrewFunction" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [921 975])
+            ("g_brew_map" variable (:type ("BrewMap" type (:type "class") nil nil)) nil [976 995])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("RegisterBrewFunction" variable (:constant-flag t) nil [1007 1027])
+            ("GetBrewFunction" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("caffe::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1258 1284]))                  
+                :type ("BrewFunction" type (:type "class") nil nil))
+                nil [1222 1670])
+            ("device_query" function (:type "int") nil [1907 2122])
+            ("unnamed" type
+               (:members 
+                  ( ("device_query" variable (:type "int") (reparse-symbol namespacesubparts) nil)
+                    ("device_query" variable (:type "int") (reparse-symbol namespacesubparts) nil))                  
+                :type "namespace")
+                nil [2123 2157])
+            ("CopyLayers" function
+               (:arguments 
+                  ( ("solver" variable
+                       (:pointer 1
+                        :type ("caffe::Solver" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2262 2291])
+                    ("model_list" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2292 2322]))                  
+                :type "void")
+                nil [2246 2731])
+            ("train" function (:type "int") nil [2762 4044])
+            ("unnamed" type
+               (:members 
+                  ( ("train" variable (:type "int") (reparse-symbol namespacesubparts) nil)
+                    ("train" variable (:type "int") (reparse-symbol namespacesubparts) nil))                  
+                :type "namespace")
+                nil [4045 4072])
+            ("test" function (:type "int") nil [4100 6302])
+            ("unnamed" type
+               (:members 
+                  ( ("test" variable (:type "int") (reparse-symbol namespacesubparts) nil)
+                    ("test" variable (:type "int") (reparse-symbol namespacesubparts) nil))                  
+                :type "namespace")
+                nil [6303 6329])
+            ("time" function (:type "int") nil [6383 9917])
+            ("unnamed" type
+               (:members 
+                  ( ("time" variable (:type "int") (reparse-symbol namespacesubparts) nil)
+                    ("time" variable (:type "int") (reparse-symbol namespacesubparts) nil))                  
+                :type "namespace")
+                nil [9918 9944])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9956 9965])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9966 9978]))                  
+                :type "int")
+                nil [9947 10623]))          
+      :file "caffe.cpp"
+      :pointmax 10624
+      :fsize 10623
+      :lastmodtime '(21979 58188 666440 49000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RegisterBrewFunction" (spp-arg-list ("func") 1027 . 1033) . ((NAMESPACE "namespace" 1036 . 1045) (semantic-list "{ \\
+class __Registerer_##func { \\
+ public: /* NOLINT */ \\
+  __Registerer_##func() { \\
+    g_brew_map[#func] = &func; \\
+  } \\
+}; \\
+__Registerer_##func g_registerer_##func; \\
+}" 1046 . 1220)))
+          )
+))
+  :file "!local!zhangna1!testnan!lisa-caffe-public!tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

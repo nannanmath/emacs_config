@@ -1,0 +1,436 @@
+;; Object tools/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tools/"
+  :tables
+  (list
+    (semanticdb-table "config.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MATH_TOOLS_CONFIG_HPP" variable (:constant-flag t) nil [275 302])
+            ("boost/config.hpp" include (:system-flag t) nil [341 368])
+            ("boost/cstdint.hpp" include (:system-flag t) nil [369 397])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [422 460])
+            ("algorithm" include (:system-flag t) nil [461 481])
+            ("boost/config/no_tr1/cmath.hpp" include (:system-flag t) nil [502 542])
+            ("climits" include (:system-flag t) nil [543 561])
+            ("cfloat" include (:system-flag t) nil [562 579])
+            ("boost/math/tools/user.hpp" include (:system-flag t) nil [680 716])
+            ("BOOST_MATH_USE_C99" variable (:constant-flag t) nil [3567 3585])
+            ("BOOST_MATH_EXPLICIT_TEMPLATE_TYPE" variable (:constant-flag t) nil [5016 5049])
+            ("BOOST_MATH_EXPLICIT_TEMPLATE_TYPE_SPEC" variable (:constant-flag t) nil [5063 5101])
+            ("BOOST_MATH_EXPLICIT_TEMPLATE_NON_TYPE" variable (:constant-flag t) nil [5115 5152])
+            ("BOOST_MATH_EXPLICIT_TEMPLATE_NON_TYPE_SPEC" variable (:constant-flag t) nil [5169 5211])
+            ("BOOST_MATH_APPEND_EXPLICIT_TEMPLATE_TYPE" variable (:constant-flag t) nil [5229 5269])
+            ("BOOST_MATH_APPEND_EXPLICIT_TEMPLATE_TYPE_SPEC" variable (:constant-flag t) nil [5283 5328])
+            ("BOOST_MATH_APPEND_EXPLICIT_TEMPLATE_NON_TYPE" variable (:constant-flag t) nil [5342 5386])
+            ("BOOST_MATH_APPEND_EXPLICIT_TEMPLATE_NON_TYPE_SPEC" variable (:constant-flag t) nil [5403 5452])
+            ("BOOST_MATH_SMALL_CONSTANT" variable (:constant-flag t) nil [5777 5802])
+            ("BOOST_MATH_POLY_METHOD" variable (:constant-flag t) nil [6357 6379])
+            ("BOOST_MATH_RATIONAL_METHOD" variable (:constant-flag t) nil [6392 6418])
+            ("BOOST_MATH_INT_TABLE_TYPE" variable (:constant-flag t) nil [6431 6456])
+            ("BOOST_MATH_INT_VALUE_SUFFIX" variable (:constant-flag t) nil [6478 6505])
+            ("BOOST_MATH_MAX_POLY_ORDER" variable (:constant-flag t) nil [6856 6881])
+            ("BOOST_MATH_CONTROL_FP" variable (:constant-flag t) nil [7911 7932])
+            ("BOOST_MATH_STD_USING_CORE" variable (:constant-flag t) nil [7992 8017])
+            ("BOOST_MATH_STD_USING" variable (:constant-flag t) nil [8509 8529])
+            ("boost" type
+               (:members 
+                  ( ("math" type
+                       (:members 
+                          ( ("tools" type
+                               (:members 
+                                  ( ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                                       (:arguments 
+                                          ( ("a" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8674 8678])
+                                            ("b" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8679 8683])
+                                            ("c" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8684 8688]))                                          
+                                        :type ("max" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8637 8735])
+                                    ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                                       (:arguments 
+                                          ( ("a" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8802 8806])
+                                            ("b" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8807 8811])
+                                            ("c" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8812 8816])
+                                            ("d" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8817 8821]))                                          
+                                        :type ("max" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8765 8883]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [8590 8886])
+                            ("suppress_unused_variable_warning" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8964 8973]))                                  )
+                                (reparse-symbol namespacesubparts) [8907 8977]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [8574 8980]))                  
+                :type "namespace")
+                nil [8557 8981])
+            ("boost/detail/fenv.hpp" include (:system-flag t) nil [9141 9176])
+            ("BOOST_FPU_EXCEPTION_GUARD" variable (:constant-flag t) nil [9859 9884])
+            ("BOOST_MATH_INSTRUMENT_FPU" variable (:constant-flag t) nil [9897 9922])
+            ("BOOST_MATH_INSTRUMENT_CODE" variable (:constant-flag t) nil [10412 10438])
+            ("BOOST_MATH_INSTRUMENT_VARIABLE" variable (:constant-flag t) nil [10452 10482]))          
+      :file "config.hpp"
+      :pointmax 10541
+      :fsize 10540
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((symbol 8763 . 8764) (INLINE 8756 . 8762) (punctuation 8754 . 8755) (symbol 8753 . 8754) (CLASS 8747 . 8752) (punctuation 8746 . 8747) (TEMPLATE 8737 . 8745) (symbol 8635 . 8636) (INLINE 8628 . 8634) (punctuation 8626 . 8627) (symbol 8625 . 8626) (CLASS 8619 . 8624) (punctuation 8618 . 8619) (TEMPLATE 8609 . 8617))
+      :lexical-table 
+        '(("BOOST_MATH_TOOLS_CONFIG_HPP")
+          ("BOOST_MATH_POLY_METHOD" . ((number "3" 6380 . 6381)))
+          ("BOOST_MATH_MAX_POLY_ORDER" . ((number "17" 6882 . 6884)))
+          ("BOOST_MATH_INSTRUMENT_VARIABLE" (spp-arg-list ("name") 10482 . 10488))
+          ("BOOST_MATH_EXPLICIT_TEMPLATE_TYPE_SPEC" (spp-arg-list ("t") 5101 . 5104))
+          ("BOOST_MATH_STD_USING_CORE" . 
+              ((USING "using" 8023 . 8028) (symbol "std" 8029 . 8032) (punctuation ":" 8032 . 8033) (punctuation ":" 8033 . 8034) (symbol "abs" 8034 . 8037) (punctuation ";" 8037 . 8038) (USING "using" 8043 . 8048) (symbol "std" 8049 . 8052) (punctuation ":" 8052 . 8053) (punctuation ":" 8053 . 8054) (symbol "acos" 8054 . 8058) (punctuation ";" 8058 . 8059) (USING "using" 8064 . 8069) (symbol "std" 8070 . 8073) (punctuation ":" 8073 . 8074) (punctuation ":" 8074 . 8075) (symbol "cos" 8075 . 8078) (punctuation ";" 8078 . 8079) (USING "using" 8084 . 8089) (symbol "std" 8090 . 8093) (punctuation ":" 8093 . 8094) (punctuation ":" 8094 . 8095) (symbol "fmod" 8095 . 8099) (punctuation ";" 8099 . 8100) (USING "using" 8105 . 8110) (symbol "std" 8111 . 8114) (punctuation ":" 8114 . 8115) (punctuation ":" 8115 . 8116) (symbol "modf" 8116 . 8120) (punctuation ";" 8120 . 8121) (USING "using" 8126 . 8131) (symbol "std" 8132 . 8135) (punctuation ":" 8135 . 8136) (punctuation ":" 8136 . 8137) (symbol "tan" 8137 . 8140) (punctuation ";" 8140 . 8141) (USING "using" 8146 . 8151) (symbol "std" 8152 . 8155) (punctuation ":" 8155 . 8156) (punctuation ":" 8156 . 8157) (symbol "asin" 8157 . 8161) (punctuation ";" 8161 . 8162) (USING "using" 8167 . 8172) (symbol "std" 8173 . 8176) (punctuation ":" 8176 . 8177) (punctuation ":" 8177 . 8178) (symbol "cosh" 8178 . 8182) (punctuation ";" 8182 . 8183) (USING "using" 8188 . 8193) (symbol "std" 8194 . 8197) (punctuation ":" 8197 . 8198) (punctuation ":" 8198 . 8199) (symbol "frexp" 8199 . 8204) (punctuation ";" 8204 . 8205) (USING "using" 8210 . 8215) (symbol "std" 8216 . 8219) (punctuation ":" 8219 . 8220) (punctuation ":" 8220 . 8221) (symbol "pow" 8221 . 8224) (punctuation ";" 8224 . 8225) (USING "using" 8230 . 8235) (symbol "std" 8236 . 8239) (punctuation ":" 8239 . 8240) (punctuation ":" 8240 . 8241) (symbol "tanh" 8241 . 8245) (punctuation ";" 8245 . 8246) (USING "using" 8251 . 8256) (symbol "std" 8257 . 8260) (punctuation ":" 8260 . 8261) (punctuation ":" 8261 . 8262) (symbol "atan" 8262 . 8266) (punctuation ";" 8266 . 8267) (USING "using" 8272 . 8277) (symbol "std" 8278 . 8281) (punctuation ":" 8281 . 8282) (punctuation ":" 8282 . 8283) (symbol "exp" 8283 . 8286) (punctuation ";" 8286 . 8287) (USING "using" 8292 . 8297) (symbol "std" 8298 . 8301) (punctuation ":" 8301 . 8302) (punctuation ":" 8302 . 8303) (symbol "ldexp" 8303 . 8308) (punctuation ";" 8308 . 8309) (USING "using" 8314 . 8319) (symbol "std" 8320 . 8323) (punctuation ":" 8323 . 8324) (punctuation ":" 8324 . 8325) (symbol "sin" 8325 . 8328) (punctuation ";" 8328 . 8329) (USING "using" 8334 . 8339) (symbol "std" 8340 . 8343) (punctuation ":" 8343 . 8344) (punctuation ":" 8344 . 8345) (symbol "atan2" 8345 . 8350) (punctuation ";" 8350 . 8351) (USING "using" 8356 . 8361) (symbol "std" 8362 . 8365) (punctuation ":" 8365 . 8366) (punctuation ":" 8366 . 8367) (symbol "fabs" 8367 . 8371) (punctuation ";" 8371 . 8372) (USING "using" 8377 . 8382) (symbol "std" 8383 . 8386) (punctuation ":" 8386 . 8387) (punctuation ":" 8387 . 8388) (symbol "log" 8388 . 8391) (punctuation ";" 8391 . 8392) (USING "using" 8397 . 8402) (symbol "std" 8403 . 8406) (punctuation ":" 8406 . 8407) (punctuation ":" 8407 . 8408) (symbol "sinh" 8408 . 8412) (punctuation ";" 8412 . 8413) (USING "using" 8418 . 8423) (symbol "std" 8424 . 8427) (punctuation ":" 8427 . 8428) (punctuation ":" 8428 . 8429) (symbol "ceil" 8429 . 8433) (punctuation ";" 8433 . 8434) (USING "using" 8439 . 8444) (symbol "std" 8445 . 8448) (punctuation ":" 8448 . 8449) (punctuation ":" 8449 . 8450) (symbol "floor" 8450 . 8455) (punctuation ";" 8455 . 8456) (USING "using" 8461 . 8466) (symbol "std" 8467 . 8470) (punctuation ":" 8470 . 8471) (punctuation ":" 8471 . 8472) (symbol "log10" 8472 . 8477) (punctuation ";" 8477 . 8478) (USING "using" 8483 . 8488) (symbol "std" 8489 . 8492) (punctuation ":" 8492 . 8493) (punctuation ":" 8493 . 8494) (symbol "sqrt" 8494 . 8498) (punctuation ";" 8498 . 8499)))
+          ("BOOST_MATH_APPEND_EXPLICIT_TEMPLATE_TYPE" (spp-arg-list ("t") 5269 . 5272))
+          ("BOOST_MATH_INSTRUMENT_CODE" (spp-arg-list ("x") 10438 . 10441))
+          ("BOOST_MATH_USE_C99")
+          ("BOOST_MATH_EXPLICIT_TEMPLATE_NON_TYPE_SPEC" (spp-arg-list ("t" "v") 5211 . 5217))
+          ("BOOST_MATH_SMALL_CONSTANT" (spp-arg-list ("x") 5802 . 5805) . ((number "0" 5806 . 5807)))
+          ("BOOST_MATH_RATIONAL_METHOD" . ((number "3" 6419 . 6420)))
+          ("BOOST_MATH_STD_USING" . ((symbol "BOOST_MATH_STD_USING_CORE" 8530 . 8555)))
+          ("BOOST_FPU_EXCEPTION_GUARD")
+          ("BOOST_MATH_APPEND_EXPLICIT_TEMPLATE_TYPE_SPEC" (spp-arg-list ("t") 5328 . 5331))
+          ("BOOST_MATH_INT_TABLE_TYPE" (spp-arg-list ("RT" "IT") 6456 . 6464) . ((symbol "RT" 6465 . 6467)))
+          ("BOOST_MATH_APPEND_EXPLICIT_TEMPLATE_NON_TYPE" (spp-arg-list ("t" "v") 5386 . 5392))
+          ("BOOST_MATH_INSTRUMENT_FPU")
+          ("BOOST_MATH_CONTROL_FP")
+          ("BOOST_MATH_EXPLICIT_TEMPLATE_TYPE" (spp-arg-list ("t") 5049 . 5052))
+          ("BOOST_MATH_EXPLICIT_TEMPLATE_NON_TYPE" (spp-arg-list ("t" "v") 5152 . 5158))
+          ("BOOST_MATH_APPEND_EXPLICIT_TEMPLATE_NON_TYPE_SPEC" (spp-arg-list ("t" "v") 5452 . 5458))
+          ("BOOST_MATH_INT_VALUE_SUFFIX" (spp-arg-list ("RV" "SUF") 6505 . 6514) . ((spp-symbol-merge ((symbol "RV" 6515 . 6517) (punctuation "." 6519 . 6520)) 6515 . 6520) (number "0L" 6520 . 6522)))
+          )
+)
+    (semanticdb-table "real_cast.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MATH_TOOLS_REAL_CAST_HPP" variable (:constant-flag t) nil [273 303])
+            ("boost" type
+               (:members 
+                  ( ("math" type
+                       (:members 
+                          ( ("tools" type
+                               (:members 
+                                  ( ("real_cast" function
+                                       (:template 
+                                          ( ("To" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type ("To" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [455 459]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [402 505]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [378 509]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [359 530]))                  
+                :type "namespace")
+                nil [342 550]))          
+      :file "real_cast.hpp"
+      :pointmax 615
+      :fsize 614
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MATH_TOOLS_REAL_CAST_HPP")
+          )
+)
+    (semanticdb-table "user.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MATH_TOOLS_USER_HPP" variable (:constant-flag t) nil [303 328]))          
+      :file "user.hpp"
+      :pointmax 2408
+      :fsize 2407
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MATH_TOOLS_USER_HPP")
+          )
+)
+    (semanticdb-table "promotion.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MATH_PROMOTION_HPP" variable (:constant-flag t) nil [753 777])
+            ("boost/math/tools/config.hpp" include (:system-flag t) nil [838 876])
+            ("boost/type_traits/is_floating_point.hpp" include (:system-flag t) nil [877 927])
+            ("boost/type_traits/is_integral.hpp" include (:system-flag t) nil [961 1005])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [1032 1079])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [1109 1149])
+            ("boost/type_traits/remove_cv.hpp" include (:system-flag t) nil [1171 1213])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [1273 1300])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [1326 1354])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [1380 1407])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [1433 1461])
+            ("boost" type
+               (:members 
+                  ( ("math" type
+                       (:members 
+                          ( ("tools" type
+                               (:members 
+                                  ( ("promote_arg" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::if_::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2853 2917]))                                          )
+                                        (reparse-symbol namespacesubparts) [2743 2926])
+                                    ("promote_arg" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("float")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3066 3085]))                                          
+                                        :template-specifier 
+                                          ( ("float" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3026 3088])
+                                    ("promote_arg" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3135 3155]))                                          
+                                        :template-specifier 
+                                          ( ("double" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3095 3158])
+                                    ("promote_arg" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("long double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3211 3236]))                                          
+                                        :template-specifier 
+                                          ( ("long double" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3165 3239])
+                                    ("promote_arg" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3285 3305]))                                          
+                                        :template-specifier 
+                                          ( ("int" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3246 3308])
+                                    ("promote_args_2" type
+                                       (:template 
+                                          ( ("T1" type (:type "class") nil nil)
+                                            ("T2" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("T1P" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3568 3577])
+                                            ("T2P" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3644 3653])
+                                            ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4478 4488]))                                          )
+                                        (reparse-symbol namespacesubparts) [3316 4497])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("float")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4663 4682]))                                          
+                                        :template-specifier 
+                                          ( ("float" type nil nil nil)
+                                            ("float" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4613 4685])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4743 4763]))                                          
+                                        :template-specifier 
+                                          ( ("double" type nil nil nil)
+                                            ("double" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4692 4766])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("long double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4835 4860]))                                          
+                                        :template-specifier 
+                                          ( ("long double" type nil nil nil)
+                                            ("long double" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4773 4863])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4917 4937]))                                          
+                                        :template-specifier 
+                                          ( ("int" type nil nil nil)
+                                            ("int" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4870 4940])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4996 5016]))                                          
+                                        :template-specifier 
+                                          ( ("int" type nil nil nil)
+                                            ("float" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4947 5019])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5075 5095]))                                          
+                                        :template-specifier 
+                                          ( ("float" type nil nil nil)
+                                            ("int" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5026 5098])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5155 5175]))                                          
+                                        :template-specifier 
+                                          ( ("int" type nil nil nil)
+                                            ("double" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5105 5178])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5235 5255]))                                          
+                                        :template-specifier 
+                                          ( ("double" type nil nil nil)
+                                            ("int" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5185 5258])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("long double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5320 5345]))                                          
+                                        :template-specifier 
+                                          ( ("int" type nil nil nil)
+                                            ("long double" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5265 5348])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("long double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5410 5435]))                                          
+                                        :template-specifier 
+                                          ( ("long double" type nil nil nil)
+                                            ("int" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5355 5438])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5497 5517]))                                          
+                                        :template-specifier 
+                                          ( ("float" type nil nil nil)
+                                            ("double" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5445 5520])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5579 5599]))                                          
+                                        :template-specifier 
+                                          ( ("double" type nil nil nil)
+                                            ("float" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5527 5602])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("long double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5666 5691]))                                          
+                                        :template-specifier 
+                                          ( ("float" type nil nil nil)
+                                            ("long double" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5609 5694])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("long double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5758 5783]))                                          
+                                        :template-specifier 
+                                          ( ("long double" type nil nil nil)
+                                            ("float" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5701 5786])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("long double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5851 5876]))                                          
+                                        :template-specifier 
+                                          ( ("double" type nil nil nil)
+                                            ("long double" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5793 5879])
+                                    ("promote_args_2" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("long double")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5944 5969]))                                          
+                                        :template-specifier 
+                                          ( ("long double" type nil nil nil)
+                                            ("double" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5886 5972])
+                                    ("promote_args" type
+                                       (:members 
+                                          ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6701 6711]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [6086 6949]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1622 6956]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1599 6979]))                  
+                :type "namespace")
+                nil [1579 6999]))          
+      :file "promotion.hpp"
+      :pointmax 7056
+      :fsize 7055
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((punctuation 6700 . 6701) (punctuation 6699 . 6700) (punctuation 6698 . 6699) (symbol 6684 . 6688) (punctuation 6683 . 6684) (punctuation 6682 . 6683) (punctuation 6681 . 6682) (symbol 6664 . 6668) (punctuation 6663 . 6664) (punctuation 6662 . 6663) (punctuation 6661 . 6662) (symbol 6641 . 6645) (punctuation 6640 . 6641) (punctuation 6639 . 6640) (punctuation 6638 . 6639) (symbol 6615 . 6619) (punctuation 6614 . 6615) (punctuation 6613 . 6614) (punctuation 6612 . 6613) (symbol 6586 . 6590) (punctuation 6585 . 6586) (punctuation 6584 . 6585) (punctuation 6583 . 6584) (symbol 6581 . 6583) (punctuation 6580 . 6581) (symbol 6571 . 6580) (TYPENAME 6562 . 6570) (punctuation 6560 . 6561) (symbol 6556 . 6560) (punctuation 6555 . 6556) (punctuation 6554 . 6555) (punctuation 6553 . 6554) (symbol 6551 . 6553) (punctuation 6550 . 6551) (symbol 6541 . 6550) (TYPENAME 6532 . 6540) (punctuation 6506 . 6507) (symbol 6492 . 6506) (TYPENAME 6483 . 6491) (punctuation 6460 . 6461) (symbol 6456 . 6460) (punctuation 6455 . 6456) (punctuation 6454 . 6455) (punctuation 6453 . 6454) (symbol 6451 . 6453) (punctuation 6450 . 6451) (symbol 6441 . 6450) (TYPENAME 6432 . 6440) (punctuation 6409 . 6410) (symbol 6395 . 6409) (TYPENAME 6386 . 6394) (punctuation 6366 . 6367) (symbol 6362 . 6366) (punctuation 6361 . 6362) (punctuation 6360 . 6361) (punctuation 6359 . 6360) (symbol 6357 . 6359) (punctuation 6356 . 6357) (symbol 6347 . 6356) (TYPENAME 6338 . 6346) (punctuation 6318 . 6319) (symbol 6304 . 6318) (TYPENAME 6295 . 6303) (punctuation 6278 . 6279) (symbol 6274 . 6278) (punctuation 6273 . 6274) (punctuation 6272 . 6273) (punctuation 6271 . 6272) (symbol 6269 . 6271) (punctuation 6268 . 6269) (symbol 6259 . 6268) (TYPENAME 6250 . 6258) (punctuation 6233 . 6234) (symbol 6219 . 6233) (TYPENAME 6210 . 6218) (punctuation 6196 . 6197) (symbol 6192 . 6196) (punctuation 6191 . 6192) (punctuation 6190 . 6191) (punctuation 6189 . 6190) (symbol 6187 . 6189) (punctuation 6186 . 6187) (symbol 6177 . 6186) (TYPENAME 6168 . 6176) (punctuation 6154 . 6155) (symbol 6140 . 6154) (TYPENAME 6131 . 6139) (TYPEDEF 6123 . 6130) (punctuation 6078 . 6079) (FLOAT 6073 . 6078) (punctuation 6072 . 6073) (symbol 6070 . 6072) (CLASS 6064 . 6069) (punctuation 6062 . 6063) (FLOAT 6057 . 6062) (punctuation 6056 . 6057) (symbol 6054 . 6056) (CLASS 6048 . 6053) (punctuation 6046 . 6047) (FLOAT 6041 . 6046) (punctuation 6040 . 6041) (symbol 6038 . 6040) (CLASS 6032 . 6037) (punctuation 6030 . 6031) (FLOAT 6025 . 6030) (punctuation 6024 . 6025) (symbol 6022 . 6024) (CLASS 6016 . 6021) (punctuation 6014 . 6015) (FLOAT 6009 . 6014) (punctuation 6008 . 6009) (symbol 6006 . 6008) (CLASS 6000 . 6005) (punctuation 5998 . 5999) (symbol 5996 . 5998) (CLASS 5990 . 5995) (punctuation 5989 . 5990) (TEMPLATE 5980 . 5988) (punctuation 4477 . 4478) (punctuation 4476 . 4477) (punctuation 4475 . 4476) (symbol 4471 . 4475) (punctuation 4470 . 4471) (punctuation 4469 . 4470) (punctuation 4468 . 4469) (symbol 4465 . 4468) (punctuation 4463 . 4464) (symbol 4460 . 4463) (punctuation 4458 . 4459) (punctuation 4457 . 4458) (punctuation 4455 . 4456) (symbol 4452 . 4455) (punctuation 4450 . 4451) (symbol 4447 . 4450) (punctuation 4446 . 4447) (symbol 4432 . 4446) (punctuation 4431 . 4432) (punctuation 4430 . 4431) (symbol 4425 . 4430) (punctuation 4424 . 4425) (punctuation 4423 . 4424) (punctuation 4421 . 4422) (punctuation 4420 . 4421) (punctuation 4418 . 4419) (symbol 4415 . 4418) (punctuation 4414 . 4415) (symbol 4397 . 4414) (punctuation 4396 . 4397) (symbol 4392 . 4396) (punctuation 4391 . 4392) (punctuation 4390 . 4391) (symbol 4387 . 4390) (punctuation 4386 . 4387) (symbol 4382 . 4386) (punctuation 4381 . 4382) (punctuation 4380 . 4381) (symbol 4377 . 4380) (TYPENAME 4368 . 4376) (punctuation 4366 . 4367) (symbol 4363 . 4366) (punctuation 4362 . 4363) (punctuation 4361 . 4362) (symbol 4358 . 4361) (TYPENAME 4349 . 4357) (punctuation 4278 . 4279) (symbol 4274 . 4278) (punctuation 4273 . 4274) (punctuation 4272 . 4273) (punctuation 4271 . 4272) (symbol 4256 . 4260) (punctuation 4255 . 4256) (punctuation 4254 . 4255) (punctuation 4253 . 4254) (FLOAT 4207 . 4212) (punctuation 4169 . 4170) (DOUBLE 4163 . 4169) (punctuation 4131 . 4132) (symbol 4127 . 4131) (punctuation 4126 . 4127) (punctuation 4125 . 4126) (punctuation 4124 . 4125) (punctuation 4122 . 4123) (symbol 4119 . 4122) (punctuation 4117 . 4118) (DOUBLE 4111 . 4117) (punctuation 4110 . 4111) (symbol 4103 . 4110) (punctuation 4101 . 4102) (punctuation 4100 . 4101) (symbol 4097 . 4100) (punctuation 4095 . 4096) (DOUBLE 4089 . 4095) (punctuation 4088 . 4089) (symbol 4081 . 4088) (punctuation 4080 . 4081) (symbol 4077 . 4080) (punctuation 4076 . 4077) (punctuation 4075 . 4076) (symbol 4072 . 4075) (TYPENAME 4063 . 4071) (punctuation 4061 . 4062) (symbol 4058 . 4061) (punctuation 4057 . 4058) (punctuation 4056 . 4057) (symbol 4053 . 4056) (TYPENAME 4044 . 4052) (punctuation 3994 . 3995) (DOUBLE 3988 . 3994) (LONG 3983 . 3987) (punctuation 3946 . 3947) (symbol 3942 . 3946) (punctuation 3941 . 3942) (punctuation 3940 . 3941) (punctuation 3939 . 3940) (punctuation 3937 . 3938) (symbol 3934 . 3937) (punctuation 3932 . 3933) (DOUBLE 3926 . 3932) (LONG 3921 . 3925) (punctuation 3920 . 3921) (symbol 3913 . 3920) (punctuation 3911 . 3912) (punctuation 3910 . 3911) (symbol 3907 . 3910) (punctuation 3905 . 3906) (DOUBLE 3899 . 3905) (LONG 3894 . 3898) (punctuation 3893 . 3894) (symbol 3886 . 3893) (punctuation 3885 . 3886) (symbol 3882 . 3885) (punctuation 3881 . 3882) (punctuation 3880 . 3881) (symbol 3877 . 3880) (TYPENAME 3868 . 3876) (punctuation 3866 . 3867) (symbol 3863 . 3866) (punctuation 3862 . 3863) (punctuation 3861 . 3862) (symbol 3858 . 3861) (TYPENAME 3849 . 3857) (punctuation 3797 . 3798) (symbol 3793 . 3797) (punctuation 3792 . 3793) (punctuation 3791 . 3792) (punctuation 3790 . 3791) (punctuation 3788 . 3789) (symbol 3785 . 3788) (punctuation 3784 . 3785) (symbol 3767 . 3784) (punctuation 3765 . 3766) (punctuation 3764 . 3765) (symbol 3761 . 3764) (punctuation 3760 . 3761) (symbol 3743 . 3760) (punctuation 3742 . 3743) (symbol 3738 . 3742) (punctuation 3737 . 3738) (punctuation 3736 . 3737) (symbol 3733 . 3736) (TYPENAME 3724 . 3732) (punctuation 3712 . 3713) (symbol 3709 . 3712) (punctuation 3708 . 3709) (punctuation 3707 . 3708) (symbol 3704 . 3707) (TYPENAME 3695 . 3703) (TYPEDEF 3687 . 3694) (punctuation 3643 . 3644) (punctuation 3642 . 3643) (punctuation 3641 . 3642) (symbol 3639 . 3641) (punctuation 3638 . 3639) (symbol 3627 . 3638) (TYPENAME 3618 . 3626) (TYPEDEF 3610 . 3617) (punctuation 3567 . 3568) (punctuation 3566 . 3567) (punctuation 3565 . 3566) (symbol 3563 . 3565) (punctuation 3562 . 3563) (symbol 3551 . 3562) (TYPENAME 3542 . 3550) (TYPEDEF 3534 . 3541))
+      :lexical-table 
+        '(("BOOST_MATH_PROMOTION_HPP")
+          )
+))
+  :file "!usr!include!boost!math!tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1064 @@
+;; Object posix_time/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "posix_time/"
+  :tables
+  (list
+    (semanticdb-table "posix_time.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("POSIX_TIME_HPP___" variable (:constant-flag t) nil [35 52])
+            ("boost/date_time/compiler_config.hpp" include nil nil [467 513])
+            ("boost/date_time/posix_time/ptime.hpp" include nil nil [514 561])
+            ("boost/date_time/posix_time/time_formatters.hpp" include nil nil [835 892])
+            ("boost/date_time/posix_time/posix_time_io.hpp" include nil nil [1081 1136])
+            ("boost/date_time/posix_time/time_parsers.hpp" include nil nil [1180 1234])
+            ("boost/date_time/posix_time/conversion.hpp" include nil nil [1235 1287]))          
+      :file "posix_time.hpp"
+      :pointmax 1298
+      :fsize 1297
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("POSIX_TIME_HPP___")
+          )
+)
+    (semanticdb-table "ptime.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("POSIX_PTIME_HPP___" variable (:constant-flag t) nil [36 54])
+            ("boost/date_time/posix_time/posix_time_system.hpp" include nil nil [378 437])
+            ("boost/date_time/time.hpp" include nil nil [438 473])
+            ("boost" type
+               (:members 
+                  ( ("posix_time" type
+                       (:members 
+                          ( ("date_time::special_values" using (:type ("date_time::special_values" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [570 602])
+                            ("date_time::not_special" using (:type ("date_time::not_special" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [605 634])
+                            ("date_time::neg_infin" using (:type ("date_time::neg_infin" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [637 664])
+                            ("date_time::pos_infin" using (:type ("date_time::pos_infin" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [667 694])
+                            ("date_time::not_a_date_time" using (:type ("date_time::not_a_date_time" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [697 730])
+                            ("date_time::max_date_time" using (:type ("date_time::max_date_time" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [733 764])
+                            ("date_time::min_date_time" using (:type ("date_time::min_date_time" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [767 798])
+                            ("ptime" type
+                               (:superclasses 
+                                  ( ("date_time::base_time" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [966 973])
+                                    ("time_system_type" type
+                                       (:typedef ("posix_time_system" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [978 1021])
+                                    ("time_rep_type" type
+                                       (:typedef ("time_system_type::time_rep_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1026 1080])
+                                    ("time_duration_type" type
+                                       (:typedef ("time_system_type::time_duration_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1085 1149])
+                                    ("time_type" type
+                                       (:typedef ("ptime" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1154 1178])
+                                    ("ptime" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("d" variable (:type ("gregorian::date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1235 1253])
+                                            ("td" variable (:type ("time_duration_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1253 1275]))                                          
+                                        :type ("ptime" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1229 1339])
+                                    ("ptime" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("d" variable (:type ("gregorian::date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1421 1439]))                                          
+                                        :type ("ptime" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1415 1526])
+                                    ("ptime" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("time_rep_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1564 1589]))                                          
+                                        :type ("ptime" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1558 1657])
+                                    ("ptime" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("sv" variable
+                                               (:constant-flag t
+                                                :type ("special_values" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1705 1729]))                                          
+                                        :type ("ptime" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1699 1791])
+                                    ("ptime" function
+                                       (:constructor-flag t
+                                        :type ("ptime" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1900 2036]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [892 2091]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [494 2096]))                  
+                :type "namespace")
+                nil [475 2098]))          
+      :file "ptime.hpp"
+      :pointmax 2131
+      :fsize 2130
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((EXPLICIT 1406 . 1414))
+      :lexical-table 
+        '(("POSIX_PTIME_HPP___")
+          )
+)
+    (semanticdb-table "time_formatters.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("POSIXTIME_FORMATTERS_HPP___" variable (:constant-flag t) nil [45 72])
+            ("boost/date_time/gregorian/gregorian.hpp" include (:system-flag t) nil [406 456])
+            ("boost/date_time/compiler_config.hpp" include (:system-flag t) nil [457 503])
+            ("boost/date_time/iso_format.hpp" include (:system-flag t) nil [504 545])
+            ("boost/date_time/date_format_simple.hpp" include (:system-flag t) nil [546 595])
+            ("boost/date_time/posix_time/posix_time_types.hpp" include (:system-flag t) nil [596 654])
+            ("boost/date_time/time_formatting_streams.hpp" include (:system-flag t) nil [655 709])
+            ("boost/date_time/time_resolution_traits.hpp" include (:system-flag t) nil [710 763])
+            ("boost/date_time/time_parsing.hpp" include (:system-flag t) nil [782 825])
+            ("boost" type
+               (:members 
+                  ( ("posix_time" type
+                       (:members 
+                          ( ("to_simple_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("td" variable (:type ("time_duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1223 1240]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [1145 3000])
+                            ("to_simple_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("td" variable (:type ("time_duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3148 3165]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3112 3215])
+                            ("to_iso_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("td" variable (:type ("time_duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3409 3426]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [3334 5168])
+                            ("to_iso_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("td" variable (:type ("time_duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5312 5329]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5279 5375])
+                            ("to_simple_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("t" variable (:type ("ptime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5546 5554]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [5468 5907])
+                            ("to_simple_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("t" variable (:type ("ptime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5946 5954]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5910 6002])
+                            ("to_simple_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("tp" variable (:type ("time_period" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6184 6199]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [6106 6463])
+                            ("to_simple_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("tp" variable (:type ("time_period" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6627 6642]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6591 6691])
+                            ("to_iso_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("t" variable (:type ("ptime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6870 6878]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [6795 7148])
+                            ("to_iso_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("t" variable (:type ("ptime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7296 7304]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7263 7349])
+                            ("to_iso_extended_string_type" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_string" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("t" variable (:type ("ptime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7538 7546]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [7454 7828])
+                            ("to_iso_extended_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("t" variable (:type ("ptime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7982 7990]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7940 8044])
+                            ("to_simple_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("td" variable (:type ("time_duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8231 8248]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8193 8301])
+                            ("to_iso_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("td" variable (:type ("time_duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8447 8464]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8412 8513])
+                            ("to_simple_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("t" variable (:type ("ptime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8556 8564]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8518 8615])
+                            ("to_simple_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("tp" variable (:type ("time_period" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8782 8797]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8744 8849])
+                            ("to_iso_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("t" variable (:type ("ptime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8999 9007]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8964 9055])
+                            ("to_iso_extended_wstring" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("t" variable (:type ("ptime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9211 9219]))                                  
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [9167 9276]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1005 9312]))                  
+                :type "namespace")
+                nil [986 9314]))          
+      :file "time_formatters.hpp"
+      :pointmax 9348
+      :fsize 9347
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("POSIXTIME_FORMATTERS_HPP___")
+          )
+)
+    (semanticdb-table "posix_time_io.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DATE_TIME_POSIX_TIME_IO_HPP__" variable (:constant-flag t) nil [47 76])
+            ("locale" include (:system-flag t) nil [410 427])
+            ("iostream" include (:system-flag t) nil [428 447])
+            ("iterator" include (:system-flag t) nil [448 467])
+            ("boost/io/ios_state.hpp" include (:system-flag t) nil [493 526])
+            ("boost/date_time/time_facet.hpp" include (:system-flag t) nil [527 568])
+            ("boost/date_time/period_formatter.hpp" include (:system-flag t) nil [569 616])
+            ("boost/date_time/posix_time/ptime.hpp" include (:system-flag t) nil [617 664])
+            ("boost/date_time/posix_time/time_period.hpp" include (:system-flag t) nil [665 718])
+            ("boost/date_time/posix_time/posix_time_duration.hpp" include (:system-flag t) nil [719 780])
+            ("boost/date_time/posix_time/conversion.hpp" include (:system-flag t) nil [781 833])
+            ("boost" type
+               (:members 
+                  ( ("posix_time" type
+                       (:members 
+                          ( ("wtime_facet" type
+                               (:typedef ("boost::date_time::time_facet" type
+                                     (:template-specifier 
+                                        ( ("ptime" type nil nil nil)
+                                          ("wchar_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1570 1639])
+                            ("time_facet" type
+                               (:typedef ("boost::date_time::time_facet" type
+                                     (:template-specifier 
+                                        ( ("ptime" type nil nil nil)
+                                          ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1642 1711])
+                            ("wtime_input_facet" type
+                               (:typedef ("boost::date_time::time_input_facet" type
+                                     (:template-specifier 
+                                        ( ("ptime" type nil nil nil)
+                                          ("wchar_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1715 1796])
+                            ("time_input_facet" type
+                               (:typedef ("boost::date_time::time_input_facet" type
+                                     (:template-specifier 
+                                        ( ("ptime" type nil nil nil)
+                                          ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1799 1880])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1982 2021])
+                                    ("p" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ptime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2035 2050]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [1884 2967])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3098 3136])
+                                    ("pt" variable
+                                       (:reference 1
+                                        :type ("ptime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3137 3147]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [3002 4486])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TraitsT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4590 4629])
+                                    ("p" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::posix_time::time_period" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4643 4683]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [4491 5608])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5745 5783])
+                                    ("tp" variable
+                                       (:reference 1
+                                        :type ("time_period" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5784 5800]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [5649 6870])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7081 7119])
+                                    ("td" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("time_duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7120 7144]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [6985 8065])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_istream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("Traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8204 8242])
+                                    ("td" variable
+                                       (:reference 1
+                                        :type ("time_duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8243 8261]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [8108 9331]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [891 9334]))                  
+                :type "namespace")
+                nil [873 9336]))          
+      :file "posix_time_io.hpp"
+      :pointmax 9391
+      :fsize 9390
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DATE_TIME_POSIX_TIME_IO_HPP__")
+          )
+)
+    (semanticdb-table "time_parsers.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("POSIXTIME_PARSERS_HPP___" variable (:constant-flag t) nil [42 66])
+            ("boost/date_time/gregorian/gregorian.hpp" include nil nil [390 440])
+            ("boost/date_time/time_parsing.hpp" include nil nil [441 484])
+            ("boost/date_time/posix_time/posix_time_types.hpp" include nil nil [485 543])
+            ("boost" type
+               (:members 
+                  ( ("posix_time" type
+                       (:members 
+                          ( ("duration_from_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [932 953]))                                  
+                                :type ("time_duration" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [890 1030])
+                            ("time_from_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1064 1085]))                                  
+                                :type ("ptime" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1034 1150])
+                            ("from_iso_string" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1183 1204]))                                  
+                                :type ("ptime" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1154 1263]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [566 1268]))                  
+                :type "namespace")
+                nil [547 1270]))          
+      :file "time_parsers.hpp"
+      :pointmax 1304
+      :fsize 1303
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("POSIXTIME_PARSERS_HPP___")
+          )
+)
+    (semanticdb-table "conversion.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("POSIX_TIME_CONVERSION_HPP___" variable (:constant-flag t) nil [46 74])
+            ("cstring" include (:system-flag t) nil [408 426])
+            ("boost/date_time/posix_time/ptime.hpp" include (:system-flag t) nil [427 474])
+            ("boost/date_time/posix_time/posix_time_duration.hpp" include (:system-flag t) nil [475 536])
+            ("boost/date_time/filetime_functions.hpp" include (:system-flag t) nil [537 586])
+            ("boost/date_time/c_time.hpp" include (:system-flag t) nil [587 624])
+            ("boost/date_time/time_resolution_traits.hpp" include (:system-flag t) nil [625 678])
+            ("boost/date_time/gregorian/conversion.hpp" include (:system-flag t) nil [697 748])
+            ("boost" type
+               (:members 
+                  ( ("posix_time" type
+                       (:members 
+                          ( ("from_time_t" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("t" variable (:type ("std::time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [875 889]))                                  
+                                :type ("ptime" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [848 991])
+                            ("to_tm" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::posix_time::ptime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1091 1125]))                                  
+                                :type ("std::tm" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1068 1428])
+                            ("to_tm" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("td" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::posix_time::time_duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1575 1618]))                                  
+                                :type ("std::tm" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1552 1952])
+                            ("ptime_from_tm" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("timetm" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tm" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2043 2065]))                                  
+                                :type ("ptime" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2014 2224]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [769 3107]))                  
+                :type "namespace")
+                nil [750 3109]))          
+      :file "conversion.hpp"
+      :pointmax 3152
+      :fsize 3151
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("POSIX_TIME_CONVERSION_HPP___")
+          )
+)
+    (semanticdb-table "posix_time_system.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("POSIX_TIME_SYSTEM_HPP___" variable (:constant-flag t) nil [42 66])
+            ("boost/date_time/posix_time/posix_time_config.hpp" include nil nil [390 449])
+            ("boost/date_time/time_system_split.hpp" include nil nil [450 498])
+            ("boost/date_time/time_system_counted.hpp" include nil nil [499 549])
+            ("boost/date_time/compiler_config.hpp" include nil nil [550 596])
+            ("boost" type
+               (:members 
+                  ( ("posix_time" type
+                       (:members 
+                          ( ("int64_time_rep" type
+                               (:typedef ("date_time::counted_time_rep" type
+                                     (:template-specifier 
+                                        ( ("millisec_posix_time_system_config" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [967 1053])
+                            ("posix_time_system" type
+                               (:typedef ("date_time::counted_time_system" type
+                                     (:template-specifier 
+                                        ( ("int64_time_rep" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1056 1129]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [617 1140]))                  
+                :type "namespace")
+                nil [599 1142]))          
+      :file "posix_time_system.hpp"
+      :pointmax 1202
+      :fsize 1201
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("POSIX_TIME_SYSTEM_HPP___")
+          )
+)
+    (semanticdb-table "posix_time_types.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("POSIX_TIME_TYPES_HPP___" variable (:constant-flag t) nil [305 328])
+            ("boost/date_time/time_clock.hpp" include nil nil [330 371])
+            ("boost/date_time/microsec_time_clock.hpp" include nil nil [372 422])
+            ("boost/date_time/posix_time/ptime.hpp" include nil nil [423 470])
+            ("boost/date_time/posix_time/posix_time_duration.hpp" include nil nil [598 659])
+            ("boost/date_time/posix_time/posix_time_system.hpp" include nil nil [660 719])
+            ("boost/date_time/posix_time/time_period.hpp" include nil nil [720 773])
+            ("boost/date_time/time_iterator.hpp" include nil nil [774 818])
+            ("boost/date_time/dst_rules.hpp" include nil nil [819 859])
+            ("boost" type
+               (:members 
+                  ( ("posix_time" type
+                       (:members 
+                          ( ("time_iterator" type
+                               (:typedef ("date_time::time_itr" type
+                                     (:template-specifier 
+                                        ( ("ptime" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1083 1132])
+                            ("second_clock" type
+                               (:typedef ("date_time::second_clock" type
+                                     (:template-specifier 
+                                        ( ("ptime" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1223 1275])
+                            ("no_dst" type
+                               (:typedef ("date_time::null_dst_rules" type
+                                     (:template-specifier 
+                                        ( ("ptime::date_type" type nil nil nil)
+                                          ("time_duration" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1546 1620])
+                            ("us_dst" type
+                               (:typedef ("date_time::us_dst_rules" type
+                                     (:template-specifier 
+                                        ( ("ptime::date_type" type nil nil nil)
+                                          ("time_duration" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1685 1757]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [980 1761]))                  
+                :type "namespace")
+                nil [861 1763]))          
+      :file "posix_time_types.hpp"
+      :pointmax 1799
+      :fsize 1798
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("POSIX_TIME_TYPES_HPP___")
+          )
+)
+    (semanticdb-table "time_period.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("POSIX_TIME_PERIOD_HPP___" variable (:constant-flag t) nil [42 66])
+            ("boost/date_time/period.hpp" include nil nil [390 427])
+            ("boost/date_time/posix_time/posix_time_duration.hpp" include nil nil [428 489])
+            ("boost/date_time/posix_time/ptime.hpp" include nil nil [490 537])
+            ("boost" type
+               (:members 
+                  ( ("posix_time" type
+                       (:members 
+                          ( ("time_period" type
+                               (:typedef ("date_time::period" type
+                                     (:template-specifier 
+                                        ( ("ptime" type nil nil nil)
+                                          ("time_duration" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [639 699]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [557 703]))                  
+                :type "namespace")
+                nil [539 705]))          
+      :file "time_period.hpp"
+      :pointmax 738
+      :fsize 737
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("POSIX_TIME_PERIOD_HPP___")
+          )
+)
+    (semanticdb-table "posix_time_duration.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("POSIX_TIME_DURATION_HPP___" variable (:constant-flag t) nil [44 70])
+            ("boost/date_time/posix_time/posix_time_config.hpp" include nil nil [393 452])
+            ("boost" type
+               (:members 
+                  ( ("posix_time" type
+                       (:members 
+                          ( ("hours" type
+                               (:superclasses 
+                                  ( ("time_duration" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [626 633])
+                                    ("hours" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("h" variable (:type "long") (reparse-symbol arg-sub-list) [653 660]))                                          
+                                        :type ("hours" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [647 696]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [585 701])
+                            ("minutes" type
+                               (:superclasses 
+                                  ( ("time_duration" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [836 843])
+                                    ("minutes" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("m" variable (:type "long") (reparse-symbol arg-sub-list) [865 872]))                                          
+                                        :type ("minutes" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [857 908]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [793 913])
+                            ("seconds" type
+                               (:superclasses 
+                                  ( ("time_duration" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1049 1056])
+                                    ("seconds" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable (:type "long") (reparse-symbol arg-sub-list) [1078 1085]))                                          
+                                        :type ("seconds" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1070 1121]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1006 1126])
+                            ("millisec" type
+                               (:typedef ("date_time::subsecond_duration" type
+                                     (:template-specifier 
+                                        ( ("time_duration" type nil nil nil)
+                                          ("1000"))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1218 1285])
+                            ("milliseconds" type
+                               (:typedef ("date_time::subsecond_duration" type
+                                     (:template-specifier 
+                                        ( ("time_duration" type nil nil nil)
+                                          ("1000"))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1288 1359])
+                            ("microsec" type
+                               (:typedef ("date_time::subsecond_duration" type
+                                     (:template-specifier 
+                                        ( ("time_duration" type nil nil nil)
+                                          ("1000000"))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1450 1520])
+                            ("microseconds" type
+                               (:typedef ("date_time::subsecond_duration" type
+                                     (:template-specifier 
+                                        ( ("time_duration" type nil nil nil)
+                                          ("1000000"))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1523 1597]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [472 1942]))                  
+                :type "namespace")
+                nil [454 1944]))          
+      :file "posix_time_duration.hpp"
+      :pointmax 1977
+      :fsize 1976
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((EXPLICIT 1061 . 1069) (EXPLICIT 848 . 856) (EXPLICIT 638 . 646))
+      :lexical-table 
+        '(("POSIX_TIME_DURATION_HPP___")
+          )
+)
+    (semanticdb-table "posix_time_config.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("POSIX_TIME_CONFIG_HPP___" variable (:constant-flag t) nil [42 66])
+            ("cstdlib" include (:system-flag t) nil [405 423])
+            ("boost/limits.hpp" include (:system-flag t) nil [458 485])
+            ("boost/cstdint.hpp" include (:system-flag t) nil [486 514])
+            ("boost/config/no_tr1/cmath.hpp" include (:system-flag t) nil [515 555])
+            ("boost/date_time/time_duration.hpp" include (:system-flag t) nil [556 600])
+            ("boost/date_time/time_resolution_traits.hpp" include (:system-flag t) nil [601 654])
+            ("boost/date_time/gregorian/gregorian_types.hpp" include (:system-flag t) nil [655 711])
+            ("boost/date_time/wrapping_int.hpp" include (:system-flag t) nil [712 755])
+            ("boost/date_time/compiler_config.hpp" include (:system-flag t) nil [756 802])
+            ("boost" type
+               (:members 
+                  ( ("posix_time" type
+                       (:members 
+                          ( ("BOOST_DATE_TIME_HAS_MILLISECONDS" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1392 1424])
+                            ("BOOST_DATE_TIME_HAS_MICROSECONDS" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1433 1465])
+                            ("time_res_traits" type
+                               (:typedef ("date_time::time_resolution_traits" type
+                                     (:template-specifier 
+                                        ( ("boost::date_time::time_resolution_traits_adapted64_impl" type nil nil nil)
+                                          ("boost::date_time::micro" type nil nil nil)
+                                          ("1000000")
+                                          ("6"))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1508 1710])
+                            ("time_duration" type
+                               (:superclasses 
+                                  ( ("date_time::time_duration" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2173 2180])
+                                    ("rep_type" type
+                                       (:typedef ("time_res_traits" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2185 2218])
+                                    ("day_type" type
+                                       (:typedef ("time_res_traits::day_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2223 2266])
+                                    ("hour_type" type
+                                       (:typedef ("time_res_traits::hour_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2271 2316])
+                                    ("min_type" type
+                                       (:typedef ("time_res_traits::min_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2321 2364])
+                                    ("sec_type" type
+                                       (:typedef ("time_res_traits::sec_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2369 2412])
+                                    ("fractional_seconds_type" type
+                                       (:typedef ("time_res_traits::fractional_seconds_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2417 2490])
+                                    ("tick_type" type
+                                       (:typedef ("time_res_traits::tick_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2495 2540])
+                                    ("impl_type" type
+                                       (:typedef ("time_res_traits::impl_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2545 2590])
+                                    ("time_duration" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("hour" variable (:type ("hour_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2609 2624])
+                                            ("min" variable (:type ("min_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2643 2656])
+                                            ("sec" variable (:type ("sec_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2675 2688])
+                                            ("fs" variable
+                                               (:default-value "0"
+                                                :type ("fractional_seconds_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2707 2735]))                                          
+                                        :type ("time_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2595 2825])
+                                    ("time_duration" function
+                                       (:constructor-flag t
+                                        :type ("time_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2830 2924])
+                                    ("time_duration" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("sv" variable (:type ("boost::date_time::special_values" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2981 3017]))                                          
+                                        :type ("time_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2967 3093])
+                                    ("date_time" friend nil (reparse-symbol classsubparts) [3165 3187])
+                                    ("time_duration" variable (:type "int") (reparse-symbol classsubparts) [3189 3235])
+                                    ("protected" label nil (reparse-symbol classsubparts) [3238 3248])
+                                    ("time_duration" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("tick_count" variable (:type ("impl_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3276 3297]))                                          
+                                        :type ("time_duration" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3262 3381]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2077 3386])
+                            ("millisec_posix_time_system_config" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [5359 5366])
+                                    ("time_rep_type" type
+                                       (:typedef ("boost::int64_t" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5371 5408])
+                                    ("date_type" type
+                                       (:typedef ("gregorian::date" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5469 5503])
+                                    ("date_duration_type" type
+                                       (:typedef ("gregorian::date_duration" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5508 5560])
+                                    ("time_duration_type" type
+                                       (:typedef ("time_duration" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5565 5606])
+                                    ("int_type" type
+                                       (:typedef ("time_res_traits::tick_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5611 5655])
+                                    ("impl_type" type
+                                       (:typedef ("time_res_traits::impl_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5660 5705])
+                                    ("resolution_traits" type
+                                       (:typedef ("time_res_traits" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5710 5752])
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("boost::int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5852 5867])
+                                            ("" variable (:type ("tick_per_second" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5868 5893]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [5830 5895]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [5312 5907]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [822 5918]))                  
+                :type "namespace")
+                nil [804 5920]))          
+      :file "posix_time_config.hpp"
+      :pointmax 5954
+      :fsize 5953
+      :lastmodtime '(21413 1117 0 0)
+      :unmatched-syntax '((EXPLICIT 3253 . 3261) (punctuation 3188 . 3189) (punctuation 3187 . 3188))
+      :lexical-table 
+        '(("POSIX_TIME_CONFIG_HPP___")
+          ("BOOST_DATE_TIME_HAS_MICROSECONDS")
+          ("BOOST_DATE_TIME_HAS_MILLISECONDS")
+          )
+))
+  :file "!usr!include!boost!date_time!posix_time!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
