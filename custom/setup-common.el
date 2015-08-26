@@ -12,29 +12,16 @@
 ;; color theme
 (load-theme 'zenburn t)
 
+;; paren
+(show-paren-mode t)
+(setq show-paren-style 'parenthesis)
+
+;; show buffer name on window bar 
+(setq frame-title-format "emacs@%b")
+
 ;; powerline
 ;; (require 'telephone-line)
 ;; (telephone-line-mode 1)
-
-;; speedbar
-;; (require 'sr-speedbar)
-;; (setq 
-;;     speedbar-show-unknown-files t
-;;     speedbar-use-images nil
-;;     speedbar-width-x 30
-;;     speedbar-width-console 30
-;;     speedbar-max-width 30
-;;     sr-speedbar-right-side nil
-;;     sr-speedbar-delete-windows t
-;; )
-;; (add-hook 'emacs-startup-hook (lambda ()
-;; (sr-speedbar-open)
-;; (with-current-buffer sr-speedbar-buffer-name
-;;  (setq window-size-fixed 'width))
-;;))
-;;(add-hook 'speedbar-mode-hook (lambda () 
-;;  (linum-mode -1)
-;;))
 
 ;; ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
@@ -56,3 +43,13 @@
 ;; mark
 (global-unset-key (kbd "C-SPC"))
 (global-set-key (kbd "M-SPC") 'set-mark-command)
+
+;; backup files
+(setq backup-directory-alist '(("." . "~/backups")))
+(setq backup-by-copying t)
+
+;; auto save 
+(setq auto-save-mode nil)
+
+;; 
+;; (setq-default make-backup-files nil)

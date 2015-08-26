@@ -37,6 +37,7 @@
 (define-key helm-grep-mode-map (kbd "<return>")  'helm-grep-mode-jump-other-window)
 (define-key helm-grep-mode-map (kbd "n")  'helm-grep-mode-jump-other-window-forward)
 (define-key helm-grep-mode-map (kbd "p")  'helm-grep-mode-jump-other-window-backward)
+
 ;; use helm to list eshell history
 (add-hook 'eshell-mode-hook
           #'(lambda ()

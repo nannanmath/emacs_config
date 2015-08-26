@@ -14,6 +14,7 @@
 (require 'setup-common)
 (require 'setup-helm)
 (require 'setup-ggtags)
+(require 'setup-window)
 (require 'setup-cedet)
 (require 'setup-company)
 (require 'setup-projectile)
