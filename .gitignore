@@ -3,5 +3,4 @@
 !.gitignore
 !init.el
 !/custom/
-!/elpa/
 !README.md

@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "anaconda-mode" "anaconda-mode.el" (22195 4805
-;;;;;;  243123 572000))
+;;;### (autoloads nil "anaconda-mode" "anaconda-mode.el" (22195 30252
+;;;;;;  285597 588000))
 ;;; Generated autoloads from anaconda-mode.el
 
 (autoload 'anaconda-mode "anaconda-mode" "\
