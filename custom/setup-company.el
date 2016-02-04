@@ -6,14 +6,12 @@
 
 
 (dolist (hook (list
-	'emacs-lisp-mode-hook
-	'lisp-mode-hook
-	'lisp-interaction-mode-hook
-	'c-mode-hook
-	'c++-mode-hook
-	'python-mode-hook
-	'sh-mode-hook
-	))
+  'emacs-lisp-mode-hook
+  'lisp-mode-hook
+  'lisp-interaction-mode-hook
+  'c-mode-hook
+  'c++-mode-hook
+  'sh-mode-hook))
 (add-hook hook 'company-mode))
 
 (add-to-list 'company-backends 'company-c-headers)
@@ -21,13 +19,10 @@
 (setq company-backends (delete 'company-clang company-backends))
 
 (eval-after-load "company"
- '(progn
-	(add-to-list 'company-backends 'company-anaconda)))
+  '(progn
+  (add-to-list 'company-backends 'company-anaconda)))
 (add-hook 'python-mode-hook 'anaconda-mode)
-
-;; (defun my/python-mode-hook ()
-;;   (add-to-list 'company-backends 'company-jedi))
-;; (add-hook 'python-mode-hook 'my/python-mode-hook)
+(add-hook 'python-mode-hook 'eldoc-mode)
 
 
 (define-key c-mode-map  [(control tab)] 'company-complete)

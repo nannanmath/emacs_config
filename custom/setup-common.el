@@ -50,6 +50,3 @@
 
 ;; auto save 
 (setq auto-save-mode nil)
-
-;; 
-;; (setq-default make-backup-files nil)
