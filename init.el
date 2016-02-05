@@ -16,7 +16,8 @@
     ein 
     helm 
     magit 
-    python-mode))
+    python-mode 
+    markdown-mode))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -36,6 +37,8 @@
 (require 'setup-prog-edit)
 ; (require 'setup-compilation)
 ; (require 'setup-debug)
+(require 'ein)
+(require 'setup-markdown)
 
 
 
