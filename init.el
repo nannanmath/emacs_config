@@ -10,7 +10,7 @@
 (package-initialize)
 
 (setq my-packages 
-  '(zenburn-theme 
+  '(sr-speedbar 
     company-anaconda 
     company-c-headers 
     ein 

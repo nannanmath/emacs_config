@@ -10,7 +10,11 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; color theme
-(load-theme 'zenburn t)
+;; (load-theme 'zenburn t)
+
+;; speed bar
+(require 'sr-speedbar)
+(global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
 
 ;; paren
 (show-paren-mode t)
