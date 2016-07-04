@@ -10,7 +10,7 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; color theme
-;; (load-theme 'zenburn t)
+(load-theme 'zenburn t)
 
 ;; speed bar
 (require 'sr-speedbar)
@@ -42,11 +42,7 @@
 ;; (setq-default indent-tabs-mode nil)
 
 ;; set appearance of a tab that is represented by 4 spaces
-(setq-default tab-width 4)
-
-;; mark
-(global-unset-key (kbd "C-SPC"))
-(global-set-key (kbd "M-SPC") 'set-mark-command)
+(setq-default tab-width 2)
 
 ;; backup files
 (setq backup-directory-alist '(("." . "~/backups")))
@@ -54,3 +50,4 @@
 
 ;; auto save 
 (setq auto-save-mode nil)
+

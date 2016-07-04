@@ -9,15 +9,20 @@
   '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
-(setq my-packages 
-  '(sr-speedbar 
-    company-anaconda 
-    company-c-headers 
-    ein 
-    helm 
-    magit 
-    python-mode 
-    markdown-mode))
+(setq my-packages
+			'(zenburn-theme
+				helm
+				ggtags
+				yasnippet
+				sr-speedbar
+				auto-complete
+				ein
+				magit
+				python-mode
+				markdown-mode
+				auctex
+				cdlatex
+				magic-latex-buffer))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -29,22 +34,11 @@
 (add-to-list 'load-path "~/.emacs.d/custom")
 (require 'setup-common)
 (require 'setup-helm)
-; require 'setup-ggtags)
 ; (require 'setup-window)
-; (require 'setup-cedet)
-(require 'setup-company)
 ; (require 'setup-projectile)
 (require 'setup-prog-edit)
 ; (require 'setup-compilation)
 ; (require 'setup-debug)
 (require 'ein)
 (require 'setup-markdown)
-
-
-
-
-
-
-
-
-
+(require 'setup-latex)
