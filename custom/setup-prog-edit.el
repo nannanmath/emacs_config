@@ -1,10 +1,40 @@
 (provide 'setup-prog-edit)
 
 ;;;;;;;;;;;;;;;;;;;;;
-;;  auto-complete  ;;
+;;  c++ font lock  ;;
 ;;;;;;;;;;;;;;;;;;;;;
-(require 'auto-complete-config)
-(ac-config-default)
+(add-hook 'c++-mode-hook 'modern-c++-font-lock-mode)
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;;       cff       ;;
+;;;;;;;;;;;;;;;;;;;;;
+(require 'cff)
+;; defines shortcut for find source/header file for the current
+;; file
+(add-hook 'c++-mode-hook
+           '(lambda ()
+              (define-key c-mode-base-map (kbd "M-o") 'cff-find-other-file)))
+(add-hook 'c-mode-hook
+           '(lambda ()
+              (define-key c-mode-base-map (kbd "M-o") 'cff-find-other-file)))
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;;     company     ;;
+;;;;;;;;;;;;;;;;;;;;;
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+(define-key company-mode-map  [(tab)] 'company-complete)
+(add-to-list 'company-backends 'company-c-headers)
+(add-to-list 'company-backends 'company-shell)
+
+(require 'semantic)
+(add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
+(global-semanticdb-minor-mode 1)
+(global-semantic-idle-scheduler-mode 1)
+(semantic-mode 1)
+(require 'stickyfunc-enhance)
 
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -69,6 +99,23 @@
 ;;;;;;;;;;;;;;;;;;;;;
 (setq gdb-many-windows t
 			gdb-show-main t)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; highlight indentation ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'highlight-indent-guides)
+(setq highlight-indent-guides-method 'character)
+(set-face-foreground 'highlight-indent-guides-character-face "red")
+(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+
+
+;;;;;;;;;;;;;
+;; folding ;;
+;;;;;;;;;;;;;
+(require 'yafolding)
+(add-hook 'prog-mode-hook 'yafolding-mode)
+
 
 
 ;;;;;;;;;;;;;;;;;;;;;

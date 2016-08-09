@@ -11,18 +11,34 @@
 
 (setq my-packages
 			'(zenburn-theme
+				modern-cpp-font-lock
+				elscreen
+				elscreen-persist
+	 			desktop+
+				bm
 				helm
+				helm-mt
+				highlight-indent-guides
+				yafolding
+				crosshairs
+				cff
+				company
+				company-c-headers
+				company-auctex
+				company-math
+				company-shell
+				stickyfunc-enhance
 				ggtags
 				yasnippet
 				sr-speedbar
-				auto-complete
 				ein
 				magit
 				python-mode
 				markdown-mode
 				auctex
 				cdlatex
-				magic-latex-buffer))
+				magic-latex-buffer
+				shell-pop))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -42,3 +58,4 @@
 (require 'ein)
 (require 'setup-markdown)
 (require 'setup-latex)
+(put 'narrow-to-region 'disabled nil)

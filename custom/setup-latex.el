@@ -18,8 +18,7 @@
 														 (add-to-list 'TeX-command-list
 																					'("XeLaTex" "%'xelatex%(mode) --shell-escape%' %t"
 																						TeX-run-TeX nil t))
-														 (setq TeX-command-defaullt "XeLaTeX")
-														 (latex-preview-pane-enable)))
+														 (setq TeX-command-defaullt "XeLaTeX")))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;
@@ -33,4 +32,14 @@
 ;; magic-latex-buffer ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'magic-latex-buffer)
-(add-hook 'latex-mode-hook 'magic-latex-buffer)
+(add-hook 'LateX-mode-hook 'magic-latex-buffer)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;   company-auctex   ;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'company-backends 'company-math-symbols-latex)
+
+(require 'company-auctex)
+(add-hook 'Latex-mode-hook 'company-auctex-init)
+
