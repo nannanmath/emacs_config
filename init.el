@@ -14,10 +14,10 @@
 				modern-cpp-font-lock
 				elscreen
 				elscreen-persist
+				elscreen-multi-term
 	 			desktop+
 				bm
 				helm
-				helm-mt
 				highlight-indent-guides
 				yafolding
 				crosshairs
@@ -58,4 +58,4 @@
 (require 'ein)
 (require 'setup-markdown)
 (require 'setup-latex)
-(put 'narrow-to-region 'disabled nil)
+

@@ -99,7 +99,7 @@
 
 ;; multi term
 (require 'multi-term)
-(setq multi-term-program "/bin/bash")
+(setq multi-term-program "/usr/bin/zsh")
 (require 'helm-mt)
 (global-set-key (kbd "C-x t") 'helm-mt)
 
