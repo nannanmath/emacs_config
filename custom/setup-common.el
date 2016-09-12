@@ -97,13 +97,6 @@
 (global-set-key (kbd "<f2>")   'bm-next)
 (global-set-key (kbd "<S-f2>") 'bm-previous)
 
-;; multi term
-(require 'multi-term)
-(setq multi-term-program "/usr/bin/zsh")
-(require 'helm-mt)
-(global-set-key (kbd "C-x t") 'helm-mt)
-
-
 ;; shell pop
 (require 'shell-pop)
 (defun shell-pop-eshell ()

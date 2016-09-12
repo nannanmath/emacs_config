@@ -3,6 +3,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;      auctex      ;;
 ;;;;;;;;;;;;;;;;;;;;;;
+(setenv "PATH" (concat (getenv "PATH") ":/home/nan/anaconda2/bin"))
+(require 'cl)
 (add-hook 'LaTeX-mode-hook (lambda()
 														 (setq TeX-auto-save t)
 														 (setq TeX-parse-self t)

@@ -14,7 +14,6 @@
 				modern-cpp-font-lock
 				elscreen
 				elscreen-persist
-				elscreen-multi-term
 	 			desktop+
 				bm
 				helm
