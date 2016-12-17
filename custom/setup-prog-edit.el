@@ -19,23 +19,53 @@
            '(lambda ()
               (define-key c-mode-base-map (kbd "M-o") 'cff-find-other-file)))
 
+;;;;;;;;;;;;;;;;;;;;;
+;;     python      ;;
+;;;;;;;;;;;;;;;;;;;;;
+(add-hook 'python-mode-hook 'anaconda-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;;     company     ;;
 ;;;;;;;;;;;;;;;;;;;;;
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
-(define-key company-mode-map  [(tab)] 'company-complete)
+(global-set-key (kbd "<C-tab>") 'company-complete)
 (add-to-list 'company-backends 'company-c-headers)
 (add-to-list 'company-backends 'company-shell)
+(add-to-list 'company-backends '(company-anaconda :with company-capf))
 
+;;;;;;;;;;;;;;;;;;;;;
+;;     semantic    ;;
+;;;;;;;;;;;;;;;;;;;;;
 (require 'semantic)
+(add-to-list 'semantic-default-submodes 'global-semanticdb-minor-mode)
+(add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode)
+(add-to-list 'semantic-default-submodes 'global-semantic-highlight-func-mode)
+(add-to-list 'semantic-default-submodes 'global-semantic-decoration-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
-(global-semanticdb-minor-mode 1)
-(global-semantic-idle-scheduler-mode 1)
+(add-to-list 'semantic-default-submodes 'global-semantic-idle-local-symbol-highlight-mode)
+(add-to-list 'semantic-default-submodes 'global-semantic-idle-scheduler-mode)
+(require 'semantic/bovine/gcc)
 (semantic-mode 1)
+
 (require 'stickyfunc-enhance)
 
+;;;;;;;;;;;;;;;;;;;;;
+;;     flycheck    ;;
+;;;;;;;;;;;;;;;;;;;;;
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;;     doxymacs    ;;
+;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'load-path "~/.emacs.d/custom/doxymacs")
+(require 'doxymacs)
+(add-hook 'c-mode-common-hook 'doxymacs-mode)
+(defun my-doxymacs-font-lock-hook ()
+	(if (or (eq major-mode 'c-mode) (eq major-mode 'c++-mode))
+			(doxymacs-font-lock)))
+  (add-hook 'font-lock-mode-hook 'my-doxymacs-font-lock-hook)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;;       tags      ;;
@@ -56,12 +86,31 @@
 
 (define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
 
+;;;;;;;;;;;;;;;;;;;;;
+;;   projectile    ;;
+;;;;;;;;;;;;;;;;;;;;;
+(require 'projectile)
+(projectile-global-mode)
+(setq projectile-enable-caching t)
+;; (setq projectile-indexing-method 'alien)
+
+(require 'helm-projectile)
+(helm-projectile-on)
+;;(setq projectile-completion-system 'helm)
+
+;; ag
+;;(require 'wgrep-helm)
+(require 'ag)
+(require 'helm-ag)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;;    yasnippet    ;;
 ;;;;;;;;;;;;;;;;;;;;;
 (require 'yasnippet)
-(yas-global-mode 1)
+(yas-reload-all)
+(add-hook 'python-mode-hook #'yas-minor-mode)
+(add-hook 'c-mode-hook #'yas-minor-mode)
+(add-hook 'c++-mode-hook #'yas-minor-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;;   sr-speedbar   ;;

@@ -3,7 +3,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;      auctex      ;;
 ;;;;;;;;;;;;;;;;;;;;;;
-(setenv "PATH" (concat (getenv "PATH") ":/home/nan/anaconda2/bin"))
 (require 'cl)
 (add-hook 'LaTeX-mode-hook (lambda()
 														 (setq TeX-auto-save t)
@@ -44,4 +43,12 @@
 
 (require 'company-auctex)
 (add-hook 'Latex-mode-hook 'company-auctex-init)
+
+;;;;;;;;;;;;;;;;;;;
+;;   yasnippet   ;;
+;;;;;;;;;;;;;;;;;;;
+(require 'yasnippet)
+(yas-reload-all)
+(add-hook 'Latex-mode-hook #'yas-minor-mode)
+
 

@@ -14,6 +14,14 @@
 ;; color theme
 (load-theme 'zenburn t)
 
+;; map keys in term
+(add-hook 'term-setup-hook
+					'(lambda()
+						 (define-key function-key-map "\e[1;2D" [S-left])
+						 (define-key function-key-map "\e[1;2C" [S-right])
+						 (define-key function-key-map "\e[1;2A" [S-up])
+						 (define-key function-key-map "\e[1;2B" [S-down])))
+
 ;; speed bar
 (require 'sr-speedbar)
 (global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
@@ -26,15 +34,16 @@
 ;; (setq frame-title-format "emacs@%b")
 
 ;; powerline
-;; (require 'telephone-line)
-;; (telephone-line-mode 1)
+;;(require 'powerline)
+;;(powerline-default-theme)
+;;(telephone-line-mode 1)
 
 ;; ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; windmove
 (windmove-default-keybindings)
-
+						 
 ;; whitespace
 (global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
 ;; activate whitespace-mode to view all whitespace characters
@@ -54,8 +63,10 @@
 (setq auto-save-mode nil)
 
 ;; crosshairs
-(global-set-key [(control +)] 'crosshairs-mode)
+(global-set-key (kbd "C-+") 'crosshairs-mode)
 
+;; path from shell
+(exec-path-from-shell-initialize)
 
 ;; elscreen & elscreen-persist & elscreen-buffer-group
 (elscreen-start)

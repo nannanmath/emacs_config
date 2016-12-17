@@ -1,4 +1,5 @@
-; (setq url-proxy-services
+
+																				; (setq url-proxy-services
 ;   '(("no_proxy" . "^\\(localhost\\|10.*\\)")
 ;      ("http" . "proxy-prc.intel.com:911")
 ;      ("https" . "proxy-prc.intel.com:911")))
@@ -11,31 +12,39 @@
 
 (setq my-packages
 			'(zenburn-theme
+				exec-path-from-shell
 				modern-cpp-font-lock
 				elscreen
 				elscreen-persist
-	 			desktop+
+				desktop+
 				bm
 				helm
 				highlight-indent-guides
 				yafolding
 				crosshairs
 				cff
+				flycheck
+				projectile
+				helm-projectile
+				ag
+				helm-ag
 				company
 				company-c-headers
-				company-auctex
 				company-math
 				company-shell
 				stickyfunc-enhance
 				ggtags
 				yasnippet
+				cmake-mode
 				sr-speedbar
 				ein
 				magit
-				python-mode
+				anaconda-mode
+				company-anaconda
 				markdown-mode
 				auctex
 				cdlatex
+				company-auctex
 				magic-latex-buffer
 				shell-pop))
 

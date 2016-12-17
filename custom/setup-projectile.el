@@ -10,7 +10,7 @@
 (setq projectile-completion-system 'helm)
 
 ;; ag
-(require 'grep)
+(require 'wgrep-helm)
 (require 'ag)
 (require 'helm-ag)
 
