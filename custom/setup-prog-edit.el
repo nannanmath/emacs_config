@@ -20,9 +20,16 @@
               (define-key c-mode-base-map (kbd "M-o") 'cff-find-other-file)))
 
 ;;;;;;;;;;;;;;;;;;;;;
-;;     python      ;;
+;; python-anaconda ;;
 ;;;;;;;;;;;;;;;;;;;;;
 (add-hook 'python-mode-hook 'anaconda-mode)
+
+;;;;;;;;;;;;;;;;;;;;;
+;;   sphinx-doc    ;;
+;;;;;;;;;;;;;;;;;;;;;
+(add-hook 'python-mode-hook (lambda ()
+															(require 'sphinx-doc)
+															(sphinx-doc-mode t)))
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;;     company     ;;

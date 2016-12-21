@@ -24,6 +24,7 @@
 				crosshairs
 				cff
 				flycheck
+				sphinx-doc
 				projectile
 				helm-projectile
 				ag
