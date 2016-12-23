@@ -20,9 +20,9 @@
               (define-key c-mode-base-map (kbd "M-o") 'cff-find-other-file)))
 
 ;;;;;;;;;;;;;;;;;;;;;
-;; python-anaconda ;;
+;;      elpy       ;;
 ;;;;;;;;;;;;;;;;;;;;;
-(add-hook 'python-mode-hook 'anaconda-mode)
+(elpy-enable)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;;   sphinx-doc    ;;
@@ -39,7 +39,7 @@
 (global-set-key (kbd "<C-tab>") 'company-complete)
 (add-to-list 'company-backends 'company-c-headers)
 (add-to-list 'company-backends 'company-shell)
-(add-to-list 'company-backends '(company-anaconda :with company-capf))
+;;(add-to-list 'company-backends '(company-anaconda :with company-capf))
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;;     semantic    ;;
@@ -60,8 +60,14 @@
 ;;;;;;;;;;;;;;;;;;;;;
 ;;     flycheck    ;;
 ;;;;;;;;;;;;;;;;;;;;;
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;;(add-hook 'after-init-hook #'global-flycheck-mode)
 
+;;;;;;;;;;;;;;;;;;;;;
+;;     flymake     ;;
+;;;;;;;;;;;;;;;;;;;;;
+(add-hook 'c++-mode-hook 'flymake-mode)
+(add-hook 'c-mode-hook 'flymake-mode)
+(add-hook 'python-mode-hook 'flymake-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;;     doxymacs    ;;

@@ -40,8 +40,7 @@
 				sr-speedbar
 				ein
 				magit
-				anaconda-mode
-				company-anaconda
+				elpy
 				markdown-mode
 				auctex
 				cdlatex

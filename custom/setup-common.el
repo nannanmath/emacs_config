@@ -111,13 +111,12 @@
 ;; shell pop
 (require 'shell-pop)
 (defun shell-pop-eshell ()
-  (interactive)
-  (let ((shell-pop-shell-type '("eshell" "*eshell*" (lambda () (eshell))))
-        (shell-pop-term-shell "eshell"))
-    (shell-pop--set-shell-type 'shell-pop-shell-type shell-pop-shell-type)
-    (call-interactively 'shell-pop)))
+	(interactive)
+	(let ((shell-pop-shell-type '("eshell" "*eshell*" (lambda () (eshell))))
+				(shell-pop-term-shell "eshell"))
+		(shell-pop--set-shell-type 'shell-pop-shell-type shell-pop-shell-type)
+		(call-interactively 'shell-pop)))
 (global-set-key (kbd "C-c t") 'shell-pop-eshell)
 (setq shell-pop-full-span t)
 (setq shell-pop-window-position "bottom")
 (setq shell-pop-window-size 30)
-
