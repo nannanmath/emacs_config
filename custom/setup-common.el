@@ -50,7 +50,7 @@
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 
 ;; use space to indent by default
-;; (setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 
 ;; set appearance of a tab that is represented by 2 spaces
 (setq-default tab-width 2)
@@ -66,6 +66,7 @@
 (global-set-key (kbd "C-+") 'crosshairs-mode)
 
 ;; path from shell
+(setq exec-path-from-shell-check-startup-files nil)
 (exec-path-from-shell-initialize)
 
 ;; elscreen & elscreen-persist & elscreen-buffer-group

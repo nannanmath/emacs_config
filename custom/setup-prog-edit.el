@@ -36,6 +36,7 @@
 ;;;;;;;;;;;;;;;;;;;;;
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
+(setq company-backends (delete 'company-clang company-backends))
 (global-set-key (kbd "<C-tab>") 'company-complete)
 (add-to-list 'company-backends 'company-c-headers)
 (add-to-list 'company-backends 'company-shell)
@@ -50,24 +51,57 @@
 (add-to-list 'semantic-default-submodes 'global-semantic-highlight-func-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-decoration-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
-(add-to-list 'semantic-default-submodes 'global-semantic-idle-local-symbol-highlight-mode)
+;; (add-to-list 'semantic-default-submodes 'global-semantic-idle-local-symbol-highlight-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-scheduler-mode)
-(require 'semantic/bovine/gcc)
-(semantic-mode 1)
 
+
+(require 'semantic/bovine/c)
+(require 'semantic/bovine/gcc)
+(require 'semantic/decorate/include)
 (require 'stickyfunc-enhance)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;;     flycheck    ;;
 ;;;;;;;;;;;;;;;;;;;;;
-;;(add-hook 'after-init-hook #'global-flycheck-mode)
+(defun setup-flycheck-gcc-project-include-path ()
+  (let* ((project-root (ignore-errors (projectile-project-root)))
+         (proj-properties-file (concat project-root ".proj-properties")))
+    (make-variable-buffer-local 'flycheck-gcc-include-path)
+    (make-variable-buffer-local 'company-c-headers-path-user)
+    (make-variable-buffer-local 'semantic-dependency-include-path)
+    (if (file-exists-p proj-properties-file)
+        (progn
+          (setq
+           my-include-path
+           (with-temp-buffer
+             (insert-file-contents proj-properties-file)
+             (split-string (buffer-string) "\n" t)))
+          (setq flycheck-gcc-include-path my-include-path)
+          (setq company-c-headers-path-user my-include-path)
+          (mapc
+           (lambda (dir)
+             (semantic-add-system-include dir 'c++-mode))
+           my-include-path)
+          )
+      (message "project-properties file no exist! You can edit one in your project root dir and named .proj-properties."))))
+
+(add-hook 'c-mode-hook #'flycheck-mode)
+(add-hook 'python-mode-hook #'flycheck-mode)
+
+(add-hook 'c++-mode-hook
+          (lambda ()
+            (semantic-mode 1)
+            (flycheck-mode 1)
+            (setq flycheck-gcc-language-standard "c++11"
+                  flycheck-checker 'c/c++-gcc)
+            (setup-flycheck-gcc-project-include-path)))
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;;     flymake     ;;
 ;;;;;;;;;;;;;;;;;;;;;
-(add-hook 'c++-mode-hook 'flymake-mode)
-(add-hook 'c-mode-hook 'flymake-mode)
-(add-hook 'python-mode-hook 'flymake-mode)
+;;(add-hook 'c++-mode-hook 'flymake-mode)
+;;(add-hook 'c-mode-hook 'flymake-mode)
+;;(add-hook 'python-mode-hook 'flymake-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;;     doxymacs    ;;
@@ -150,18 +184,17 @@
 ;;;;;;;;;;;;;;;;;;;;;
 ;;   compilation   ;;
 ;;;;;;;;;;;;;;;;;;;;;
+
 (global-set-key (kbd "<f5>") (lambda ()
                                (interactive)
                                (setq compile-command "make")
                                (call-interactively 'compile)))
 
-
 ;;;;;;;;;;;;;;;;;;;;;
 ;;      debug      ;;
 ;;;;;;;;;;;;;;;;;;;;;
-(setq gdb-many-windows t
-			gdb-show-main t)
-
+;; (setq gdb-many-windows t
+;;			gdb-show-main t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; highlight indentation ;;
